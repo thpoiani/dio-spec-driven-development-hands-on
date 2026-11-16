@@ -26,3 +26,7 @@ O power-up de **voo** — o mais versátil do jogo: planado, ataca em giro e alc
 - **Forest of Illusion 4**: chegar ao topo do túnel azul flutuante com Lakitu.
 - **Valley Ghost House**: voar até a fenda entre as pilhas de blocos onde está a keyhole do castelo final.
 - **Chocolate Island 3**: voar sobre os portais para o secret da Chocolate Fortress.
+
+## Conexões
+
+- **Recomendado em**: [Valley Ghost House](../levels/valley-ghost-house.md)

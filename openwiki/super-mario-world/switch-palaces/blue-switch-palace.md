@@ -18,3 +18,7 @@ generated: { by: "opencode", at: "2026-11-16T18:17:21.144Z" }
 O palácio dos **blocos "!" azuis** — acessado pela saída secreta da **Forest of Illusion 2** (compartimento secreto submerso à esquerda do bloco "!" amarelo, nadando no fundo).
 
 Com o botão azul pisado, trechos de Vanilla Dome e da Forest of Illusion que exigem os blocos "!" azuis ficam acessíveis.
+
+## Conexões
+
+- **Acesso**: [Forest of Illusion 2](../levels/forest-of-illusion-2.md) — saída secreta (compartimento submerso)

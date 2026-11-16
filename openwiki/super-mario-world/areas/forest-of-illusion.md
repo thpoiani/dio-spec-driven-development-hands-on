@@ -35,6 +35,12 @@ Terceira área — **o labirinto**. Fases **Forest of Illusion 1 a 4**, **Forest
 | Forest Secret Area | normal | A saída da floresta |
 | Roy's Castle | boss **Roy** | Libera a Chocolate Island |
 
+
+## Conexões
+
+- **Fases**: [Forest of Illusion 1](../levels/forest-of-illusion-1.md) · [Forest of Illusion 2](../levels/forest-of-illusion-2.md) · [Forest of Illusion 3](../levels/forest-of-illusion-3.md) · [Forest of Illusion 4](../levels/forest-of-illusion-4.md)
+- **Desbloqueia**: [Chocolate Island](chocolate-island.md)
+
 ## Dados
 
 ```yaml

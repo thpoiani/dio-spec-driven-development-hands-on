@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Terceira fase do caminho principal de **Yoshi's Island**.
 
+
+## Conexões
+
+- **Área**: [Yoshi's Island](../areas/yoshis-island.md)
+- **Saída normal**: [Yoshi's Island 4](yoshis-island-4.md)
+- **Pré-requisito**: [Yoshi's Island 2](yoshis-island-2.md)
+
 ## Dados
 
 ```yaml

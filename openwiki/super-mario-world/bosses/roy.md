@@ -17,3 +17,7 @@ generated: { by: "opencode", at: "2026-11-16T18:18:24.120Z" }
 # Roy
 
 O boss do **Roy's Castle #5** — acessado pelo secret da **Forest of Illusion 3** (keyhole no último túnel verde, exige power-up). Derrotar Roy libera a **Chocolate Island**.
+
+## Conexões
+
+- **Libera**: [Chocolate Island](../areas/chocolate-island.md)

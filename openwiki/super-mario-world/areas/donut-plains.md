@@ -37,6 +37,12 @@ Segunda área do caminho principal. Fases **Donut Plains 1 a 4**, as casas fanta
 | Donut Secret House | normal + secret (→ Star World 1) | The Big Boo guarda a saída secreta |
 | Ludwig's Castle | boss **Ludwig** | Libera a Forest of Illusion |
 
+
+## Conexões
+
+- **Fases**: [Donut Plains 1](../levels/donut-plains-1.md) · [Donut Plains 2](../levels/donut-plains-2.md) · [Donut Plains 3](../levels/donut-plains-3.md) · [Donut Plains 4](../levels/donut-plains-4.md) · [Donut Secret House](../levels/donut-secret-house.md) · [Ludwig's Castle](../levels/ludwigs-castle.md)
+- **Desbloqueia**: [Forest of Illusion](forest-of-illusion.md)
+
 ## Dados
 
 ```yaml

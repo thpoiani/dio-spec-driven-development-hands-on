@@ -22,6 +22,15 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 - **Normal**: → Larry's Castle.
 - **Secret exit** → **Front Door + Star World 5**: atalho para o confronto final e para a camada secreta.
 
+
+## Conexões
+
+- **Área**: [Valley of Bowser](../areas/valley-of-bowser.md)
+- **Saída normal**: [Larry's Castle](larrys-castle.md)
+- **Secret exit**: valley-of-bowser-front-door
+- **Secret exit**: star-world-5
+- **Pré-requisito**: [Valley of Bowser 3](valley-of-bowser-3.md)
+
 ## Dados
 
 ```yaml

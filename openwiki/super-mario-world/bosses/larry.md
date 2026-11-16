@@ -17,3 +17,7 @@ generated: { by: "opencode", at: "2026-11-16T18:18:24.120Z" }
 # Larry
 
 O boss do **Larry's Castle #7** (Valley of Bowser) — o último do caminho principal. Duas entradas: a frente (pelo caminho normal) ou a **entrada secreta** pela Valley Ghost House (keyhole no alto, exige Cape). Derrotar Larry abre o confronto com **Bowser** (Front Door/Back Door — três fases: MechaKoopas, Big Steelys e a perseguição em zigue-zague ao balão).
+
+## Conexões
+
+- **Castelo**: [Larry's Castle](../levels/larrys-castle.md)

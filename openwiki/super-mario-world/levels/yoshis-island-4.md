@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Última fase regular de **Yoshi's Island** antes do **Iggy's Castle**.
 
+
+## Conexões
+
+- **Área**: [Yoshi's Island](../areas/yoshis-island.md)
+- **Saída normal**: [Iggy's Castle](iggys-castle.md)
+- **Pré-requisito**: [Yoshi's Island 3](yoshis-island-3.md)
+
 ## Dados
 
 ```yaml

@@ -20,6 +20,14 @@ Segunda fase do caminho principal — com o **primeiro segredo do jogo**: a saí
 - **Normal**: → Yoshi's Island 3.
 - **Secret exit** → **Yellow Switch Palace**.
 
+
+## Conexões
+
+- **Área**: [Yoshi's Island](../areas/yoshis-island.md)
+- **Saída normal**: [Yoshi's Island 3](yoshis-island-3.md)
+- **Secret exit**: [Yellow Switch Palace](../switch-palaces/yellow-switch-palace.md)
+- **Pré-requisito**: [Yoshi's Island 1](yoshis-island-1.md)
+
 ## Dados
 
 ```yaml

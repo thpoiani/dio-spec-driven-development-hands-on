@@ -18,3 +18,7 @@ generated: { by: "opencode", at: "2026-11-16T18:17:21.144Z" }
 O palácio dos **blocos "!" verdes** — acessado pela saída secreta da **Donut Plains 2** (casca azul na área escondida do teto → parreira → keyhole).
 
 Sem ele, a Donut Plains 1 exige voo de Cape para alcançar a keyhole, e trechos dos mundos seguintes ficam bloqueados.
+
+## Conexões
+
+- **Acesso**: [Donut Plains 2](../levels/donut-plains-2.md) — saída secreta (keyhole no teto escondido)

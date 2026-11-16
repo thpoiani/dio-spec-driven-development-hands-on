@@ -20,6 +20,14 @@ A casa fantasma do **Valley of Bowser** — sua saída secreta é a **entrada se
 - **Normal**: segue o caminho do vale até o castelo pela frente.
 - **Secret exit** → **Larry's Castle (#7)**: ao entrar na primeira porta, bata o bloco acima dela, pise no botão 'P' e siga pela esquerda até a porta que aparece. Na sala alta está a keyhole escondida no alto — **exige Cape**: voe até a pilha de blocos que isola a fechadura, solte Y perto da fenda entre as pilhas, agache na brecha e, agachado, aperte B e para frente.
 
+
+## Conexões
+
+- **Área**: [Valley of Bowser](../areas/valley-of-bowser.md)
+- **Saída normal**: [Valley of Bowser 3](valley-of-bowser-3.md)
+- **Secret exit**: [Larry's Castle](larrys-castle.md)
+- **Pré-requisito**: valley-of-bowser-2
+
 ## Dados
 
 ```yaml

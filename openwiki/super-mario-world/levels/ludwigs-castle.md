@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Castelo de **Donut Plains** — o boss **Ludwig**. Derrotá-lo libera a **Forest of Illusion**. Com a Cape (power-up recomendado para castelos), o confronto fica mais seguro.
 
+
+## Conexões
+
+- **Área**: [Donut Plains](../areas/donut-plains.md)
+- **Saída normal**: [Forest of Illusion 1](forest-of-illusion-1.md)
+- **Pré-requisito**: [Donut Plains 4](donut-plains-4.md)
+
 ## Dados
 
 ```yaml

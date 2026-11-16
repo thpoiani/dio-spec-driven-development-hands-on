@@ -51,3 +51,8 @@ Fato canônico (Super Mario Wiki): completar o jogo exige **no mínimo duas saí
 - `Valley Ghost House` → **Larry's Castle** (entrada secreta do castelo final)
 
 Essas setas de progresso são exatamente o que o frontmatter (`exits`/`prerequisites`) declara — a estratégia do jogo mora nos secret exits.
+
+## Conexões
+
+- **Áreas**: [Yoshi's Island](areas/yoshis-island.md) · [Donut Plains](areas/donut-plains.md) · [Forest of Illusion](areas/forest-of-illusion.md) · [Chocolate Island](areas/chocolate-island.md) · [Valley of Bowser](areas/valley-of-bowser.md) · [Star Road → Special Zone](areas/star-road.md)
+- **Switch Palaces**: [Yellow](switch-palaces/yellow-switch-palace.md) · [Green](switch-palaces/green-switch-palace.md) · [Blue](switch-palaces/blue-switch-palace.md)

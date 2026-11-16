@@ -20,6 +20,14 @@ Primeira fase da **Forest of Illusion**. Sua saída secreta leva à **Forest Gho
 - **Normal**: segue o curso da fase.
 - **Secret exit** → **Forest Ghost House**: depois de todas as toras com os Wigglers, há um bloco "?" com um **Balão 'P'**. Pegue-o e flutue para baixo/à esquerda, abaixo das toras — a keyhole está numa plataforma abaixo da tora mais longa.
 
+
+## Conexões
+
+- **Área**: [Forest of Illusion](../areas/forest-of-illusion.md)
+- **Saída normal**: [Forest of Illusion 2](forest-of-illusion-2.md)
+- **Secret exit**: forest-ghost-house
+- **Pré-requisito**: [Ludwig's Castle](ludwigs-castle.md)
+
 ## Dados
 
 ```yaml

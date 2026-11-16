@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Fase regular do **Valley of Bowser**, entre a Valley of Bowser 2 e a 4.
 
+
+## Conexões
+
+- **Área**: [Valley of Bowser](../areas/valley-of-bowser.md)
+- **Saída normal**: [Valley of Bowser 4](valley-of-bowser-4.md)
+- **Pré-requisito**: valley-of-bowser-2
+
 ## Dados
 
 ```yaml

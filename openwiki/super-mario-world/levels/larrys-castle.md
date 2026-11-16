@@ -17,6 +17,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Castelo **#7** — o fim do caminho principal: o boss **Larry**. Duas formas de chegar: a **frente** (pelo caminho normal do Valley of Bowser) ou a **entrada secreta** pela Valley Ghost House.
 
+
+## Conexões
+
+- **Área**: [Valley of Bowser](../areas/valley-of-bowser.md)
+- **Saída normal**: valley-of-bowser-front-door
+- **Pré-requisito**: [Valley of Bowser 4](valley-of-bowser-4.md)
+
 ## Dados
 
 ```yaml

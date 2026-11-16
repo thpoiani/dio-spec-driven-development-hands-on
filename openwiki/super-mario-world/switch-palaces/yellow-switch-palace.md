@@ -16,3 +16,7 @@ generated: { by: "opencode", at: "2026-11-16T18:17:21.144Z" }
 # Yellow Switch Palace
 
 O palácio dos **blocos "!" amarelos** — acessado pela saída secreta da **Yoshi's Island 2**: o primeiro segredo do jogo.
+
+## Conexões
+
+- **Acesso**: [Yoshi's Island 2](../levels/yoshis-island-2.md) — saída secreta (o primeiro segredo do jogo)

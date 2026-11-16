@@ -17,3 +17,8 @@ generated: { by: "opencode", at: "2026-11-16T18:18:24.120Z" }
 # Iggy
 
 O boss do **Iggy's Castle** (Yoshi's Island) — o primeiro do caminho principal. Derrotar Iggy libera **Donut Plains**.
+
+## Conexões
+
+- **Castelo**: [Iggy's Castle](../levels/iggys-castle.md)
+- **Libera**: [Donut Plains](../areas/donut-plains.md)

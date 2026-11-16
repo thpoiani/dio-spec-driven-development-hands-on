@@ -20,6 +20,14 @@ Nível da área **Donut Plains** com o papel de gating mais cedo do jogo: sua **
 - **Normal**: segue para o resto de Donut Plains.
 - **Secret exit** (keyhole) → **Green Switch Palace**: durante a fase há blocos no teto; um deles leva a uma área escondida com uma pilha de blocos amarelos em escada e uma casca azul presa. Solte a casca quebrando os blocos com A (é preciso estar, no mínimo, Super Mario), carregue-a e jogue-a no bloco mais alto — surge uma parreira. Suba pelos blocos, escale a parreira e encaixe a chave na fechadura.
 
+
+## Conexões
+
+- **Área**: [Donut Plains](../areas/donut-plains.md)
+- **Saída normal**: [Donut Plains 3](donut-plains-3.md)
+- **Secret exit**: [Green Switch Palace](../switch-palaces/green-switch-palace.md)
+- **Pré-requisito**: [Donut Plains 1](donut-plains-1.md)
+
 ## Dados
 
 ```yaml

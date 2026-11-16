@@ -17,3 +17,8 @@ generated: { by: "opencode", at: "2026-11-16T18:18:24.120Z" }
 # Ludwig
 
 O boss do **Ludwig's Castle** (Donut Plains) — derrotá-lo libera a **Forest of Illusion**.
+
+## Conexões
+
+- **Castelo**: [Ludwig's Castle](../levels/ludwigs-castle.md)
+- **Libera**: [Forest of Illusion](../areas/forest-of-illusion.md)

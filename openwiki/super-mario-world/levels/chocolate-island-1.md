@@ -17,6 +17,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Primeira fase regular de **Chocolate Island**, no caminho principal após a Forest of Illusion.
 
+
+## Conexões
+
+- **Área**: [Chocolate Island](../areas/chocolate-island.md)
+- **Saída normal**: chocolate-island-2
+- **Pré-requisito**: roy-castle
+
 ## Dados
 
 ```yaml

@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Fase regular de **Donut Plains**, no caminho principal entre a Donut Plains 2 e a Donut Plains 4.
 
+
+## Conexões
+
+- **Área**: [Donut Plains](../areas/donut-plains.md)
+- **Saída normal**: [Donut Plains 4](donut-plains-4.md)
+- **Pré-requisito**: [Donut Plains 2](donut-plains-2.md)
+
 ## Dados
 
 ```yaml

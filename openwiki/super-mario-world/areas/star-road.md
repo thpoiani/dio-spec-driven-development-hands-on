@@ -33,6 +33,11 @@ As 8 fases especiais são alcançadas pelas Star Roads; completar todas revela o
 
 *Páginas das fases da Special Zone entram na expansão do conhecimento (feature/10-knowledge-expansion).*
 
+## Conexões
+
+- **Acesso**: [Donut Secret House](../levels/donut-secret-house.md) — secret leva à Star Road 1 (Star World 1)
+- **Acesso**: [Valley of Bowser 4](../levels/valley-of-bowser-4.md) — secret leva à Star Road 5
+
 ## Dados
 
 ```yaml

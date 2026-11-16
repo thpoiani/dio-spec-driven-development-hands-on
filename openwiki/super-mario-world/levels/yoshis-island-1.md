@@ -15,6 +15,12 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 A primeira fase do jogo — introdução do progresso no caminho principal de **Yoshi's Island**.
 
+
+## Conexões
+
+- **Área**: [Yoshi's Island](../areas/yoshis-island.md)
+- **Saída normal**: [Yoshi's Island 2](yoshis-island-2.md)
+
 ## Dados
 
 ```yaml

@@ -17,3 +17,8 @@ generated: { by: "opencode", at: "2026-11-16T18:18:24.120Z" }
 # Wendy
 
 A boss do **Wendy's Castle** (Chocolate Island) — derrotá-la libera o **Valley of Bowser**.
+
+## Conexões
+
+- **Castelo**: [Wendy's Castle](../levels/wendys-castle.md)
+- **Libera**: [Valley of Bowser](../areas/valley-of-bowser.md)

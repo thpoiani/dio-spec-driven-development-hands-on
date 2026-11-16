@@ -20,6 +20,14 @@ Nível aquático da **Forest of Illusion** — sua saída secreta ativa o **Blue
 - **Normal**: segue o curso submerso da floresta.
 - **Secret exit** → **Blue Switch Palace**: ao chegar ao bloco "!" amarelo, fique no fundo e nade para a esquerda, direto para a parede — há um compartimento secreto na água.
 
+
+## Conexões
+
+- **Área**: [Forest of Illusion](../areas/forest-of-illusion.md)
+- **Saída normal**: [Forest of Illusion 3](forest-of-illusion-3.md)
+- **Secret exit**: [Blue Switch Palace](../switch-palaces/blue-switch-palace.md)
+- **Pré-requisito**: [Forest of Illusion 1](forest-of-illusion-1.md)
+
 ## Dados
 
 ```yaml

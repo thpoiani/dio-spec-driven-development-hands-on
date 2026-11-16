@@ -20,6 +20,14 @@ O nível do **momento de gating mais famoso da Forest of Illusion**: a saída **
 - **Normal**: leva de volta a um ponto já desbloqueado — **não progride** (canônico: Super Mario Wiki).
 - **Secret exit** (keyhole) → **Forest Secret Area**: entre no túnel azul flutuante que tem Lakitu nele — a keyhole está lá dentro. Chegar ao topo sem voar é difícil, mas possível; com a Cape, é mais fácil.
 
+
+## Conexões
+
+- **Área**: [Forest of Illusion](../areas/forest-of-illusion.md)
+- **Saída normal**: não progride — leva de volta à própria fase
+- **Secret exit**: forest-secret-area
+- **Pré-requisito**: [Forest of Illusion 3](forest-of-illusion-3.md)
+
 ## Dados
 
 ```yaml

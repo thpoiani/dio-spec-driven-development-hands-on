@@ -15,6 +15,14 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Castelo de **Chocolate Island** — a boss **Wendy**. Derrotá-la libera o **Valley of Bowser**. Com a Cape (power-up recomendado para castelos), o confronto fica mais seguro.
 
+
+## Conexões
+
+- **Área**: [Chocolate Island](../areas/chocolate-island.md)
+- **Saída normal**: [Valley of Bowser 1](valley-of-bowser-1.md)
+- **Pré-requisito**: [Chocolate Island 1](chocolate-island-1.md)
+- **Pré-requisito**: chocolate-fortress
+
 ## Dados
 
 ```yaml

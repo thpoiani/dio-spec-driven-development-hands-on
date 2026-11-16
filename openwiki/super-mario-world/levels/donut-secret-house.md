@@ -20,6 +20,14 @@ Casa fantasma de **Donut Plains** — e a **porta de entrada da Star Road**: sua
 - **Normal**: ao encontrar as cinco moedas no contorno de uma porta, colete pelo menos duas, pise no botão 'P' e atravesse a porta que aparece.
 - **Secret exit** → **Star World 1**: pise no botão 'P' perto da porta flutuante — três blocos "?" aparecem. Bata no bloco diretamente acima da porta: uma parreira cresce levando ao **The Big Boo**, que guarda a saída secreta.
 
+
+## Conexões
+
+- **Área**: [Donut Plains](../areas/donut-plains.md)
+- **Saída normal**: [Donut Plains 3](donut-plains-3.md)
+- **Secret exit**: star-world-1
+- **Pré-requisito**: [Donut Plains 1](donut-plains-1.md)
+
 ## Dados
 
 ```yaml

@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Primeira fase do **Valley of Bowser**, o vale final do caminho principal.
 
+
+## Conexões
+
+- **Área**: [Valley of Bowser](../areas/valley-of-bowser.md)
+- **Saída normal**: valley-of-bowser-2
+- **Pré-requisito**: [Wendy's Castle](wendys-castle.md)
+
 ## Dados
 
 ```yaml

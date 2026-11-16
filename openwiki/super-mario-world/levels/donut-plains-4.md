@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Última fase regular de **Donut Plains** antes do **Ludwig's Castle**.
 
+
+## Conexões
+
+- **Área**: [Donut Plains](../areas/donut-plains.md)
+- **Saída normal**: [Ludwig's Castle](ludwigs-castle.md)
+- **Pré-requisito**: [Donut Plains 3](donut-plains-3.md)
+
 ## Dados
 
 ```yaml

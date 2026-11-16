@@ -15,6 +15,13 @@ generated: { by: "opencode", at: "2026-11-16T18:09:34.647Z" }
 
 Castelo de **Yoshi's Island** — o primeiro boss do caminho principal: **Iggy**. Derrotá-lo libera **Donut Plains**. Castelos não têm secret exits (canônico).
 
+
+## Conexões
+
+- **Área**: [Yoshi's Island](../areas/yoshis-island.md)
+- **Saída normal**: [Donut Plains 1](donut-plains-1.md)
+- **Pré-requisito**: [Yoshi's Island 4](yoshis-island-4.md)
+
 ## Dados
 
 ```yaml
