@@ -1,7 +1,7 @@
 # ARCHITECTURE · Game Copilot
 
 > Arquitetura e componentes do sistema da aula 2. Escopo e decisões em [SCOPE.md](./SCOPE.md) · roteiro em [PRESENTATION.md](./PRESENTATION.md).
-> Stack: TypeScript strict · Vitest · EMQX (MQTT) · LangChain.js · OpenWiki (OKF v0.2) · OpenCode + Skills do Matt Pocock como processo de desenvolvimento.
+> Stack: TypeScript strict · Vitest · OpenWiki (OKF v0.2) · OpenCode + Skills do Matt Pocock como processo de desenvolvimento.
 
 ## 1. Visão geral
 
@@ -11,14 +11,11 @@ flowchart TD
         PR["playthrough-runner<br/>lê uma fita de eventos e publica"]
     end
 
-    subgraph Broker ["Broker MQTT (EMQX, docker)"]
-        T["tópicos:<br/>game/telemetry/&lt;evento&gt;"]
-    end
+    T["EventBus in-memory<br/>tópicos: game/telemetry/&lt;evento&gt;"]
 
     subgraph Consumers ["Consumidores"]
         PP["PlayerProfiler<br/>regras · determinístico"]
         PA["ProgressionAdvisor<br/>regras · determinístico"]
-        WA["WorldAdvisor<br/>agente LangChain · LLM"]
     end
 
     subgraph KB ["Base de conhecimento — camada única"]
@@ -45,9 +42,9 @@ flowchart TD
 
 Princípios:
 
-- **Um só contrato de evento** governa todos os consumidores — a spec define o evento, e regras e agente coexistem no mesmo tópico.
-- **Determinismo onde importa**: profiler e progression advisor são agregação/regras (testáveis, instantâneos). O LLM entra apenas onde linguagem natural agrega valor (WorldAdvisor).
-- **A wiki é a única fonte de conhecimento**: o frontmatter OKF alimenta o motor; a prosa alimenta o agente. Não existe `graph.ts` paralelo (impossível haver drift entre as camadas).
+- **Um só contrato de evento** governa os consumidores — a spec define o evento.
+- **Determinismo onde importa**: profiler e progression advisor são agregação/regras (testáveis, instantâneos).
+- **A wiki é a única fonte de conhecimento**: o frontmatter OKF alimenta o motor; a prosa alimenta a leitura rica. Não existe `graph.ts` paralelo (impossível haver drift entre as camadas).
 
 ## 2. Componentes do sistema
 
@@ -60,8 +57,7 @@ Princípios:
 ### 2.2 `event-bus` (a seam do sistema)
 
 - **Interface `EventBus`**: `publish(topic, event)` / `subscribe(topic, handler)`, tipada por evento.
-- **`InMemoryEventBus`**: usado nos testes e no demo sem docker. Permanece após a etapa 07 — a interface é o que permite trocar o transporte sem tocar nos consumidores (lição da etapa 07: a seam acordada na spec).
-- **`MqttEventBus`** (etapa 07): implementação sobre `mqtt.js` conectada ao EMQX; mapeia eventos para tópicos (§4).
+- **`InMemoryEventBus`**: usado nos testes e no demo sem docker. A interface é o que permite trocar o transporte sem tocar nos consumidores.
 
 ### 2.3 `player-profiler` (determinístico)
 
@@ -83,15 +79,6 @@ Princípios:
   - **Próximo objetivo por perfil**: casual → próximo castelo no caminho principal; completionist → segredo faltante na área atual; speedrunner → rota mais curta até o próximo boss.
   - **Gating detectado**: chegou numa área cujo acesso depende de Switch Palace/saída secreta não concluída → recomenda concluir o pré-requisito (o *momento da demo*: Forest of Illusion, §6).
   - **Power-up**: antes de `boss_engaged`, sugere o power-up certo se o inventário não o tem (ex.: Cape Feather para castelo).
-
-### 2.5 `world-advisor` (agente LangChain — etapa 08)
-
-- **O que é**: agente LLM que é mais um consumidor do broker. Recebe telemetria + perfil, **consulta a wiki** e publica recomendações ricas em linguagem natural.
-- **Ferramentas**: `openwiki_search` / `openwiki_read` (ferramentas locais, read-only, sem chamada de modelo do OpenWiki) ou leitura direta das páginas `openwiki/` — decisão acordada na spec da feature.
-- **Quando reage** (non-goal: reagir a cada evento): `area_entered` (o que este mundo esconde), `boss_engaged` (power-up/estratégia), `profile_changed` (reorienta as dicas). Throttle por sessão.
-- **Contrato de saída** (schema validado): a recomendação deve citar a página da wiki que fundamenta a dica (`evidence`) — *guardrail: não inventar segredo que não está na wiki*.
-- **Evals**: conjunto de casos (evento + perfil → dica esperada) rodado fora do caminho crítico; a spec da feature os define.
-- Provider LLM: endpoint OpenAI-compatible (ex.: GLM), configurável — decisão da spec da feature.
 
 ### 2.6 `knowledge-loader` + `openwiki/` (a camada de conhecimento)
 
@@ -115,11 +102,11 @@ prerequisites: [forest-of-illusion-2]
 rewards: [dragon-coin]
 boss: false
 ---
-Atrás do bloco "!" há uma keyhole escondida... (prosa que o agente lê)
+Atrás do bloco "!" há uma keyhole escondida...
 ```
 
 - **`knowledge-loader`**: varre `openwiki/`, faz parse do frontmatter e monta o **`KnowledgeIndex`** em memória (áreas, níveis, exits, pré-requisitos, recompensas, power-ups). É o que o `ProgressionAdvisor` consulta — determinístico e testável.
-- **`INSTRUCTIONS.md`/schema da wiki** (regras do OpenWiki) é a **spec da base**: define os tipos de página (`area`, `level`, `power-up`, `boss`, `switch-palace`) e os campos obrigatórios do frontmatter. O corpo em prosa é o que o agente consome.
+- **`INSTRUCTIONS.md`/schema da wiki** (regras do OpenWiki) é a **spec da base**: define os tipos de página (`area`, `level`, `power-up`, `boss`, `switch-palace`) e os campos obrigatórios do frontmatter. O corpo em prosa é a leitura rica do conteúdo.
 - **`openwiki visualize`** gera o grafo interativo do mundo — material do slide.
 
 ### 2.7 `console-ui`
@@ -131,20 +118,16 @@ Atrás do bloco "!" há uma keyhole escondida... (prosa que o agente lê)
   ▸ ProgressionAdvisor (perfil: casual)
     Você está dando voltas na Forest of Illusion. A saída para o próximo mundo
     é o secret exit da Forest of Illusion 4.
-  ▸ WorldAdvisor (agente · wiki: forest-of-illusion-4)
     Procure a keyhole atrás do bloco "!" — leve a Cape Feather para atravessar
     a área alta sem tomar dano.
 ```
 
 ### 2.8 Infra
 
-- `docker-compose.yml`: serviço `emqx` (porta 1883 + dashboard 18083). Única dependência de runtime fora do npm.
-
 ## 3. Estrutura de pastas (proposta — NestJS com camadas DDD)
 
 ```text
 dio-spec-driven-development-hands-on/
-├── docker-compose.yml               # EMQX (etapa 07)
 ├── package.json / tsconfig.json / vitest.config.ts
 ├── AGENTS.md / CODING_STANDARDS.md / GLOSSARY.md / docs/agents/
 ├── docs/openwiki-setup.md           # guia de setup da base de conhecimento
@@ -169,9 +152,6 @@ dio-spec-driven-development-hands-on/
     │   └── advisor/                 # ProgressionAdvisor service (@OnEvent)
     ├── infrastructure/              # adapters
     │   ├── knowledge/               # loader OKF → KnowledgeIndex
-    │   ├── mqtt/                    # MqttEventBus (etapa 07 — migração gravada)
-    │   ├── world-advisor/           # agente LangChain (etapa 08 — gravada)
-    │   └── otel/                    # observabilidade (etapa 06)
     ├── game/                        # playthrough-runner: as 3 fitas de eventos
     └── presentation/                # console-ui
 ├── scripts/check-wiki.mjs           # validador do schema da wiki (CI)
@@ -197,8 +177,7 @@ Envelope comum de todo evento: `{ type, sessionId, ts, data }`.
 | Tópico | Publicado por | Payload |
 |---|---|---|
 | `game/profile_changed` | PlayerProfiler | `{ profile: "casual" \| "completionist" \| "speedrunner", confidence: number, signals: string[] }` |
-| `game/recommendations` | ProgressionAdvisor, WorldAdvisor | `{ source: "progression-advisor" \| "world-advisor", profile, message: string, evidence: { wikiPage?: string, events: string[] } }` |
-| `game/agent/observed` *(opcional)* | WorldAdvisor | observações do agente como evento (padrão extensível) |
+| `game/recommendations` | ProgressionAdvisor | `{ source: "progression-advisor", profile, message: string, evidence: { wikiPage?: string, events: string[] } }` |
 
 ### 4.3 Glossário (semilla para o `GLOSSARY.md` das skills)
 
@@ -229,22 +208,21 @@ Estrutura real simplificada para caber em aula (~5 áreas principais + camada se
 | **Forest of Illusion** | Fases com **múltiplas saídas** (labirinto: sem a saída secreta certa, repete-se a área), **Blue Switch Palace**, **Roy's Castle** | O **momento da demo**: casual entra em loop na floresta |
 | **Chocolate Island** | Fases, Chocolate Secret, **Wendy's Castle** | Boss libera o acesso ao Valley of Bowser |
 | **Valley of Bowser** | Fases 1–4, **Larry's Castle** (final) | Fim do caminho principal |
-| **Star Road → Special Zone** | Acesso só por **secret exits/keyholes**; 8 níveis especiais | Conteúdo do completionist; expansão do homework (`feature/09`) |
+| **Star Road → Special Zone** | Acesso só por **secret exits/keyholes**; 8 níveis especiais | Conteúdo do completionist; expansão do conhecimento |
 
-Power-ups como "equipamento": **Cape Feather** (voo — ideal para castelos), **Fire Flower**, **Yoshi** — o `WorldAdvisor`/ProgressionAdvisor sugerem qual levar ao `boss_engaged`.
+Power-ups como "equipamento": **Cape Feather** (voo — ideal para castelos), **Fire Flower**, **Yoshi** — o ProgressionAdvisor sugere qual levar ao `boss_engaged`.
 
 ## 6. Sequências de demo (as 3 fitas)
 
 | Fita | Roteiro de eventos | Saída esperada no console |
 |---|---|---|
-| **casual.ts** | Caminho principal, sem segredos, inventário consultado com frequência, pausas longas | Perfil `casual`; ao entrar na Forest of Illusion, **loop**: ProgressionAdvisor detecta o gating e aponta a saída secreta; WorldAdvisor enriquece com a wiki (keyhole + power-up) |
+| **casual.ts** | Caminho principal, sem segredos, inventário consultado com frequência, pausas longas | Perfil `casual`; ao entrar na Forest of Illusion, **loop**: ProgressionAdvisor detecta o gating e aponta a saída secreta; a leitura rica da wiki complementa (keyhole + power-up) |
 | **completionist.ts** | Secret exits, Switch Palaces, Dragon Coins, inventário constante, revisita áreas | Perfil `completionist`; dicas do que falta coletar por área; caminho para a Star Road |
-| **speedrunner.ts** | Deltas curtos, direto aos castelos (Iggy → Ludwig → Roy → Wendy → Larry), zero desvios | Perfil `speedrunner`; ProgressionAdvisor dá o próximo objetivo; WorldAdvisor sugere rota otimizada |
+| **speedrunner.ts** | Deltas curtos, direto aos castelos (Iggy → Ludwig → Roy → Wendy → Larry), zero desvios | Perfil `speedrunner`; ProgressionAdvisor dá o próximo objetivo; a leitura rica da wiki complementa a rota |
 
-`npm run demo` executa as três em sequência (ou por parâmetro) contra o broker EMQX (etapa 07 em diante) — antes disso, roda com `InMemoryEventBus`.
+`npm run demo` executa as três em sequência (ou por parâmetro) no barramento in-memory.
 
 ## 7. Testes
 
 - **Unitários por componente** com `InMemoryEventBus` e fitas mínimas: profiler (sinais → perfil), progression (gating → recomendação), loader (frontmatter → índice; campo faltante = erro de schema da wiki).
 - **Contrato de eventos**: schema/tipo compartilhado — quebrar o payload quebra o build.
-- **Evals do agente** (etapa 08): casos evento+perfil → dica esperada, com as páginas da wiki como gabarito; fora do caminho crítico.

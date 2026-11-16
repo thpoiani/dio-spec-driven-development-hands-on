@@ -5,7 +5,7 @@
 
 ## 1. Contexto e tese
 
-A aula 1 provou, com o experimento dos 4 placares (4/10 em todos os métodos), que **o gargalo do SDD é quem especifica, não o método**. A aula 2 é o contraponto prático: **o mesmo ciclo das Skills do Matt Pocock** (`@grill-with-docs` → `@to-spec` → `@to-tickets` → `@implement`/`@tdd`/`@code-review` → `@retro`) aplicado a um sistema real, com arquitetura, eventos, evolução de infraestrutura e agentes LLM.
+A aula 1 provou, com o experimento dos 4 placares (4/10 em todos os métodos), que **o gargalo do SDD é quem especifica, não o método**. A aula 2 é o contraponto prático: **o mesmo ciclo das Skills do Matt Pocock** (`@grill-with-docs` → `@to-spec` → `@to-tickets` → `@implement`/`@tdd`/`@code-review` → `@retro`) aplicado a um sistema real, com arquitetura, eventos e evolução de infraestrutura.
 
 **Tese da aula**: features em sistema existente são onde o SDD brilha de verdade — e a postura do operador muda: na aula 1 eu *aceitava as recomendações* (e o placar mostrou o gargalo); na aula 2 **eu respondo de verdade**, com decisões de negócio próprias, e o método transforma cada resposta em requisito testável.
 
@@ -22,7 +22,7 @@ A aula 1 provou, com o experimento dos 4 placares (4/10 em todos os métodos), q
 
 ## 3. O sistema: Game Copilot
 
-Um assistente de jogador que consome a **telemetria de gameplay** (eventos publicados num broker), infere o **perfil do jogador**, cruza com uma **base de conhecimento do mundo do jogo** (wiki) e publica **recomendações human-readable** — tanto por um motor de regras determinístico quanto por um agente LLM.
+Um assistente de jogador que consome a **telemetria de gameplay** (eventos publicados num broker), infere o **perfil do jogador**, cruza com uma **base de conhecimento do mundo do jogo** (wiki) e publica **recomendações human-readable** — por um motor de regras determinístico.
 
 Para a aula, o jogo é **Super Mario World** (reconhecimento imediato da plateia, pré-requisitos reais e legíveis). A captura/análise de screenshot fica fora do escopo: a aula **começa nos eventos**, que são mockados por "playthroughs" (fitas de eventos que simulam sessões reais de jogo). A mensagem explícita na aula: *"amanhã você pluga o jogo que quiser na mesma interface"*.
 
@@ -33,24 +33,19 @@ Para a aula, o jogo é **Super Mario World** (reconhecimento imediato da plateia
 | 1 | Tese da aula | Mercado como gancho + SDD como método | Fecha o arco com a aula 1 |
 | 2 | Divisão offline vs. gravação | Core pronto offline; gravação = 2 features via ciclo SDD completo | A gravação ensina o ciclo, não a digitação |
 | 3 | Jogo da base de conhecimento | Super Mario World | Plateia conhece; gating por Switch Palaces/saídas secretas é didático; Sonic tem pré-requisito fraco |
-| 4 | Camada de conhecimento | **Uma só**: wiki em formato OKF v0.2 (langchain-ai/openwiki), commitada no repo | Sem `graph.ts` paralelo: frontmatter = dado estruturado do motor; prosa = texto do agente; sem drift entre camadas |
+| 4 | Camada de conhecimento | **Uma só**: wiki em formato OKF v0.2 (langchain-ai/openwiki), commitada no repo | Sem `graph.ts` paralelo: frontmatter = dado estruturado do motor; prosa = leitura rica; sem drift entre camadas |
 | 5 | Autoria da wiki | OpenWiki + OpenCode (integração nativa) a partir de um detonado | Mesmo agente do curso; OKF portável; visualizador de grafo para slide |
-| 6 | Broker de eventos | MQTT (EMQX (MQTT) em docker-compose) | Tema TV/IoT; 1 container; tópicos por tipo de evento; habilita o agente como consumidor |
 | 7 | Perfis de jogador | `completionist`, `speedrunner`, `casual` | Vocabulário Mario; inferíveis a partir dos eventos (com timestamps) |
-| 8 | Onde o LLM entra | **Só no WorldAdvisor** (agente LangChain) | Profiler/ProgressionAdvisor determinísticos e testáveis; demo rápida e estável |
 | 9 | Vocabulário | Eventos e componentes no domínio Mario (`level_started`, `boss_engaged`, power-ups) | Glossário registra; Avoid: "quest", "batalha" |
 | 10 | Postura do operador | Responder de verdade na entrevista | Contraponto do protocolo da aula 1 |
 | 11 | Terminal na gravação | Gravado separado, acelerado na edição | A entrevista ao vivo é o conteúdo; o terminal fica dinâmico |
 | 12 | Branches | Numeradas, preservadas após merge, `main` sempre final | Alunos navegam a evolução; GitHub Pages não muda |
-| 13 | Dependências externas | Liberadas nesta aula (mqtt.js, LangChain, EMQX) | Diferente da aula 1 ("sem deps") por ser um sistema integrado |
 
 ## 5. Non-goals (explícitos na aula e nas specs)
 
 - ❌ Captura e análise de screenshot real (OCR/vision) — a aula começa nos eventos mockados.
 - ❌ LLM no caminho determinístico — `PlayerProfiler` e `ProgressionAdvisor` são regras puras.
 - ❌ UI/overlay — o sistema termina nas recomendações textuais no console.
-- ❌ Broker Kafka/RabbitMQ — overkill; EMQX de um container.
-- ❌ O agente reagir a **cada** evento — só a eventos relevantes (`area_entered`, `boss_engaged`, `profile_changed`), com throttle.
 
 ## 6. Estágios, tickets e PRs
 
@@ -64,15 +59,10 @@ O desenvolvimento acontece em **10 estágios** (que organizam as issues) e em **
 | 04 | issue do estágio | `PlayerProfiler` (3 perfis) + `ProgressionAdvisor` (services `@OnEvent`) | Offline | `v0.4` |
 | 05 | issue do estágio | 3 fitas (JSON) + runner com `--speed` + console + `npm run demo` — **barramento in-memory** (sem broker, sem docker) | Offline | `v0.5` |
 | 06 | issue do estágio | **Upgrade NestJS 11 → 12**: os `@nestjs/*` na v12 (ESM-only — nosso `type: module` ✓), o migration guide revisado (hook ordering, lifecycle), a suíte verde; a **observabilidade nativa** (`@nestjs/observe`) fica disponível para quando o projeto precisar | Offline | `v0.6` |
-| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + EMQX | **Gravada ao vivo** | `v0.7` |
-| 08 | issue do estágio | `WorldAdvisor`: agente LangChain (Nest provider) | **Gravada ao vivo** | `v0.8` |
-| 09 | issue do estágio | Expansão do mundo (Star Road / Special Zone) | **Homework** dos alunos | `v0.9` |
-
-Regras de repositório:
-
 - O projeto é este repositório; **cada ticket = branch + PR** com `Closes #N`; o merge acontece no fechamento do ticket e as branches permanecem — os PRs merged, em ordem, são a evolução do curso.
-- O estágio 07 é a **migração MQTT gravada ao vivo** (o contrato sobrevive, o transporte troca); o estágio 08 é o **agente gravado ao vivo**. O estágio 09 é o homework, com spec + tickets pré-produzidos.
-- `-matt-pocock-skills` na raiz ✅ antes da gravação (tracker **GitHub Issues**, labels de triagem, single-context).
+- O estágio 06 é o **upgrade NestJS 12** (o migration guide revisado); os estágios seguintes são definidos ao vivo na aula.
+- `@setup-matt-pocock-skills` na raiz ✅ antes da gravação (tracker **GitHub Issues**, labels de triagem, single-context).
+- Os estágios seguintes são definidos ao vivo na aula.
 
 ## 7. Roteiro da gravação (resumo)
 
@@ -80,9 +70,7 @@ Regras de repositório:
 |---|---|---|
 | Abertura | 15' | Gancho GTA VI (19/11) + tendência TV + use case + non-goals |
 | Tour do core | 10' | Arquitetura, base de conhecimento, demo dos 3 playthroughs |
-| Feature 1 (etapa 07) | ~15' | `event-broker` — SDD para infraestrutura |
-| Feature 2 (etapa 08) | ~20' | `world-advisor` — SDD para agentes |
-| Encerramento | 5' | Recap, homework (`feature/09`), convite |
+| Encerramento | 5' | Recap, convite |
 
 Detalhe completo (falas, telas, cortes): [PRESENTATION.md](./PRESENTATION.md).
 
@@ -94,8 +82,7 @@ O checklist vivo (o que está feito, o que falta) mora em **uma fonte só**: [`A
 
 - **Fontes do jogo (etapa 01)**: [Detonado PC do Paulo](https://www.pcdopaulo.com/2024/09/detonado-super-nintendo-super-mario.html) · [Super Mario Wiki — Secret exit](https://www.mariowiki.com/Secret_exit) · [SM Wiki — Super Mario World](https://www.mariowiki.com/Super_Mario_World) · [YouTube — Saídas Secretas](https://www.youtube.com/watch?v=KjhSUdv5Lwo)
 
-- [Matt Pocock Skills](https://github.com/mattpocock/skills) · [OpenCode](https://opencode.ai/docs) (agente do curso)
+- [Matt Pocock Skills](https://github.com/mattpocock/skills) · [OpenCode](https://opencode.ai/docs)
 - [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) · [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-- [EMQX](https://emqx.com/en/products/emqx) · [MQTT.org](https://mqtt.org/) · [mqtt.js](https://github.com/mqttjs/MQTT.js) · [LangChain.js](https://js.langchain.com/)
 - [cleanyour.tv](https://cleanyour.tv/) · [Rockstar — GTA VI 19/11/2026](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026)
 - Aula 1: [README do curso](https://github.com/thpoiani/dio-spec-driven-development) · [slides](https://github.com/thpoiani/dio-spec-driven-development/tree/main/slides)
