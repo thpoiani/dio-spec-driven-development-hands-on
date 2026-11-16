@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:35cfd8e921b24e0bf2f7c614a8e264b5894ba1a4b52c834b10eafd051553eea8",
+  "claims": [
+    {
+      "id": "claim_7fcdbaf8fd1a4a3f945b71a3b62d9a13",
+      "statement": "O Green Switch Palace é acessado pela saída secreta da Donut Plains 2 (casca azul na área escondida do teto → parreira → keyhole).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L12-L12",
+          "version": "repo-lines-v1:sha256:02162371b1c949f06fbbcf6a4d0f1765ef0ef19f278cd6f2e08e45131dbbf806:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGEyNzRhMGViYTYwYzVjZTExMDVjNmY4ZTcwOWI1Mjg1ZTgyMDUxNDQxNGU2MjU2MzYyNzU2YjY5MGQ3MTllMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjhiNTMzYmYwMDJkOGVlOTA5YjBjYmQwNTFjZmRkNGZjYWFmZjE1M2JkOTAyMDYzMzI4MGJlYmJmZDI0N2Y0NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_798f33fa04064a4e814804592a829bd2",
+      "statement": "Pisar no botão verde ativa os blocos ! verdes — sem ele, a keyhole da Donut Plains 1 exige voo de Cape sobre o túnel amarelo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L11-L12",
+          "version": "repo-lines-v1:sha256:6ca693c8f70db11b4bb4cc580693488337f2adbe81610ad8572c5de357e2f868:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDZlMzcwZjNmYjZiYTI4ZDM2Y2Q2YThlMTQxOWU1ODVlZTBmZjRmZjY5NzY4MzJmM2ZlODI0NDE1ZTczYWU3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjhiNTMzYmYwMDJkOGVlOTA5YjBjYmQwNTFjZmRkNGZjYWFmZjE1M2JkOTAyMDYzMzI4MGJlYmJmZDI0N2Y0NiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:17:21.144Z"
+  }
+}

@@ -7,3 +7,4 @@
 
 - [areas](areas/)
 - [levels](levels/)
+- [switch-palaces](switch-palaces/)
