@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b9fd69210954ad1d7ed557fd56dacc309f0cbf2599ee44a474aee58ecaac25fc",
+  "claims": [
+    {
+      "id": "claim_e34af12bec954c08b8d1cf1cd37c838b",
+      "statement": "A Fire Flower é o power-up de projéteis de fogo — combate à distância contra inimigos e bosses.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L35-L39",
+          "version": "repo-lines-v1:sha256:82f7c159e8c9a1b275764c12364feb2e4f892bba5dc1ae03225bf1b17b2011d9:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzg0M2Q0ZjVkNjgzYzhmMzZlOTRlMDBhYzg4NzQ3MTA0YmZjY2ZhZTJhMTk4ZThiODkwNjc5ODFiN2UxZGFlZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODRlMjA4ODk2MGFkNTkzZTU5MzJlZmJmMGRmMzkxMDE2NTY3NmI4YzIwM2QyN2VmMTY0YWYzZDU2ZGU0ZTA2YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzI3YTEzNmIwZDkyOGRhYWVmMDA4Yjk2MzI5MzU5NDQ4NmU4ZjU4MjRmNTIyN2M2MTg1YzUwM2M3MWFhNzYwYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTBlYmNmYWM5NDBkOTYxNWI0NjMzOTJjYzE4M2RkNmRhZjIyOWJmYTcwMjRhNzExYWEzZGQ0ZGExNWM0MmVmYSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:18:24.120Z"
+  }
+}

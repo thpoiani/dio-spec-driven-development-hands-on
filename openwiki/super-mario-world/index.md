@@ -6,4 +6,6 @@
 # Diretórios
 
 - [areas](areas/)
+- [bosses](bosses/)
 - [levels](levels/)
+- [power-ups](power-ups/)
