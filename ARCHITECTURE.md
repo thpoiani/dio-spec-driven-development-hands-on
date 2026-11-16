@@ -1,7 +1,7 @@
 # ARCHITECTURE · Game Copilot
 
 > Arquitetura e componentes do sistema da aula 2. Escopo e decisões em [SCOPE.md](./SCOPE.md) · roteiro em [PRESENTATION.md](./PRESENTATION.md).
-> Stack: TypeScript strict · Vitest · Mosquitto (MQTT) · LangChain.js · OpenWiki (OKF v0.2) · OpenCode + Skills do Matt Pocock como processo de desenvolvimento.
+> Stack: TypeScript strict · Vitest · EMQX (MQTT) · LangChain.js · OpenWiki (OKF v0.2) · OpenCode + Skills do Matt Pocock como processo de desenvolvimento.
 
 ## 1. Visão geral
 
@@ -11,7 +11,7 @@ flowchart TD
         PR["playthrough-runner<br/>lê uma fita de eventos e publica"]
     end
 
-    subgraph Broker ["Broker MQTT (Mosquitto, docker)"]
+    subgraph Broker ["Broker MQTT (EMQX, docker)"]
         T["tópicos:<br/>game/telemetry/&lt;evento&gt;"]
     end
 
@@ -61,7 +61,7 @@ Princípios:
 
 - **Interface `EventBus`**: `publish(topic, event)` / `subscribe(topic, handler)`, tipada por evento.
 - **`InMemoryEventBus`**: usado nos testes e no demo sem docker. Permanece após a etapa 07 — a interface é o que permite trocar o transporte sem tocar nos consumidores (lição da etapa 07: a seam acordada na spec).
-- **`MqttEventBus`** (etapa 07): implementação sobre `mqtt.js` conectada ao Mosquitto; mapeia eventos para tópicos (§4).
+- **`MqttEventBus`** (etapa 07): implementação sobre `mqtt.js` conectada ao EMQX; mapeia eventos para tópicos (§4).
 
 ### 2.3 `player-profiler` (determinístico)
 
@@ -138,13 +138,13 @@ Atrás do bloco "!" há uma keyhole escondida... (prosa que o agente lê)
 
 ### 2.8 Infra
 
-- `docker-compose.yml`: serviço `mosquitto` (porta 1883, config mínima). Única dependência de runtime fora do npm.
+- `docker-compose.yml`: serviço `emqx` (porta 1883 + dashboard 18083, OTLP para o OpenObserve). Única dependência de runtime fora do npm.
 
 ## 3. Estrutura de pastas (proposta — NestJS com camadas DDD)
 
 ```text
 dio-spec-driven-development-hands-on/
-├── docker-compose.yml               # Mosquitto (etapa 07) + OpenObserve (etapa 06)
+├── docker-compose.yml               # EMQX (etapa 07) + OpenObserve (etapa 06)
 ├── package.json / tsconfig.json / vitest.config.ts
 ├── AGENTS.md / CODING_STANDARDS.md / GLOSSARY.md / docs/agents/
 ├── docs/openwiki-setup.md           # guia de setup da base de conhecimento
@@ -241,7 +241,7 @@ Power-ups como "equipamento": **Cape Feather** (voo — ideal para castelos), **
 | **completionist.ts** | Secret exits, Switch Palaces, Dragon Coins, inventário constante, revisita áreas | Perfil `completionist`; dicas do que falta coletar por área; caminho para a Star Road |
 | **speedrunner.ts** | Deltas curtos, direto aos castelos (Iggy → Ludwig → Roy → Wendy → Larry), zero desvios | Perfil `speedrunner`; ProgressionAdvisor dá o próximo objetivo; WorldAdvisor sugere rota otimizada |
 
-`npm run demo` executa as três em sequência (ou por parâmetro) contra o broker Mosquitto (etapa 07 em diante) — antes disso, roda com `InMemoryEventBus`.
+`npm run demo` executa as três em sequência (ou por parâmetro) contra o broker EMQX (etapa 07 em diante) — antes disso, roda com `InMemoryEventBus`.
 
 ## 7. Testes
 

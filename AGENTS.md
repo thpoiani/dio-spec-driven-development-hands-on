@@ -21,7 +21,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 - [ ] Etapa 04 — `PlayerProfiler` + `ProgressionAdvisor` (services `@OnEvent`)
 - [ ] Etapa 05 — fitas de playthrough + console + `npm run demo`
 - [ ] Etapa 06 — observabilidade (`nestjs-otel` + OpenObserve, traces por sessionId)
-- [ ] Etapa 07 — **gravação**: migração MQTT (`@nestjs/microservices` + Mosquitto)
+- [ ] Etapa 07 — **gravação**: migração MQTT (`@nestjs/microservices` + EMQX)
 - [ ] Etapa 08 — **gravação**: `WorldAdvisor` (agente LangChain, Nest provider)
 - [ ] Etapa 09 — **homework**: expansão do mundo (Star Road / Special Zone) — spec + tickets pré-produzidos quando o resto estiver estável
 
@@ -35,9 +35,9 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 
 - **Jogo**: Super Mario World. Vocabulário Mario em código, wiki e glossário — *Avoid*: "quest", "batalha" (são `level`, `boss_engaged`, power-ups).
 - **Camada de conhecimento única**: `openwiki/` no formato OKF v0.2, commitada, **organizada por jogo** (`openwiki/<game-slug>/` — jogo novo = pasta nova). O motor de regras consome o **frontmatter** (via knowledge-loader); o agente consome a **prosa**. Não criar `graph.ts` paralelo. **A wiki contém apenas conhecimento de jogo** — nada de documentação de projeto.
-- **Broker**: Mosquitto (MQTT) em docker-compose; `InMemoryEventBus` permanece para testes — a interface `EventBus` é a seam.
+- **Broker**: EMQX (MQTT) em docker-compose; `InMemoryEventBus` permanece para testes — a interface `EventBus` é a seam.
 - **LLM só no WorldAdvisor**: `PlayerProfiler` e `ProgressionAdvisor` são regras puras, determinísticos e testáveis. Non-goal: agente reagir a cada evento.
-- **Zero deps no core** (bootstrap); dependências externas (`mqtt.js`, LangChain, OpenTelemetry, Mosquitto) entram a partir das etapas 07/08.
+- **Zero deps no core** (bootstrap); dependências externas (`mqtt.js`, LangChain, OpenTelemetry, EMQX) entram a partir das etapas 07/08.
 - **Perfis**: `casual`, `completionist`, `speedrunner` — inferidos por agregação de eventos (com timestamps), publicados como `game/profile_changed`.
 
 ## Contratos e detalhes

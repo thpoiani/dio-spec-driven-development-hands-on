@@ -35,21 +35,21 @@ Para a aula, o jogo é **Super Mario World** (reconhecimento imediato da plateia
 | 3 | Jogo da base de conhecimento | Super Mario World | Plateia conhece; gating por Switch Palaces/saídas secretas é didático; Sonic tem pré-requisito fraco |
 | 4 | Camada de conhecimento | **Uma só**: wiki em formato OKF v0.2 (langchain-ai/openwiki), commitada no repo | Sem `graph.ts` paralelo: frontmatter = dado estruturado do motor; prosa = texto do agente; sem drift entre camadas |
 | 5 | Autoria da wiki | OpenWiki + OpenCode (integração nativa) a partir de um detonado | Mesmo agente do curso; OKF portável; visualizador de grafo para slide |
-| 6 | Broker de eventos | MQTT (Mosquitto em docker-compose) | Tema TV/IoT; 1 container; tópicos por tipo de evento; habilita o agente como consumidor |
+| 6 | Broker de eventos | MQTT (EMQX (MQTT) em docker-compose) | Tema TV/IoT; 1 container; tópicos por tipo de evento; habilita o agente como consumidor |
 | 7 | Perfis de jogador | `completionist`, `speedrunner`, `casual` | Vocabulário Mario; inferíveis a partir dos eventos (com timestamps) |
 | 8 | Onde o LLM entra | **Só no WorldAdvisor** (agente LangChain) | Profiler/ProgressionAdvisor determinísticos e testáveis; demo rápida e estável |
 | 9 | Vocabulário | Eventos e componentes no domínio Mario (`level_started`, `boss_engaged`, power-ups) | Glossário registra; Avoid: "quest", "batalha" |
 | 10 | Postura do operador | Responder de verdade na entrevista | Contraponto do protocolo da aula 1 |
 | 11 | Terminal na gravação | Gravado separado, acelerado na edição | A entrevista ao vivo é o conteúdo; o terminal fica dinâmico |
 | 12 | Branches | Numeradas, preservadas após merge, `main` sempre final | Alunos navegam a evolução; GitHub Pages não muda |
-| 13 | Dependências externas | Liberadas nesta aula (mqtt.js, LangChain, Mosquitto) | Diferente da aula 1 ("sem deps") por ser um sistema integrado |
+| 13 | Dependências externas | Liberadas nesta aula (mqtt.js, LangChain, EMQX) | Diferente da aula 1 ("sem deps") por ser um sistema integrado |
 
 ## 5. Non-goals (explícitos na aula e nas specs)
 
 - ❌ Captura e análise de screenshot real (OCR/vision) — a aula começa nos eventos mockados.
 - ❌ LLM no caminho determinístico — `PlayerProfiler` e `ProgressionAdvisor` são regras puras.
 - ❌ UI/overlay — o sistema termina nas recomendações textuais no console.
-- ❌ Broker Kafka/RabbitMQ — overkill; Mosquitto de uma linha.
+- ❌ Broker Kafka/RabbitMQ — overkill; EMQX de um container.
 - ❌ O agente reagir a **cada** evento — só a eventos relevantes (`area_entered`, `boss_engaged`, `profile_changed`), com throttle.
 
 ## 6. Estágios, tickets e PRs
@@ -64,7 +64,7 @@ O desenvolvimento acontece em **10 estágios** (que organizam as issues) e em **
 | 04 | issue do estágio | `PlayerProfiler` (3 perfis) + `ProgressionAdvisor` (services `@OnEvent`) | Offline | `v0.4` |
 | 05 | issue do estágio | 3 fitas (JSON) + runner com `--speed` + console + `npm run demo` — **MQTTX** para a injeção manual ao vivo e o barramento visível | Offline | `v0.5` |
 | 06 | issue do estágio | Observabilidade: **`nestjs-otel`** + OpenObserve (traces por sessionId) | Offline | `v0.6` |
-| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + Mosquitto | **Gravada ao vivo** | `v0.7` |
+| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + EMQX com **E2E tracing** (`traceparent` via User-Property MQTT 5 — o trace do produtor ao consumidor atravessa o broker) | **Gravada ao vivo** | `v0.7` |
 | 08 | issue do estágio | `WorldAdvisor`: agente LangChain (Nest provider) | **Gravada ao vivo** | `v0.8` |
 | 09 | issue do estágio | Expansão do mundo (Star Road / Special Zone) | **Homework** dos alunos | `v0.9` |
 
@@ -96,6 +96,6 @@ O checklist vivo (o que está feito, o que falta) mora em **uma fonte só**: [`A
 
 - [Matt Pocock Skills](https://github.com/mattpocock/skills) · [OpenCode](https://opencode.ai/docs) (agente do curso)
 - [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) · [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-- [Eclipse Mosquitto](https://mosquitto.org/) · [MQTT.org](https://mqtt.org/) · [mqtt.js](https://github.com/mqttjs/MQTT.js) · [LangChain.js](https://js.langchain.com/)
+- [EMQX](https://emqx.com/en/products/emqx) · [MQTT.org](https://mqtt.org/) · [mqtt.js](https://github.com/mqttjs/MQTT.js) · [LangChain.js](https://js.langchain.com/)
 - [cleanyour.tv](https://cleanyour.tv/) · [Rockstar — GTA VI 19/11/2026](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026)
 - Aula 1: [README do curso](https://github.com/thpoiani/dio-spec-driven-development) · [slides](https://github.com/thpoiani/dio-spec-driven-development/tree/main/slides)

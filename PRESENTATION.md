@@ -16,7 +16,7 @@
 |---|---|
 | Entrevista ao vivo | O `@grill-with-docs` é gravado ao vivo: Thiago **responde com decisões de negócio reais** (contraponto da aula 1) |
 | Terminal acelerado | `@implement`/`@tdd`/`@code-review` gravados separadamente e **acelerados na edição**; a narração entra por cima |
-| Demos rodam de verdade | Mosquitto + `npm run demo` em tempo real; se falhar, cortar para a fita acelerada |
+| Demos rodam de verdade | EMQX + `npm run demo` em tempo real; se falhar, cortar para a fita acelerada |
 | Pontos de corte | Se a Feature 1 passar de ~15', a Feature 2 vira demo acelerada; o homework nunca é gravado || Postura | Nunca oferecer regras que não foram perguntadas — responder o que foi perguntado, com decisão própria |
 | Setup | `@setup-matt-pocock-skills` já rodado na subpasta (1 slide menciona, como o slide 17 da aula 1) |
 
@@ -52,7 +52,7 @@
 - O grill pergunta o que importa para **infra**: qual broker e por quê (MQTT — o protocolo dos dispositivos; a TV é um dispositivo), o que acontece sem broker (testes!), o que preservar da API atual, como migrar sem quebrar os consumidores, o que fica de fora (ex.: persistência, QoS).
 - Decisão que a entrevista traz à tona: a **interface `EventBus` é a seam** — `InMemoryEventBus` fica para os testes, `MqttEventBus` vai para a demo. Nenhum consumidor muda.
 - Artefatos na tela: spec (com o non-goal "sem persistência"), tickets com dependências, glossário recebendo "broker", "tópico", "telemetria de gameplay".
-- Implementação acelerada (TDD + code-review) → demo real: `docker compose up` + `npm run demo` com o Mosquitto logando os tópicos — "a mesma demo de antes, agora fluindo por um broker de verdade."
+- Implementação acelerada (TDD + code-review) → demo real: `docker compose up` + `npm run demo` com o EMQX logando os tópicos — "a mesma demo de antes, agora fluindo por um broker de verdade."
 
 ### Bloco D · Feature 2 (etapa 09): `world-advisor` — SDD para agentes (~20')
 
@@ -97,7 +97,7 @@ Parte 03 · feature 01: SDD para infraestrutura
  16 iniciativa     "eventos em um broker de verdade" (vaga de propósito)
  17 grill          as perguntas que a infra exige (seam, sem broker nos testes, non-goals)
  18 artefatos      spec + tickets + glossário recebendo "broker"/"tópico"
- 19 demo           Mosquitto logando tópicos · mesma demo, fluxo real
+ 19 demo           EMQX logando tópicos · mesma demo, fluxo real
 Parte 04 · feature 02: SDD para agentes
  21 iniciativa     "dicas do mundo geradas por um agente"
  22 grill          quando reage · contrato de saída · guardrails · evals · provider
@@ -105,7 +105,7 @@ Parte 04 · feature 02: SDD para agentes
 Parte 05 · encerramento
  25 recap          spec é contrato · não disse = inventou · infra e agente no mesmo ciclo
  26 homework       feature/10-knowledge-expansion com spec pronta no repo
- 27 referências    OpenWiki · OKF · Skills · Mosquitto · cleanyour.tv
+ 27 referências    OpenWiki · OKF · Skills · EMQX · cleanyour.tv
  28 convite        transforme o próximo prompt vago em spec
 ```
 
@@ -117,6 +117,6 @@ Parte 05 · encerramento
 - [ ] `@setup-matt-pocock-skills` rodado na raiz do repositório (tracker GitHub Issues, single-context)
 - [ ] Wiki OpenWiki completa e `openwiki visualize` exportado para o slide
 - [ ] Spec + tickets do homework publicados como Issues (`ready-for-agent`)
-- [ ] Mosquitto + `npm run demo` testados na máquina de gravação
+- [ ] EMQX + `npm run demo` testados na máquina de gravação
 - [ ] Chave do provider LLM do agente configurada e testada
 - [ ] Deck gerado com `dio-slides` e revisado contra este roteiro
