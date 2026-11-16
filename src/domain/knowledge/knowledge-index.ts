@@ -1,3 +1,6 @@
+// O token de DI do índice de conhecimento (infrastructure fornece, domain consulta).
+export const KNOWLEDGE_INDEX = Symbol("KnowledgeIndex");
+
 // O índice em memória do mundo — o que o motor de regras consulta.
 // Imutável e consultado sem I/O: as regras de progressão são puras sobre ele.
 
