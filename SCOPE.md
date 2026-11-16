@@ -62,9 +62,9 @@ O desenvolvimento acontece em **10 estágios** (que organizam as issues) e em **
 | 02 | issue do estágio | **Bootstrap NestJS + DDD**: tipos de evento + EventBus (`@nestjs/event-emitter`, in-memory síncrono) | Offline | `v0.2` |
 | 03 | issue do estágio | `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast) + fixtures | Offline | `v0.3` |
 | 04 | issue do estágio | `PlayerProfiler` (3 perfis) + `ProgressionAdvisor` (services `@OnEvent`) | Offline | `v0.4` |
-| 05 | issue do estágio | 3 fitas (JSON) + runner com `--speed` + console + `npm run demo` — **MQTTX** para a injeção manual ao vivo e o barramento visível | Offline | `v0.5` |
+| 05 | issue do estágio | 3 fitas (JSON) + runner com `--speed` + console + `npm run demo` — **barramento in-memory** (sem broker, sem docker) | Offline | `v0.5` |
 | 06 | issue do estágio | Observabilidade: **`nestjs-otel`** + OpenObserve (traces por sessionId) | Offline | `v0.6` |
-| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + EMQX com **E2E tracing** (`traceparent` via User-Property MQTT 5 — o trace do produtor ao consumidor atravessa o broker) | **Gravada ao vivo** | `v0.7` |
+| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + EMQX com **E2E tracing** (`traceparent` via User-Property MQTT 5 — o trace do produtor ao consumidor atravessa o broker) + **MQTTX** para a injeção manual ao vivo e o barramento visível | **Gravada ao vivo** | `v0.7` |
 | 08 | issue do estágio | `WorldAdvisor`: agente LangChain (Nest provider) | **Gravada ao vivo** | `v0.8` |
 | 09 | issue do estágio | Expansão do mundo (Star Road / Special Zone) | **Homework** dos alunos | `v0.9` |
 

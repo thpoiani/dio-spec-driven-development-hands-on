@@ -19,7 +19,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 - [x] **Etapa 02 — concluída** (`v0.2`): bootstrap NestJS + DDD (domain puro sem Nest) + tipos de evento + EventBus in-memory (`@nestjs/event-emitter`) — PRs #17/#18, CI verde
 - [x] **Etapa 03 — concluída** (`v0.3`): knowledge-loader (OKF → `KnowledgeIndex`, fail fast) + integração com as 36 páginas reais de SMW
 - [x] **Etapa 04 — concluída** (`v0.4`): `PlayerProfiler` (a inferência dos 3 perfis com thresholds explícitos) + `ProgressionAdvisor` (o gating, o power-up, o objetivo — com `source`/`evidence`) — PRs #25/#26
-- [ ] Etapa 05 — fitas de playthrough (JSON) + console + `npm run demo` — com **MQTTX** para a injeção manual ao vivo e o barramento visível
+- [ ] Etapa 05 — fitas de playthrough (JSON) + console + `npm run demo` — **barramento in-memory** (o MQTTX entra na migração, etapa 07)
 - [ ] Etapa 06 — observabilidade (`nestjs-otel` + OpenObserve, traces por sessionId)
 - [ ] Etapa 07 — **gravação**: migração MQTT (EMQX com E2E tracing + `traceparent` via User-Property)
 - [ ] Etapa 08 — **gravação**: `WorldAdvisor` (agente LangChain + Ollama local, Nest provider)
