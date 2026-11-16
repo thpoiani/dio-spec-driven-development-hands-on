@@ -18,3 +18,4 @@ Regras aplicadas na **revisão** (não na implementação). Cada regra aqui é u
 
 7. **Funções puras nos consumidores determinísticos** (`PlayerProfiler`, `ProgressionAdvisor`): sem estado global, sem I/O — a entrada sai do `EventBus`, o resultado volta como evento.
 8. **Vocabulário do glossário vincula identificadores**: o `GLOSSARY.md` (criado pelo `/domain-modeling`) é o padrão de nomenclatura para código, teste e revisão.
+9. **`@Inject` explícito nos construtores Nest**: o vitest/esbuild não emite metadados de decorator — o DI por tipo falha silenciosamente nos testes; declare o token sempre que a dependência vier de outro módulo.
