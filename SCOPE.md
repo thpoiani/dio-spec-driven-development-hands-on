@@ -54,26 +54,25 @@ Para a aula, o jogo é **Super Mario World** (reconhecimento imediato da plateia
 
 ## 6. Estágios, tickets e PRs
 
-O desenvolvimento acontece em **10 estágios** (que organizam as issues) e em **tickets** (a unidade de trabalho). Cada **ticket** tem uma branch própria (`ticket/<issue>-<slug>`) e um **PR próprio** para a `main`, com `Closes #N` no corpo — o merge fecha o sub-issue correspondente. O merge acontece no fechamento do ticket (TDD/review verdes); branch **nunca é deletada**; a `main` recebe a evolução ticket a ticket — sempre verde, e o histórico conta a história do curso.
+O desenvolvimento acontece em **10 estágios** (que organizam as issues) e em **tickets** (a unidade de trabalho). O projeto é **NestJS** com camadas **DDD** (`domain/` puro sem Nest · `application/` serviços · `infrastructure/` adapters · `presentation/` console). Cada **ticket** tem uma branch própria (`ticket/<issue>-<slug>`) e um **PR próprio** para a `main`, com `Closes #N` no corpo — o merge fecha o sub-issue correspondente. O merge acontece no fechamento do ticket (TDD/review verdes); branch **nunca é deletada**; a `main` recebe a evolução ticket a ticket — sempre verde, e o histórico conta a história do curso.
 
 | # | Estágio (issue-pai) | Entregável | Quando | Tag |
 |---|---|---|---|---|
-| 01 | #1 `knowledge-base` | Wiki OpenWiki do SMW (OKF): schema + mundo + entidades | Offline, com apoio do agente | `v0.1` |
-| 02 | issue do estágio | Tipos de evento + interface `EventBus` + `InMemoryEventBus` | Offline | `v0.2` |
-| 03 | issue do estágio | OKF → `KnowledgeIndex` (fail fast) + fixtures | Offline | `v0.3` |
-| 04 | issue do estágio | `PlayerProfiler` (3 perfis) + `game/profile_changed` | Offline | `v0.4` |
-| 05 | issue do estágio | Regras + `game/recommendations` | Offline | `v0.5` |
-| 06 | issue do estágio | 3 fitas + `--speed` + console + `npm run demo` | Offline | `v0.6` |
-| 07 | issue do estágio | OTel (traces por sessionId) + OpenObserve | Offline | `v0.7` |
-| 08 | issue do estágio | `MqttEventBus` + Mosquitto (docker-compose) | **Gravada ao vivo** | `v0.8` |
-| 09 | issue do estágio | `WorldAdvisor`: agente LangChain consultando a wiki | **Gravada ao vivo** | `v0.9` |
-| 10 | issue do estágio | Expansão do mundo (Star Road / Special Zone) | **Homework** dos alunos | `v1.0` |
+| 01 | #1 `knowledge-base` | Wiki OpenWiki do SMW (OKF): schema + mundo + entidades | Offline, com apoio do agente | `v0.1` ✅ |
+| 02 | issue do estágio | **Bootstrap NestJS + DDD**: tipos de evento + EventBus (`@nestjs/event-emitter`, in-memory síncrono) | Offline | `v0.2` |
+| 03 | issue do estágio | `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast) + fixtures | Offline | `v0.3` |
+| 04 | issue do estágio | `PlayerProfiler` (3 perfis) + `ProgressionAdvisor` (services `@OnEvent`) | Offline | `v0.4` |
+| 05 | issue do estágio | 3 fitas + `--speed` + console + `npm run demo` | Offline | `v0.5` |
+| 06 | issue do estágio | Observabilidade: **`nestjs-otel`** + OpenObserve (traces por sessionId) | Offline | `v0.6` |
+| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + Mosquitto | **Gravada ao vivo** | `v0.7` |
+| 08 | issue do estágio | `WorldAdvisor`: agente LangChain (Nest provider) | **Gravada ao vivo** | `v0.8` |
+| 09 | issue do estágio | Expansão do mundo (Star Road / Special Zone) | **Homework** dos alunos | `v0.9` |
 
 Regras de repositório:
 
 - O projeto é este repositório; **cada ticket = branch + PR** com `Closes #N`; o merge acontece no fechamento do ticket e as branches permanecem — os PRs merged, em ordem, são a evolução do curso.
-- Os estágios 08 e 09 são **gravados ao vivo**: o PR da gravação é mergeado após a gravação (o ciclo das skills roda na câmera; a entrevista `@grill` ao vivo, o terminal acelerado na edição).
-- `@setup-matt-pocock-skills` na raiz ✅ (tracker **GitHub Issues**, labels de triagem, single-context).
+- O estágio 07 é a **migração MQTT gravada ao vivo** (o contrato sobrevive, o transporte troca); o estágio 08 é o **agente gravado ao vivo**. O estágio 09 é o homework, com spec + tickets pré-produzidos.
+- `nestjs-otel` na raiz ✅ antes da gravação (tracker **GitHub Issues**, labels de triagem, single-context).
 
 ## 7. Roteiro da gravação (resumo)
 

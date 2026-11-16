@@ -60,8 +60,8 @@ Princípios:
 ### 2.2 `event-bus` (a seam do sistema)
 
 - **Interface `EventBus`**: `publish(topic, event)` / `subscribe(topic, handler)`, tipada por evento.
-- **`InMemoryEventBus`**: usado nos testes e no demo sem docker. Permanece após a etapa 08 — a interface é o que permite trocar o transporte sem tocar nos consumidores (lição da etapa 08: a seam acordada na spec).
-- **`MqttEventBus`** (etapa 08): implementação sobre `mqtt.js` conectada ao Mosquitto; mapeia eventos para tópicos (§4).
+- **`InMemoryEventBus`**: usado nos testes e no demo sem docker. Permanece após a etapa 07 — a interface é o que permite trocar o transporte sem tocar nos consumidores (lição da etapa 07: a seam acordada na spec).
+- **`MqttEventBus`** (etapa 07): implementação sobre `mqtt.js` conectada ao Mosquitto; mapeia eventos para tópicos (§4).
 
 ### 2.3 `player-profiler` (determinístico)
 
@@ -84,7 +84,7 @@ Princípios:
   - **Gating detectado**: chegou numa área cujo acesso depende de Switch Palace/saída secreta não concluída → recomenda concluir o pré-requisito (o *momento da demo*: Forest of Illusion, §6).
   - **Power-up**: antes de `boss_engaged`, sugere o power-up certo se o inventário não o tem (ex.: Cape Feather para castelo).
 
-### 2.5 `world-advisor` (agente LangChain — etapa 09)
+### 2.5 `world-advisor` (agente LangChain — etapa 08)
 
 - **O que é**: agente LLM que é mais um consumidor do broker. Recebe telemetria + perfil, **consulta a wiki** e publica recomendações ricas em linguagem natural.
 - **Ferramentas**: `openwiki_search` / `openwiki_read` (ferramentas locais, read-only, sem chamada de modelo do OpenWiki) ou leitura direta das páginas `openwiki/` — decisão acordada na spec da feature.
@@ -140,31 +140,42 @@ Atrás do bloco "!" há uma keyhole escondida... (prosa que o agente lê)
 
 - `docker-compose.yml`: serviço `mosquitto` (porta 1883, config mínima). Única dependência de runtime fora do npm.
 
-## 3. Estrutura de pastas (proposta)
+## 3. Estrutura de pastas (proposta — NestJS com camadas DDD)
 
 ```text
 dio-spec-driven-development-hands-on/
-├── docker-compose.yml
+├── docker-compose.yml               # Mosquitto (etapa 07) + OpenObserve (etapa 06)
 ├── package.json / tsconfig.json / vitest.config.ts
-├── AGENTS.md / GLOSSARY.md / docs/agents/     (gerados pelo @setup-matt-pocock-skills)
-├── openwiki/                    # base de conhecimento dos jogos (OKF v0.2, por título)
-│   ├── INSTRUCTIONS.md          # brief: apenas conhecimento de jogo, multi-jogo
-│   ├── quickstart.md            # índice dos jogos + retrieval
-│   └── super-mario-world/       # um jogo por pasta (slug do título)
-│       ├── schema.md            # tipos de página e campos do jogo
-│       ├── world-map.md         # esqueleto curado + gating
-│       └── entities/...         # páginas por nível/área/power-up (tickets #3–#7)
-├── src/
-│   ├── events/            # tipos, EventBus, InMemoryEventBus, MqttEventBus
-│   ├── knowledge/         # loader OKF → KnowledgeIndex
-│   ├── profiler/          # PlayerProfiler
-│   ├── advisors/
-│   │   ├── progression/   # regras (v1)
-│   │   └── world/         # agente LangChain (feature/09)
-│   ├── playthroughs/      # casual.ts · completionist.ts · speedrunner.ts
-│   └── ui/                # console
-├── tests/                 # testes por componente (fitas determinísticas)
-└── docs/agents/           # tracker GitHub Issues · labels · domain docs
+├── AGENTS.md / CODING_STANDARDS.md / GLOSSARY.md / docs/agents/
+├── docs/openwiki-setup.md           # guia de setup da base de conhecimento
+├── knowledge/sources/               # digests das fontes (detonado, SM Wiki)
+├── openwiki/                        # base de conhecimento dos jogos (OKF v0.2)
+│   ├── INSTRUCTIONS.md              # brief: apenas conhecimento de jogo, multi-jogo
+│   ├── quickstart.md                # índice dos jogos + retrieval
+│   └── super-mario-world/           # um jogo por pasta (slug do título)
+│       ├── schema.md                # tipos de página e campos do jogo
+│       ├── world-map.md             # esqueleto curado + gating
+│       ├── areas/ · levels/ · power-ups/ · bosses/ · switch-palaces/
+│       └── index.md
+├── .github/workflows/ci.yml         # CI: typecheck + test + check:wiki
+└── src/
+    ├── domain/                      # PURO, sem Nest — entidades e regras
+    │   ├── events/                  # os 5 tipos canônicos + envelope
+    │   ├── profiler/                # regras de inferência de perfil (funções puras)
+    │   └── progression/             # regras de progressão (sobre o KnowledgeIndex)
+    ├── application/                 # Nest services (orquestração)
+    │   ├── event-bus/               # EventBus sobre EventEmitter2 (@nestjs/event-emitter)
+    │   ├── profiler/                # PlayerProfiler service (@OnEvent)
+    │   └── advisor/                 # ProgressionAdvisor service (@OnEvent)
+    ├── infrastructure/              # adapters
+    │   ├── knowledge/               # loader OKF → KnowledgeIndex
+    │   ├── mqtt/                    # MqttEventBus (etapa 07 — migração gravada)
+    │   ├── world-advisor/           # agente LangChain (etapa 08 — gravada)
+    │   └── otel/                    # observabilidade (etapa 06)
+    ├── game/                        # playthrough-runner: as 3 fitas de eventos
+    └── presentation/                # console-ui
+├── scripts/check-wiki.mjs           # validador do schema da wiki (CI)
+└── test/                            # suíte (vitest)
 ```
 
 ## 4. Contratos
@@ -218,7 +229,7 @@ Estrutura real simplificada para caber em aula (~5 áreas principais + camada se
 | **Forest of Illusion** | Fases com **múltiplas saídas** (labirinto: sem a saída secreta certa, repete-se a área), **Blue Switch Palace**, **Roy's Castle** | O **momento da demo**: casual entra em loop na floresta |
 | **Chocolate Island** | Fases, Chocolate Secret, **Wendy's Castle** | Boss libera o acesso ao Valley of Bowser |
 | **Valley of Bowser** | Fases 1–4, **Larry's Castle** (final) | Fim do caminho principal |
-| **Star Road → Special Zone** | Acesso só por **secret exits/keyholes**; 8 níveis especiais | Conteúdo do completionist; expansão do homework (`feature/10`) |
+| **Star Road → Special Zone** | Acesso só por **secret exits/keyholes**; 8 níveis especiais | Conteúdo do completionist; expansão do homework (`feature/09`) |
 
 Power-ups como "equipamento": **Cape Feather** (voo — ideal para castelos), **Fire Flower**, **Yoshi** — o `WorldAdvisor`/ProgressionAdvisor sugerem qual levar ao `boss_engaged`.
 
@@ -230,10 +241,10 @@ Power-ups como "equipamento": **Cape Feather** (voo — ideal para castelos), **
 | **completionist.ts** | Secret exits, Switch Palaces, Dragon Coins, inventário constante, revisita áreas | Perfil `completionist`; dicas do que falta coletar por área; caminho para a Star Road |
 | **speedrunner.ts** | Deltas curtos, direto aos castelos (Iggy → Ludwig → Roy → Wendy → Larry), zero desvios | Perfil `speedrunner`; ProgressionAdvisor dá o próximo objetivo; WorldAdvisor sugere rota otimizada |
 
-`npm run demo` executa as três em sequência (ou por parâmetro) contra o broker Mosquitto (etapa 08 em diante) — antes disso, roda com `InMemoryEventBus`.
+`npm run demo` executa as três em sequência (ou por parâmetro) contra o broker Mosquitto (etapa 07 em diante) — antes disso, roda com `InMemoryEventBus`.
 
 ## 7. Testes
 
 - **Unitários por componente** com `InMemoryEventBus` e fitas mínimas: profiler (sinais → perfil), progression (gating → recomendação), loader (frontmatter → índice; campo faltante = erro de schema da wiki).
 - **Contrato de eventos**: schema/tipo compartilhado — quebrar o payload quebra o build.
-- **Evals do agente** (etapa 09): casos evento+perfil → dica esperada, com as páginas da wiki como gabarito; fora do caminho crítico.
+- **Evals do agente** (etapa 08): casos evento+perfil → dica esperada, com as páginas da wiki como gabarito; fora do caminho crítico.

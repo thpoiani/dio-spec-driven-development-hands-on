@@ -2,4 +2,3 @@ node_modules/
 dist/
 .DS_Store
 .github/workflows/openwiki-update.yml
-.github/workflows/ci.yml
