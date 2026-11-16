@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:8de223fee3b9adffb3f9d4a83a81d6b4e8782fb28a01e38d08ee0700d3c5020e",
+  "claims": [
+    {
+      "id": "claim_a589a06084784011936fd79cef920b7a",
+      "statement": "O esqueleto curado do mundo cobre 6 áreas — Yoshi's Island, Donut Plains, Forest of Illusion, Chocolate Island, Valley of Bowser e Star Road → Special Zone — com caminho principal, secret exits/keyholes de gating, Switch Palaces (Green e Forest), power-ups (Cape Feather, Fire Flower, Yoshi) e bosses (Iggy, Ludwig, Roy, Wendy, Larry).",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L200-L215",
+          "version": "repo-lines-v1:sha256:38a31b1406084f3bac0b105b634ad804777dfb3c698ed464f9b10ba4ed15a39c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5ZDFiYzNhYzc0NTU1MDIwOGI1NDhhMWUxOGFkNDE1ODI0NGI0ZDJjZWJhN2FjODFlMjRjMjYzYzk5NjhlZmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1ZTcwMDU5YmMwNzE2ODRjNTVhMjFjODkxMGZhMGYyNzI1MDRhNDZhYjM3NzkyOGIyZTZjOGU1OTk3MDUxNTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyNmMxNDYyZTZmNjU1MTZlY2U2MDY2MDg1NmIwMjI2MTUwODcxNjk5MWFlZTRmNzIyYmYwMzc5NmNmODI2NTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkYjg5NzdiMTc0ZjE0YTYyZDUxMjhkOWI4YmQ4MDQyZjk5M2UyNWMwYjM5ZjFlOTRiZTc0NjU3MWFmZWNlMTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_05d740cc435e49f994a461e2788b8029",
+      "statement": "As fontes da base de conhecimento são o detonado PC do Paulo (PT-BR, ingestão primária) e a Super Mario Wiki (validação canônica do gating, página Secret exit) — escolha registrada no Ticket #2 da etapa 01.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L202-L204",
+          "version": "repo-lines-v1:sha256:ac482117a73c1b6587e729e0909c99f383ddb93cae292fd2e5a7535956dfcf75:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTIwMzViMmM3Mjg0YjA1MjI4MTk0ZjQzMWE5NzZhZTg3OTQ4M2M0YTc2NWE1MWU0YWNhYmI3ZWJhNTc3ODJhMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmQxMzdjZDFkOWMyODNhYjlmNTQ3YTZkM2UxZGZlYjk3YmIyYWRhMTNhYTBjZGNhMzZmZDJkMTdlMDM0MDViZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWExYWQyZDcxNmU0ZGUyZWJmNjcxYTAxMzIzYTYyY2RmZjY5MTg0NmU3MWZiMWQ4YTIxZjgwOGMxMDViMGI3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmJmNWRhMTQ3Njg4ZDM3M2I3NjVkNjBjZjRkNDBhNWUyMDRjYzQ5NGYwZWUzNGZlZjkzZDQ5NTVkZDYxMTUyMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_93eafe86d09d4bf3b74490fb97652e2d",
+      "statement": "O momento da demo: o jogador casual entra em loop na Forest of Illusion porque a saída normal da Forest of Illusion 4 não progride — o ProgressionAdvisor detecta o gating pelo índice e aponta a saída secreta, e o WorldAdvisor enriquece com a prosa da wiki.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L207-L216",
+          "version": "repo-lines-v1:sha256:88ede0c14f7b3d7e175294bc0fd0a3b3a2b55279fe53b47a948cb1f14e28e256:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjYjA2ODJiYzVlZWM2YWY3ZDEzMzBjOGQyYjlmZDNhNGE1MGE1ODkxYmM1YWNkYzMxZjhkYTA2ZTIzMDhkZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkOGY0ZWI5YjNhYTBmNGNkYmYxNDllOWIzY2FjMzRlMzVkYmQ1MTU0MTk5MTY5NWIxYmQxYmY3OThmYjYyN2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJmOTYwMGNkNDI2NmVkYmNiMmI1NzBhNDExNTBiZTAxNjFmYjBiZWUyZTYyN2JhOWM1MzNlZGY0NjllYzUyNDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_98de3bd2ffd14365974d3de10b71916e",
+      "statement": "Power-ups funcionam como equipamento: Cape Feather é recomendada para castelos, e os advisors sugerem o item certo quando o jogador enfrenta um boss_engaged sem a recomendação no inventário.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L215-L215",
+          "version": "repo-lines-v1:sha256:f5e70059bc071684c55a21c8910fa0f272504a46ab377928b2e6c8e599705159:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjVlNzAwNTliYzA3MTY4NGM1NWEyMWM4OTEwZmEwZjI3MjUwNGE0NmFiMzc3OTI4YjJlNmM4ZTU5OTcwNTE1OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjVlNzAwNTliYzA3MTY4NGM1NWEyMWM4OTEwZmEwZjI3MjUwNGE0NmFiMzc3OTI4YjJlNmM4ZTU5OTcwNTE1OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmQxMGI3ZDA0Njk4YzY2MTkxNTE4ZDJiNzBlYTlkMGU4ZGY1MWZjNDVmM2IwNTY3Zjc4YWIxMGI5OGRhMGRmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmRiODk3N2IxNzRmMTRhNjJkNTEyOGQ5YjhiZDgwNDJmOTkzZTI1YzBiMzlmMWU5NGJlNzQ2NTcxYWZlY2UxNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9eb18aff7a30472bb4870aecfdeadf25",
+      "statement": "As três fitas de demo (casual.ts, completionist.ts, speedrunner.ts) produzem perfis e recomendações diferentes: casual mostra o loop de gating, completionist recebe o que falta coletar e o caminho da Star Road, speedrunner recebe próximo objetivo e rota otimizada.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L217-L224",
+          "version": "repo-lines-v1:sha256:82a8761647105366b2d46161e021e922bab66f20640bae949de38f168ccca7dc:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWI2MGExOTFjZDk2ZjE0NGJkM2E3NDUxMmM5NDhkMzg3YmI2OGU0ZTlkMmQxMDllYjBkYjlmOTc0NDQ1ZTQ5NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzc5ZjBlZjA2MWJmMWY5ZTJjNTk4Yzg1YzA5MDllZGI1MjdjN2RjYmEyMjA3YTM4NDExNmEwZDQ3MDFmZWM3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTZlNDZmYzU0NWFiMWY5YzIxOWViNzFhZjkwNTlmMTBhMjkwOGU5NjJlYzJlZjQyNDZlOThkMzNmODZmMjgzNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e14dc839f7224bfe909fde00c60614e2",
+      "statement": "A Special Zone fica fora desta etapa: expandir o mundo até lá é o homework do estágio 10 (feature/10-knowledge-expansion).",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L213-L213",
+          "version": "repo-lines-v1:sha256:965426640ea9509cf14663307620e520cf4388ca21f7079578d3a2fe332fa702:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTY1NDI2NjQwZWE5NTA5Y2YxNDY2MzMwNzYyMGU1MjBjZjQzODhjYTIxZjcwNzk1NzhkM2EyZmUzMzJmYTcwMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTY1NDI2NjQwZWE5NTA5Y2YxNDY2MzMwNzYyMGU1MjBjZjQzODhjYTIxZjcwNzk1NzhkM2EyZmUzMzJmYTcwMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGUzNTkwMzUxZmZlMDNiM2ZhZDIxZTAzODUyN2UzNzljMzg5ODdiOGE4YzZiYzZmZWNkODNkOTAzMjRhMmJiMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzc5ZjBlZjA2MWJmMWY5ZTJjNTk4Yzg1YzA5MDllZGI1MjdjN2RjYmEyMjA3YTM4NDExNmEwZDQ3MDFmZWM3NCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T17:26:03.041Z"
+  }
+}

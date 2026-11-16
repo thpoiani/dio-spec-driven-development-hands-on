@@ -199,6 +199,8 @@ Envelope comum de todo evento: `{ type, sessionId, ts, data }`.
 
 ## 5. Mundo de Super Mario World (esqueleto curado)
 
+> **Fontes**: detonado **PC do Paulo** (PT-BR, ingestão primária) + **Super Mario Wiki** (validação canônica do gating — página *Secret exit*). Escolha registrada no Ticket #2 da etapa 01.
+
 Estrutura real simplificada para caber em aula (~5 áreas principais + camada secreta). As evidências exatas de cada página vêm do detonado na autoria da wiki.
 
 | Área | Conteúdo | Papel no gating |

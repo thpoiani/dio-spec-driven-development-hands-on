@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:292fa6489058fb5eab7ad74500c82ef1601cba6494724512debd4614fa7aadd7",
+  "claims": [
+    {
+      "id": "claim_fe1808be547e4d30b30a9f005b912cd8",
+      "statement": "Esta wiki é a documentação viva do Game Copilot, o hands-on da aula 2 do curso DIO de Spec-Driven Development: um assistente de gameplay com telemetria via MQTT, perfil de jogador, motor de regras determinístico e agente LLM.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L5",
+          "version": "repo-lines-v1:sha256:60d94dbb463a88b49330b094cdae54ba5c4f545ce40a081571c74d14a80cd97b:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzc5ZjAzYWI5MzlhMGYzMTE5NzFlNmY4ZGQ1YTlmMTg4NjA3MzM4ZjM3OThkY2QyMTU4OTJkZWIxOWQzZDhkYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzNiNWE3NWZhMGE5YmUzNTZhNmU0ZDlmMTYxYjQ0OGExYTdhOGEyZmU4OTk2ZTE5YWU4YjU1ZDNiODE2YjMyYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjk4NjUyZThmNTA2NjdkMGRhMTJkMDM0M2VlZmM0ZDUzNjBhNWU2ZmI2YWIxOWYzNDRmMjhjNmZkNjk5Y2NmMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b45e5c12219a4a19879e3377b1e487ed",
+      "statement": "As páginas da wiki cobrem: visão geral do projeto (overview.md), componentes e contratos (hands-on/contracts.md), estágios e tracker (hands-on/stages.md), schema OKF da base de conhecimento (knowledge/schema.md) e o mundo curado de Super Mario World (knowledge/world-map.md).",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L9-L14",
+          "version": "repo-lines-v1:sha256:a62bbb71af377a00f4224211a6ad09f146ca08897abbbb3dc441e0df797011f8:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjU5M2ZlMWJlYmY3NDFmMzEzODgwODhjYjhlZDA0NTZkOTFjM2RjZDdjZDNmMjJiYmU2N2E5NWU1ZGNlOTgwMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzNhMmExNjE4MDM4ZDA4NWY5NzJhYjU2YTg2NWNlNTkzODRiZDgyNTQ1NjRhMzAwYTlhNzNkMjgwZjY3ODRhYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjk4NjUyZThmNTA2NjdkMGRhMTJkMDM0M2VlZmM0ZDUzNjBhNWU2ZmI2YWIxOWYzNDRmMjhjNmZkNjk5Y2NmMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmJlMTA0YjBlZjhiZDFjY2RkMzNkZjJlMjA4MzgzYTExYTZkZmEzMmQyYTJhNjU2NDUyYmI0ZGM4ODU3NTkxMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_cf0a67d4e7374038ad84687046c66424",
+      "statement": "Os alunos acompanham o projeto pelas Issues (specs e tickets de cada estágio, com labels ready-for-agent/ready-for-human) e pelos Pull Requests empilhados — um por estágio, abertos para análise, com merge só no cenário final.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L16-L20",
+          "version": "repo-lines-v1:sha256:bc168ffcd1064e4f24451be92a63f72e15fdba850e7632f841317ea9ca55a773:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzQ5YjNmODczOGFjODVkZDZjMGZhY2UzODU4NGYzNDlkY2NmMTg5ODY3NjRmNTRkMDBlNzJmZWZkOTQwYzZhOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2U1OTdhNDhmNWQxY2RiNzMwNTJjMjhhYzBmZDAwZDU1NjgxNjY2YjBkOTU1OGI1YTQ3Mjc1NGFkNDZiMmZkZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmM0OWY1OTYzZGYwMDU0MjliYjE5MDUxOWI3MTFmNWVjNmE2Nzk4MzU5NDM1ODBiODljZWE0NGI0ZjFlMzA4MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T17:26:03.041Z"
+  }
+}

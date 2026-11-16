@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/hands-on/contracts.md": {
+      "pageVersion": "sha256:64e15abd4092a6b268dd915928c791a1f3128a40eabd352b925999f02724aaa2",
+      "completedBy": "opencode",
+      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
+      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
+      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+    },
+    "/openwiki/hands-on/stages.md": {
+      "pageVersion": "sha256:485d332524bf49ca7b90eac60acdb2a502a405d45b282651287c4da1175fb7ea",
+      "completedBy": "opencode",
+      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
+      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
+      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+    },
+    "/openwiki/knowledge/schema.md": {
+      "pageVersion": "sha256:f1afa963d6d390ecb4b0bfc74bb71461f8bdf472aa60031c0a81e2120eec3e00",
+      "completedBy": "opencode",
+      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
+      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
+      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+    },
+    "/openwiki/knowledge/world-map.md": {
+      "pageVersion": "sha256:8de223fee3b9adffb3f9d4a83a81d6b4e8782fb28a01e38d08ee0700d3c5020e",
+      "completedBy": "opencode",
+      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
+      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
+      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+    },
+    "/openwiki/overview.md": {
+      "pageVersion": "sha256:9be031e15cf6841015a35e2411bfb04d4824a0ea0c180084595feeb46329e251",
+      "completedBy": "opencode",
+      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
+      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
+      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:292fa6489058fb5eab7ad74500c82ef1601cba6494724512debd4614fa7aadd7",
+      "completedBy": "opencode",
+      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
+      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
+      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+    }
+  }
+}

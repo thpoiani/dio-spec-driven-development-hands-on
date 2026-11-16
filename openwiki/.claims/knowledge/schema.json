@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f1afa963d6d390ecb4b0bfc74bb71461f8bdf472aa60031c0a81e2120eec3e00",
+  "claims": [
+    {
+      "id": "claim_aeae4f52d6c64adbaf6270235b9d8f09",
+      "statement": "A base de conhecimento do Game Copilot é uma camada só: a wiki openwiki/ em formato OKF v0.2 (markdown com frontmatter YAML estruturado + evidências), commitada no repositório e gerada/curada a partir de um detonado.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L96-L124",
+          "version": "repo-lines-v1:sha256:3a4212d4ebea8174bffec8baa6fabdc0f3002c2048b3de299d48bcee60717bb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkNDViNTBkZWM2NDFkNGM3NzhkMTQwNGZkZTI4Yzg4NjdhOWE3Zjg3ODgzNzgyNDdjYzMxMTA3YTlmYzZkNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjODdhMGU4ZTc3OTRjMDY0M2UyYjliMzAxYjIwYTZlOGU3NTFjOTdkM2Q3NzZlODI2NWRkNzFiNDkwZjYxNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0NzE3YTNhNmVlYTljNDQ3YWQ1YjVjYzIzN2MxMTNjOTQxYmQ3ZGI2MGQwMWM1MTZlMTRhMjU2MmJiOGFhNDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a90b35b0e15a4fb19e6bef281424ff07",
+      "statement": "O frontmatter das páginas é o que o knowledge-loader parseia para montar o KnowledgeIndex consultado pelo ProgressionAdvisor; a prosa é o que o agente WorldAdvisor lê para redigir recomendações.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L96-L124",
+          "version": "repo-lines-v1:sha256:3a4212d4ebea8174bffec8baa6fabdc0f3002c2048b3de299d48bcee60717bb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkNDViNTBkZWM2NDFkNGM3NzhkMTQwNGZkZTI4Yzg4NjdhOWE3Zjg3ODgzNzgyNDdjYzMxMTA3YTlmYzZkNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjODdhMGU4ZTc3OTRjMDY0M2UyYjliMzAxYjIwYTZlOGU3NTFjOTdkM2Q3NzZlODI2NWRkNzFiNDkwZjYxNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0NzE3YTNhNmVlYTljNDQ3YWQ1YjVjYzIzN2MxMTNjOTQxYmQ3ZGI2MGQwMWM1MTZlMTRhMjU2MmJiOGFhNDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8aabfa5a6eaf431e9bff4e4033947a14",
+      "statement": "O schema da wiki define cinco tipos de página — area, level, switch-palace, power-up e boss — com campos obrigatórios por tipo; o schema é a spec da base e muda de campo implica revisar o knowledge-loader.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L96-L124",
+          "version": "repo-lines-v1:sha256:3a4212d4ebea8174bffec8baa6fabdc0f3002c2048b3de299d48bcee60717bb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkNDViNTBkZWM2NDFkNGM3NzhkMTQwNGZkZTI4Yzg4NjdhOWE3Zjg3ODgzNzgyNDdjYzMxMTA3YTlmYzZkNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjODdhMGU4ZTc3OTRjMDY0M2UyYjliMzAxYjIwYTZlOGU3NTFjOTdkM2Q3NzZlODI2NWRkNzFiNDkwZjYxNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0NzE3YTNhNmVlYTljNDQ3YWQ1YjVjYzIzN2MxMTNjOTQxYmQ3ZGI2MGQwMWM1MTZlMTRhMjU2MmJiOGFhNDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7b6f69bc015d4151915333577352d12d",
+      "statement": "Um level declara exits (lista de { kind: normal | secret | keyhole, goes-to, requirement? }), prerequisites, rewards e boss — o exemplo canônico do schema é a página forest-of-illusion-4.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L104-L118",
+          "version": "repo-lines-v1:sha256:1f45817693a881732bf846b26b51949fcbcea94abe168181d6471a668abe29b0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1YTVhMDE4Njg2NDdhMjZiOGU0YjBiN2I5MDExYjJkYTQ4MmViMjYyMjBmN2UyNzcxNTE3ZGQ1NjI0ZjBiOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmZWUzMjUwZDVkNGMxNDYxYjBmNmE0NDI5ODY0MzMxZDZiNTQ4NGI2MGVhM2MyYzRmMWI5NDIxMGQxZGU1ZDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjNjFmZTdlZDFmZmIwYTJiNjE1ZTY5OTBjYjg5NTY3MjgxN2JjZTQ4MTBlYThkYjY3ODY4NjNiYjgzNWZlMzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0MTJiZDA3YzYyMDE1MmYzNmFhMWQ1MGEzMGY1ZjE5MzEwMDI2OGJhMGFjYTBjNjYwOWY2NGMzZDZkMjNmZTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_162f241f3da54f349baf283b4b87c1fa",
+      "statement": "Página com campo obrigatório faltando ou inválido causa fail fast no load, apontando arquivo e campo — nunca skip silencioso — e toda página carrega provenance (sources).",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L96-L124",
+          "version": "repo-lines-v1:sha256:3a4212d4ebea8174bffec8baa6fabdc0f3002c2048b3de299d48bcee60717bb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkNDViNTBkZWM2NDFkNGM3NzhkMTQwNGZkZTI4Yzg4NjdhOWE3Zjg3ODgzNzgyNDdjYzMxMTA3YTlmYzZkNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjODdhMGU4ZTc3OTRjMDY0M2UyYjliMzAxYjIwYTZlOGU3NTFjOTdkM2Q3NzZlODI2NWRkNzFiNDkwZjYxNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0NzE3YTNhNmVlYTljNDQ3YWQ1YjVjYzIzN2MxMTNjOTQxYmQ3ZGI2MGQwMWM1MTZlMTRhMjU2MmJiOGFhNDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_36c31e9c6d284d1ebf81e470a1cfc0d0",
+      "statement": "O openwiki visualize gera o grafo interativo do mundo — material de slide da aula.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L96-L124",
+          "version": "repo-lines-v1:sha256:3a4212d4ebea8174bffec8baa6fabdc0f3002c2048b3de299d48bcee60717bb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkNDViNTBkZWM2NDFkNGM3NzhkMTQwNGZkZTI4Yzg4NjdhOWE3Zjg3ODgzNzgyNDdjYzMxMTA3YTlmYzZkNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjODdhMGU4ZTc3OTRjMDY0M2UyYjliMzAxYjIwYTZlOGU3NTFjOTdkM2Q3NzZlODI2NWRkNzFiNDkwZjYxNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0NzE3YTNhNmVlYTljNDQ3YWQ1YjVjYzIzN2MxMTNjOTQxYmQ3ZGI2MGQwMWM1MTZlMTRhMjU2MmJiOGFhNDcifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T17:26:03.041Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:485d332524bf49ca7b90eac60acdb2a502a405d45b282651287c4da1175fb7ea",
+  "claims": [
+    {
+      "id": "claim_1a47f57acfd847f4a5d671ee7da008e1",
+      "statement": "O desenvolvimento do Game Copilot acontece em 10 estágios, um por branch empilhada (cada estágio nasce da branch do estágio anterior), com spec própria como Issue no GitHub (issue-pai + tickets como sub-issues com dependências nativas).",
+      "evidence": [
+        {
+          "resource": "repo://SCOPE.md#L57-L70",
+          "version": "repo-lines-v1:sha256:50d0f6cf8988339797924df4ae7ea64507cde60f9110e89c5ce93ee8f7b50161:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlOTIxYjA4ZmYxNDg1MzVhNWZmODFjOTRlYzk3ZTE3ODhmMzJiNTZkZjdiMWVmZTE2ZDQ5ZGRhM2YzM2FiMTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhOTRkYzYyNzQ4YzhhOWIyZGYxNTczZmVlMDU0OTFkNzExZDYxNWFhMTkyNDYzZWYzNGU3NjFmMDE4MThkZGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0MjE1OWFiNjljZTJmMzNlMmZlOTgyZDlmZWNmOWRlNmQ3ZGVkYzQ2NmFkZjk1MTI1NjY2MjRiNjMzODI2M2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0ZWViNjNhZmJjNjBmNWU1YTJlZDM1ZTMwZDE2MDZmZDlhNWEzODUxZWE4MDZkMDJiMzcyZGI0NGUxZjZkYTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_52aa04e10002430c8c5c86f4cb94439f",
+      "statement": "Nada vai para a main até o cenário final — incluindo o que será gravado; o merge final é feito pelo Thiago, e as branches nunca são deletadas: a lista numerada conta a história do projeto.",
+      "evidence": [
+        {
+          "resource": "repo://SCOPE.md#L74-L76",
+          "version": "repo-lines-v1:sha256:7d60af0d133d1723d069402c402dee858155985d71bfb0d25f13665cfbb8dc1a:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGEyZDFhMWZiNTFmMjUzOTAyMjk5ZWMyNzZlODQyNjdjNTA4MmZmMDY2NjI5MTM1MzU1NzljMjNkZjA4ZTU4NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzk0MjY1ZDE2ZmM4ZDc4OGM3ODI4N2JiOTY2MmEwZmVkMzI2OGE1ZmE0OWQ1NjNlOTFkYTg1MWQ0Mzg5ZjNkZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTRlZWI2M2FmYmM2MGY1ZTVhMmVkMzVlMzBkMTYwNmZkOWE1YTM4NTFlYTgwNmQwMmIzNzJkYjQ0ZTFmNmRhNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDk3Y2IwMDFlNmE5ODAwZjkyZWU5ZDQ0Y2EwMjEzZjJjNDllMmYwOWMzOGIzYzA2OTAyMmRmMjFhZjQ1ZGNjOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_33820d2899ae41368dfcf55cc9b2edfa",
+      "statement": "Os estágios 01-07 são desenvolvidos offline; os estágios 08 (event-broker, MQTT) e 09 (world-advisor, agente LangChain) são gravados ao vivo na aula passando pelo ciclo completo das skills; o estágio 10 (knowledge-expansion) é o homework dos alunos.",
+      "evidence": [
+        {
+          "resource": "repo://SCOPE.md#L61-L70",
+          "version": "repo-lines-v1:sha256:0a9282e3f624f4a21456cc065da2eade8db88be636fee060802f4c5f257bbe06:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5Mzk4NDMyYjQ3OTEwY2QwNWJkYjZmMmQyMTljZGY5MmI2ZWRlM2U3Yjk4YmM5M2EyNDYwMjg0NDlhNGM4M2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhOTRkYzYyNzQ4YzhhOWIyZGYxNTczZmVlMDU0OTFkNzExZDYxNWFhMTkyNDYzZWYzNGU3NjFmMDE4MThkZGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2ODNlNWM2MmZhNDQxODFlYzkyNWMyN2U3MTVlMDE4N2M4ZDllNDYyZTA1Zjk1NzE0ZTk5OGMwZmYzOGI2MmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0ZWViNjNhZmJjNjBmNWU1YTJlZDM1ZTMwZDE2MDZmZDlhNWEzODUxZWE4MDZkMDJiMzcyZGI0NGUxZjZkYTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f6269ef0b8214674aebe88dd2b54a613",
+      "statement": "Cada estágio abre um PR empilhado (base = branch do estágio anterior) que mostra apenas o diff da etapa, e os PRs ficam abertos para os alunos analisarem o histórico.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L28-L28",
+          "version": "repo-lines-v1:sha256:0a3633bec56e36ea804d0bba6dccb54a998db62ca66cfce79048cb8275ec140d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGEzNjMzYmVjNTZlMzZlYTgwNGQwYmJhNmRjY2I1NGE5OThkYjYyY2E2NmNmY2U3OTA0OGNiODI3NWVjMTQwZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGEzNjMzYmVjNTZlMzZlYTgwNGQwYmJhNmRjY2I1NGE5OThkYjYyY2E2NmNmY2U3OTA0OGNiODI3NWVjMTQwZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDk0ZmExYjU2ZjU2MzEwZjIxZjMxOTM1MzRlNjhiNWIwOWQ5NmE1MWY1MmRkYzkzOTc2ZjVjMjk3MzFjM2NjYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGM4ODBjMmM3NGNlM2E0NmQxNWJkZThjN2FjYWUyNzQ0M2RmMjZiZWRiYmE3NTc3YTZmMjY3M2QzOGUyNDE0OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_8ad3ddeab29246de99090f01ab7770dd",
+      "statement": "O tracker é o GitHub Issues: a spec de cada estágio é um issue-pai, os tickets são sub-issues com dependências nativas blocked-by, e os labels de triagem são needs-triage, needs-info, ready-for-agent, ready-for-human e wontfix.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/issue-tracker.md#L1-L10",
+          "version": "repo-lines-v1:sha256:6c5706e41d7711c2b706956b5bf4bda66d21c69ca074c6da73dae281255571b6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxZjQ1YzlhMzliOTM5NzdmMzQyYmJlODgyNTk5NmYzMDE3ODMxN2M4NjcxY2IyOGQwOGE4MWEzZTc5NTE4MGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhMjljMzg0Mzg1NTQ3MGU4YjI1MDEyNDlkMmUwYzkxMjNlZjM3NjYyZmRiNDM0M2ZjZmRhYTkyMTFlZWRmMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3ZjhjMDA1MDVhNTM5MTNkZTFlZjNjNTg3NGIzMmIxZTk3Yjc4Nzc2OGJkNDYzYTMxNzEzZTNiOWM1Mzc4OTkifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T17:26:03.041Z"
+  }
+}
