@@ -1,0 +1,75 @@
+{
+  "sessionId": "speedrunner-demo",
+  "entries": [
+    {
+      "delayMs": 0,
+      "topic": "game/telemetry/area_entered",
+      "data": {
+        "area": "yoshis-island"
+      }
+    },
+    {
+      "delayMs": 80,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "yoshis-island-1"
+      }
+    },
+    {
+      "delayMs": 60,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "yoshis-island-1",
+        "exit": "normal",
+        "durationMs": 25000
+      }
+    },
+    {
+      "delayMs": 80,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "yoshis-island-2"
+      }
+    },
+    {
+      "delayMs": 60,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "yoshis-island-2",
+        "exit": "normal",
+        "durationMs": 28000
+      }
+    },
+    {
+      "delayMs": 80,
+      "topic": "game/telemetry/area_entered",
+      "data": {
+        "area": "donut-plains"
+      }
+    },
+    {
+      "delayMs": 70,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "donut-plains-1"
+      }
+    },
+    {
+      "delayMs": 60,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "donut-plains-1",
+        "exit": "normal",
+        "durationMs": 32000
+      }
+    },
+    {
+      "delayMs": 80,
+      "topic": "game/telemetry/boss_engaged",
+      "data": {
+        "boss": "ludwig",
+        "level": "ludwigs-castle"
+      }
+    }
+  ]
+}

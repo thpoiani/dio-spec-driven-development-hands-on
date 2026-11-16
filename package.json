@@ -7,11 +7,16 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "start": "node --experimental-transform-types --import tsx src/main.ts",
+    "start": "tsx src/main.ts",
+    "demo": "tsx src/game/demo.ts",
     "check:wiki": "node scripts/check-wiki.mjs"
   },
   "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
     "@nestjs/event-emitter": "^12.0.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.0",
     "yaml": "^2.9.1"
   },
   "devDependencies": {

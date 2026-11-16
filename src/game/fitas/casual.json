@@ -1,0 +1,67 @@
+{
+  "sessionId": "casual-demo",
+  "entries": [
+    {
+      "delayMs": 0,
+      "topic": "game/telemetry/area_entered",
+      "data": {
+        "area": "yoshis-island"
+      }
+    },
+    {
+      "delayMs": 300,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "yoshis-island-1"
+      }
+    },
+    {
+      "delayMs": 400,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "yoshis-island-1",
+        "exit": "normal",
+        "durationMs": 120000
+      }
+    },
+    {
+      "delayMs": 200,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "yoshis-island-2"
+      }
+    },
+    {
+      "delayMs": 400,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "yoshis-island-2",
+        "exit": "normal",
+        "durationMs": 130000
+      }
+    },
+    {
+      "delayMs": 200,
+      "topic": "game/telemetry/area_entered",
+      "data": {
+        "area": "forest-of-illusion"
+      }
+    },
+    {
+      "delayMs": 300,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "forest-of-illusion-4"
+      }
+    },
+    {
+      "delayMs": 400,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "forest-of-illusion-4",
+        "exit": "normal",
+        "durationMs": 90000
+      }
+    }
+  ]
+}

@@ -19,15 +19,19 @@ export class EventBusService {
     @Inject(EventEmitter2) private readonly emitter: EventEmitter2,
   ) {}
 
-  publish<T extends GameTopic>(event: GameEvent<T>): void {
+  publish<T extends GameTopic>(event: GameEvent<T>): void;
+  publish(event: GameEvent): void;
+  publish(event: GameEvent): void {
     this.emitter.emit(event.type, event);
   }
 
   subscribe<T extends GameTopic>(
     topic: T,
     handler: (event: GameEvent<T>) => void,
-  ): void {
-    this.emitter.on(topic, (event: GameEvent<T>) => {
+  ): void;
+  subscribe(topic: string, handler: (event: GameEvent) => void): void;
+  subscribe(topic: string, handler: (event: GameEvent) => void): void {
+    this.emitter.on(topic, (event: GameEvent) => {
       try {
         handler(event);
       } catch (error) {
