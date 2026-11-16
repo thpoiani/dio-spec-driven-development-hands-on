@@ -90,14 +90,16 @@ Detalhe completo (falas, telas, cortes): [PRESENTATION.md](./PRESENTATION.md).
 ## 8. Checklist de execução
 
 0. ✅ Documentação (`SCOPE.md`, `ARCHITECTURE.md`, `PRESENTATION.md`, `AGENTS.md`)
-1. ✅ Scaffold do projeto + `@setup-matt-pocock-skills`
-2. ✅ Spec da etapa 01 publicada (**Issue #1**, tickets #2–#7 como sub-issues)
-3. [ ] **Etapa 01** — wiki OpenWiki de SMW (setup manual + ingestão/curadoria com apoio do agente)
-4. [ ] **Etapas 02–06** — eventos/bus · loader · profiler · advisor · playthroughs/demo (uma spec por componente)
-5. [ ] **Etapa 07** — observabilidade (OTel + OpenObserve)
-6. [ ] **Etapa 10** — spec + tickets do homework pré-produzidos (`ready-for-agent`)
-7. [ ] Gravação das etapas 08 e 09 (ciclo completo das skills, terminal acelerado)
-8. [ ] Outline + deck com a skill `dio-slides`
+1. ✅ Bootstrap do projeto (scaffold + `@setup-matt-pocock-skills`)
+2. ✅ **Etapa 01** — wiki OpenWiki de SMW (schema, áreas, caminho principal, gating, Switch Palaces, power-ups, bosses — 39/39 páginas com schema) · Issue #1 fechada · tag `v0.1`
+3. [ ] **Etapa 02** — eventos + `EventBus` + `InMemoryEventBus` (issue-pai + tickets)
+4. [ ] **Etapa 03** — `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast) + fixtures
+5. [ ] **Etapa 04** — `PlayerProfiler` + `ProgressionAdvisor`
+6. [ ] **Etapa 05** — fitas de demo + `npm run demo` + testes · tag `v0.6`
+7. [ ] **Etapa 07** — observabilidade (OTel + OpenObserve)
+8. [ ] **Etapa 08/09** — gravação das features (broker + agente)
+9. [ ] **Etapa 10** — homework: spec + tickets pré-produzidos (`ready-for-agent`)
+10. [ ] Outline + deck com a skill `dio-slides`
 
 ## 9. Referências
 

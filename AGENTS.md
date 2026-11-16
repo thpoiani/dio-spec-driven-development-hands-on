@@ -15,7 +15,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 ## Estado atual (atualize esta seção a cada etapa concluída)
 
 - [x] Bootstrap: documentação + scaffold (TS strict + Vitest, zero deps no core) + `@setup-matt-pocock-skills` (tracker **GitHub Issues** + labels de triagem, single-context: `GLOSSARY.md` + `docs/adr/`)
-- [~] **Etapa 01 — em andamento**: spec **Issue #1** (`ready-for-human`); tickets como sub-issues. **#2 ✅** (setup do OpenWiki) e **#3 ✅** (ingestão do detonado — 6 rascunhos de níveis de gating) **mergeados na `main`** (PR #8). Pendente: **#4** (áreas e níveis do caminho principal — Super Mario Wiki) → **#5** (gating) + **#6** (power-ups/bosses) → **#7** (validação de cobertura e grafo)
+- [~] **Etapa 01 — concluída**: spec **Issue #1** fechada com todos os tickets ✅ (#2 setup · #3 ingestão · #4 caminho principal · #5 Switch Palaces · #6 power-ups/bosses · #7 validação 39/39). Wiki do SMW estável (`openwiki/super-mario-world/`, 39 páginas com schema completo, Claims com evidência) — **tag `v0.1`**
 - [ ] Etapa 02 — eventos + interface `EventBus` + `InMemoryEventBus`
 - [ ] Etapa 03 — `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast)
 - [ ] Etapa 04 — `PlayerProfiler` (casual/completionist/speedrunner) + `ProgressionAdvisor`
