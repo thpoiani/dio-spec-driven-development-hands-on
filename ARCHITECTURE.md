@@ -201,6 +201,13 @@ Envelope comum de todo evento: `{ type, sessionId, ts, data }`.
 ## 5. Mundo de Super Mario World (esqueleto curado)
 
 > **Fontes**: detonado **PC do Paulo** (PT-BR, ingestão primária) + **Super Mario Wiki** (validação canônica do gating — página *Secret exit*). Escolha registrada no Ticket #2 da etapa 01.
+>
+> | Fonte | Uso | Link |
+> |---|---|---|
+> | PC do Paulo — Detonado Super Mario World (2024, PT-BR) | **Ingestão primária** (texto completo, secret exits e Star World) | <https://www.pcdopaulo.com/2024/09/detonado-super-nintendo-super-mario.html> |
+> | Super Mario Wiki — *Secret exit* | **Validação canônica do gating** (as 24 saídas secretas) | <https://www.mariowiki.com/Secret_exit> |
+> | Super Mario Wiki — *Super Mario World* | Validação por nível/área | <https://www.mariowiki.com/Super_Mario_World> |
+> | YouTube — Todas as Saídas Secretas | Referência visual das rotas | <https://www.youtube.com/watch?v=KjhSUdv5Lwo> |
 
 Estrutura real simplificada para caber em aula (~5 áreas principais + camada secreta). As evidências exatas de cada página vêm do detonado na autoria da wiki.
 

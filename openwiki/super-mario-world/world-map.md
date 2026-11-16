@@ -17,8 +17,9 @@ O esqueleto curado do mundo, simplificado para a base de conhecimento: 5 áreas 
 
 ## Fontes
 
-- **Ingestão primária**: detonado **PC do Paulo** (PT-BR, texto completo, com saídas secretas e Star World detalhados).
-- **Validação canônica**: **Super Mario Wiki** (página *Secret exit* — as 24 saídas secretas do jogo e o gating exato).
+- **Ingestão primária**: detonado **PC do Paulo** (PT-BR, texto completo, com saídas secretas e Star World detalhados) — <https://www.pcdopaulo.com/2024/09/detonado-super-nintendo-super-mario.html>
+- **Validação canônica**: **Super Mario Wiki** (página *Secret exit* — as 24 saídas secretas do jogo e o gating exato) — <https://www.mariowiki.com/Secret_exit>
+- **Referência visual**: YouTube — *Todas as Saídas Secretas* — <https://www.youtube.com/watch?v=KjhSUdv5Lwo>
 
 ## Áreas e gating
 
