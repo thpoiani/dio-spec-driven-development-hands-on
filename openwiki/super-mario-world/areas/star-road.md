@@ -32,3 +32,13 @@ A **camada secreta** do mundo: acesso somente por **secret exits/keyholes** espa
 As 8 fases especiais são alcançadas pelas Star Roads; completar todas revela o mundo desconhecido no cume da Star World 5 (canônico no detonado). Fases da Special Zone **não têm segredos** — são o conteúdo de coleta total do completionist.
 
 *Páginas das fases da Special Zone entram na expansão do conhecimento (feature/10-knowledge-expansion).*
+
+## Dados
+
+```yaml
+type: area
+id: star-road
+name: Star Road → Special Zone
+order: 6
+unlocks: [special-zone]
+```

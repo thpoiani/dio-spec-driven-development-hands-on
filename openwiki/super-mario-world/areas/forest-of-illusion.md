@@ -34,3 +34,13 @@ Terceira área — **o labirinto**. Fases **Forest of Illusion 1 a 4**, **Forest
 | Forest Ghost House | normal (→ Forest of Illusion 1) + secret | Teleporte dentro da casa |
 | Forest Secret Area | normal | A saída da floresta |
 | Roy's Castle | boss **Roy** | Libera a Chocolate Island |
+
+## Dados
+
+```yaml
+type: area
+id: forest-of-illusion
+name: Forest of Illusion
+order: 3
+unlocks: [chocolate-island]
+```

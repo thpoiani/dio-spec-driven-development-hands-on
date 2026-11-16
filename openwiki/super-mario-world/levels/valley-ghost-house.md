@@ -20,6 +20,24 @@ A casa fantasma do **Valley of Bowser** — sua saída secreta é a **entrada se
 - **Normal**: segue o caminho do vale até o castelo pela frente.
 - **Secret exit** → **Larry's Castle (#7)**: ao entrar na primeira porta, bata o bloco acima dela, pise no botão 'P' e siga pela esquerda até a porta que aparece. Na sala alta está a keyhole escondida no alto — **exige Cape**: voe até a pilha de blocos que isola a fechadura, solte Y perto da fenda entre as pilhas, agache na brecha e, agachado, aperte B e para frente.
 
+## Dados
+
+```yaml
+type: level
+id: valley-ghost-house
+name: Valley Ghost House
+area: valley-of-bowser
+kind: side
+exits:
+  - kind: normal
+    goes-to: valley-of-bowser-3
+  - kind: secret
+    goes-to: larrys-castle
+prerequisites: [valley-of-bowser-2]
+rewards: []
+boss: false
+```
+
 ## Estratégia
 
 A keyhole do Valley Ghost House é um dos segredos mais difíceis de executar — o detonado manda "treinar bastante". Com capa é obrigatório; sem ela, a rota é o caminho normal do vale até a frente do castelo.
