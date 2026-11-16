@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:18bfec0bbb3886b7cf27e1bee8b0fe44d3c27e4c1470eb73e33b26ba01a60724",
+  "claims": [
+    {
+      "id": "claim_f2c68dcf3f1e42b5a3990d530976d5ea",
+      "statement": "O Blue Switch Palace é acessado pela saída secreta da Forest of Illusion 2 (compartimento secreto submerso à esquerda do bloco ! amarelo).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L20-L20",
+          "version": "repo-lines-v1:sha256:70444eaa187057fa0ca269ca026527e089e49e959c340c5ce9274983dc877f9f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGE0YmRhNGUzNmIxYzlmZmZhMDAzODZhMzBkNGExYjY1NmQzMTEzMzRkY2IyZDQ1YWU3ZjQ3NGJhYzcwYmY4MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2Q2ODZmYjA5OTZkOTRiOTZhZGRjN2E2ZTgwZTU3OGUzNDViYTc5Y2FmNjcxNjA1M2UwMzE5NzExZDdhNzgxNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3ccfb718ace74e3f93c2614acf4a7e93",
+      "statement": "Pisar no botão azul ativa os blocos ! azuis do mundo (Donut Plains 4, Forest of Illusion 4 e Star World 4 usam pilhas de blocos azuis em suas rotas).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L17-L31",
+          "version": "repo-lines-v1:sha256:58fd9d82e65bd4015981a19cdc8625ad40b91f015279169c3d86b49beb35b5ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4NmJlNWJmZThhNDQ2ZjI3YmYwOGIwOGE1MWI1ZWMzMDc4MTY0NDQwZGY3MGJjYmQ0YTFmMjRlMWQ2MmQxNGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiMGE4MzE2YTMxOTQ4Y2VlZTljMzg0ZjY3ZWU5MWI3YjFiZjI4MzYyODZjMzg3NTczYjc5OTkxYWRhN2UxZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlhNGI2OGViODFmNjU3ODc4Yjc2NjUxOTNkMWE0MTA0MjlkMmEyZjQxYjgxYTJkMzA0OGI4YmUzYWYyZjRjNjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRlY2JmMmU3NDc0MThlMGE4MDcyNGI0NjgzZWUwYzViZDNkODJiZDY1NjE4NGM2NmU0MjM0ODIwMGNjZjljNjQifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:17:21.144Z"
+  }
+}
