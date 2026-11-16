@@ -1,0 +1,88 @@
+{
+  "sessionId": "completionist-demo",
+  "entries": [
+    {
+      "delayMs": 0,
+      "topic": "game/telemetry/area_entered",
+      "data": {
+        "area": "yoshis-island"
+      }
+    },
+    {
+      "delayMs": 200,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "yoshis-island-1"
+      }
+    },
+    {
+      "delayMs": 300,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "yoshis-island-1",
+        "exit": "secret",
+        "durationMs": 90000
+      }
+    },
+    {
+      "delayMs": 100,
+      "topic": "game/telemetry/inventory_opened",
+      "data": {
+        "reason": "collect"
+      }
+    },
+    {
+      "delayMs": 150,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "yoshis-island-2"
+      }
+    },
+    {
+      "delayMs": 250,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "yoshis-island-2",
+        "exit": "keyhole",
+        "durationMs": 100000
+      }
+    },
+    {
+      "delayMs": 100,
+      "topic": "game/telemetry/inventory_opened",
+      "data": {
+        "reason": "collect"
+      }
+    },
+    {
+      "delayMs": 150,
+      "topic": "game/telemetry/area_entered",
+      "data": {
+        "area": "forest-of-illusion"
+      }
+    },
+    {
+      "delayMs": 200,
+      "topic": "game/telemetry/level_started",
+      "data": {
+        "level": "forest-of-illusion-2"
+      }
+    },
+    {
+      "delayMs": 300,
+      "topic": "game/telemetry/level_completed",
+      "data": {
+        "level": "forest-of-illusion-2",
+        "exit": "secret",
+        "durationMs": 110000
+      }
+    },
+    {
+      "delayMs": 100,
+      "topic": "game/telemetry/inventory_opened",
+      "data": {
+        "reason": "collect"
+      }
+    }
+  ]
+}
