@@ -15,7 +15,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 ## Estado atual (atualize esta seção a cada etapa concluída)
 
 - [x] Bootstrap: documentação + scaffold (TS strict + Vitest, zero deps no core) + `@setup-matt-pocock-skills` (tracker **GitHub Issues** + labels de triagem, single-context: `GLOSSARY.md` + `docs/adr/`)
-- [~] **Etapa 01 — em andamento**: spec **Issue #1** (`ready-for-human`); tickets #2–#7 como sub-issues. **Ticket #2 (setup do OpenWiki) concluído**: `openwiki/` gerado (6 páginas OKF + Claims + índices), schema documentado (`openwiki/knowledge/schema.md`), fontes registradas (PC do Paulo + Super Mario Wiki). Pendente: tickets #3–#7 (ingestão do detonado → páginas do mundo → validação do gating)
+- [~] **Etapa 01 — em andamento**: spec **Issue #1** (`ready-for-human`); tickets como sub-issues. **#2 ✅** (setup do OpenWiki) e **#3 ✅** (ingestão do detonado — 6 rascunhos de níveis de gating) **mergeados na `main`** (PR #8). Pendente: **#4** (áreas e níveis do caminho principal — Super Mario Wiki) → **#5** (gating) + **#6** (power-ups/bosses) → **#7** (validação de cobertura e grafo)
 - [ ] Etapa 02 — eventos + interface `EventBus` + `InMemoryEventBus`
 - [ ] Etapa 03 — `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast)
 - [ ] Etapa 04 — `PlayerProfiler` (casual/completionist/speedrunner) + `ProgressionAdvisor`
@@ -25,7 +25,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 
 ## Fluxo de trabalho por etapa
 
-1. **Uma etapa por vez, na ordem dos estágios 01→10** (tabela no `SCOPE.md` §6). Cada estágio = uma branch numerada, **empilhada sobre a anterior** (nasce da branch do estágio anterior), com **spec própria como Issue no GitHub** (issue-pai + tickets como sub-issues com dependências nativas) e commits atômicos que contam a história (spec → tickets → código). **Nenhuma branch é deletada e nada vai para a `main` até o cenário final** — o merge final é feito pelo Thiago. PR de cada etapa fica aberto (base = branch anterior) para os alunos analisarem. Tags `v0.1` … `v1.0` por estágio.
+1. **Um ticket por vez, na ordem da fronteira** (issues com blockers fechados, ver §6). Cada **ticket** = uma branch `ticket/<issue>-<slug>` + um **PR próprio** para a `main` com `Closes #N` no corpo — o merge no fechamento do ticket (verde: TDD/review) mantém a `main` sempre com código funcional. Branches **nunca são deletadas**; PRs merged continuam acessíveis e, em ordem, contam a evolução do curso.
 2. Etapas com conteúdo de conhecimento (01, 10) são **manuais com apoio do agente** (Thiago roda o OpenWiki; o agente converte/valida páginas). Estágios de código seguem TDD.
 3. Os **estágios 08 (broker) e 09 (agente)** só existem como *gravação* — se estiver trabalhando neles fora de gravação, pare no preparo dos artefatos e confirme com o Thiago.
 
