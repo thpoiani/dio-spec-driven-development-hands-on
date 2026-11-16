@@ -54,6 +54,13 @@ export interface ProfileChangedData {
   signals: string[];
 }
 
+export interface RecommendationData {
+  source: "progression-advisor" | "world-advisor";
+  profile: PlayerProfile;
+  message: string;
+  evidence: { wikiPage: string };
+}
+
 export interface GameEventBase<T extends GameTopic> {
   sessionId: string;
   ts: number;
@@ -71,7 +78,9 @@ export type EventPayload<T extends GameTopic> = T extends typeof GAME_TOPIC.area
           ? BossEngagedData
           : T extends typeof GAME_TOPIC.profileChanged
             ? ProfileChangedData
-            : never;
+            : T extends typeof GAME_TOPIC.recommendations
+              ? RecommendationData
+              : never;
 
 export type GameEvent<T extends GameTopic = GameTopic> = T extends GameTopic
   ? {

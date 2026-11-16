@@ -21,7 +21,7 @@ function makeEvent<T extends GameTopic>(
   ts: number,
   data: Record<string, unknown> = {},
 ): GameEvent<T> {
-  return { type: topic, sessionId, ts, data } as GameEvent<T>;
+  return { type: topic, sessionId, ts, data } as unknown as GameEvent<T>;
 }
 
 function publishLevel(
