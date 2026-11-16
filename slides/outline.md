@@ -1,4 +1,4 @@
-# Outline · SDD na prática: construindo um Game Copilot
+# Outline · Spec-Driven Development: da spec ao produto
 
 > Rascunho para aprovação. **Não gere o `index.html` antes do ok.**
 > Uma linha por slide. O título aqui é o título que vai para o slide.
@@ -9,24 +9,29 @@ Estes valores vão direto para o bloco `DECK` do template.
 
 | Campo | Valor |
 |---|---|
-| `title` | SDD na prática: construindo um Game Copilot |
-| `subtitle` | o ciclo spec-driven aplicado a um sistema real — do evento de gameplay à recomendação no console |
-| `event` | Master Class · DIO |
-| `date` | nov/2026 |
+| `title` | Spec-Driven Development: da spec ao produto |
+| `subtitle` | construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato |
+| `event` | Spec-Driven Development (título do curso — o cabeçalho mostra título + data) |
+| `date` | Novembro 2026 |
 | `instructor.name` | Thiago Poiani |
-| `instructor.role` | Expert · Spec-Driven Development |
+| `instructor.role` | Principal Software Engineer, Skip |
 | `theme` | dark |
 | Duração | 65 minutos |
+| `links` | docs.langchain.com/oss/openwiki · docs.langchain.com/oss/python/langchain · docs.nestjs.com · opencode.ai · github.com/mattpocock/skills |
 
 ## Roteiro
 
 ```text
-00:00  Abertura: a semana em que o jogo lançou   (15 min)
-00:15  O sistema: Game Copilot + demo            (10 min)
-00:25  SDD para infraestrutura                   (15 min)
-00:40  SDD para agentes                          (20 min)
-01:00  Recap, homework e convite                 (5 min)
+00:00  Abertura: a semana em que o jogo lançou   (slides 04–08 · 15 min)
+00:15  O sistema: Game Copilot + demo            (slides 09–12 · 10 min)
+00:25  SDD para infraestrutura                   (slides 13–16 · 15 min)
+00:40  SDD para agentes                          (slides 17–19 · 20 min)
+01:00  Recap, homework e convite                 (slides 20–23 · 5 min)
 ```
+
+> Ancorado nos marcadores visíveis: o contador do rodapé (`NN / 23`) e os números das Partes nos divisores (slides 04, 09, 13 e 17).
+
+Mapeamento para gravação (pelo contador do rodapé): Abertura = 04–08 · O sistema = 09–12 · Infraestrutura = 13–16 · Agentes = 17–19 · Encerramento = 20–23.
 
 ## Slides
 
@@ -54,9 +59,9 @@ Layouts disponíveis: `capa`, `agenda`, `bio`, `divisor`, `bullets`, `duas-colun
 **Nota:** 15 + 10 + 15 + 20 + 5 minutos
 
 ### 03 · bio
-**Título:** Mais sobre mim
-**Mensagem:** {{4 linhas: o que faz, de onde veio, por que importa, algo humano}}
-**Nota:** criar confiança, não currículo — preencher com o Thiago
+**Título:** Thiago Poiani
+**Mensagem:** Principal Software Engineer @ Skip · foto: avatar do GitHub (github.com/thpoiani.png, link externo) · SDD na prática: o repositório do Game Copilot é a aula
+**Nota:** duas linhas bastam; criar confiança, não currículo
 
 ### 04 · divisor
 **Título:** A semana em que o jogo lançou
@@ -150,8 +155,8 @@ Layouts disponíveis: `capa`, `agenda`, `bio`, `divisor`, `bullets`, `duas-colun
 
 ### 22 · referencias
 **Título:** Onde continuar
-**Mensagem:** Skills do Matt Pocock · OpenWiki/OKF · OpenCode · repo do curso
-**Nota:** deixar no ar durante as perguntas
+**Mensagem:** OpenWiki (docs.langchain.com/oss/openwiki) · LangChain (docs.langchain.com/oss/python/langchain) · NestJS (docs.nestjs.com) · OpenCode (opencode.ai) · Skills do Matt Pocock (github.com/mattpocock/skills)
+**Nota:** os cinco links vivem no `DECK.links` e voltam no encerramento
 
 ### 23 · encerramento
 **Título:** Dúvidas?

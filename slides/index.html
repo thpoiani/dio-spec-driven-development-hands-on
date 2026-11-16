@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Spec-Driven Development: da spec ao produto</title>
+
+<!-- Metadata para compartilhamento. OWNER/REPO são placeholders: troque ao publicar
+     (Passo 5 da SKILL.md) pelo URL final do Pages. -->
+<meta name="description" content="construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato">
+<link rel="canonical" href="https://thpoiani.github.io/dio-spec-driven-development-hands-on/">
+<meta name="theme-color" content="#0C0C0C">
+<link rel="icon" href="https://www.dio.me/favicon.ico">
+
+<!-- Preview ao compartilhar (WhatsApp, Telegram, LinkedIn, Slack, X) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DIO — Master Class">
+<meta property="og:url" content="https://thpoiani.github.io/dio-spec-driven-development-hands-on/">
+<meta property="og:title" content="Spec-Driven Development: da spec ao produto">
+<meta property="og:description" content="construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato">
+<meta property="og:image" content="https://thpoiani.github.io/dio-spec-driven-development-hands-on/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Capa do curso: fundo escuro com logo DIO amarelo e o título da aula.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spec-Driven Development: da spec ao produto">
+<meta name="twitter:description" content="construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato">
+<meta name="twitter:image" content="https://thpoiani.github.io/dio-spec-driven-development-hands-on/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
+
+<style>
+/* ============================================================
+   DIO · deck base — tokens de marca
+   Fonte da verdade: skills/dio-brand/assets/tokens.css
+   ============================================================ */
+:root{
+  --brand:#E5E145;
+  --ink:#0C131E;
+
+  --bg:#0C0C0C;
+  --fg:#F2F2EE;
+  --muted:#8A8A84;
+  --surface:#151514;
+  --surface-2:#1C1C1A;
+  --line:#2B2B28;
+  --accent:var(--brand);
+  --on-brand:#0C0C0C;
+
+  --font-display:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+
+  --radius:10px;
+  --pad:64px;
+}
+html[data-theme="light"]{
+  --bg:#F6F6F1;
+  --fg:#0C131E;
+  --muted:#5F5F59;
+  --surface:#FFFFFF;
+  --surface-2:#EDEDE6;
+  --line:#D8D8CE;
+  --accent:var(--ink);
+  --on-brand:#0C131E;
+}
+
+*{box-sizing:border-box}
+
+/* ---------- reveal: reset e escala ---------- */
+.reveal-viewport{background:var(--bg)}
+.reveal{font-family:var(--font-body);font-size:24px;color:var(--fg);font-weight:400}
+.reveal .slides{text-align:left}
+.reveal .controls,.reveal .slide-number{display:none}
+.reveal .progress{height:3px;color:var(--brand);background:var(--line)}
+.reveal .progress span{background:var(--brand)}
+.reveal a{color:inherit;text-decoration:none}
+
+/* ---------- slide ----------
+   O reveal aplica display:block inline na seção atual, então o layout do slide
+   é feito com filhos absolutos dentro de um canvas fixo de 1280×720. */
+.reveal .slides section.slide{
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  width:1280px;
+  height:720px;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
+  text-align:left;
+  overflow:hidden;
+}
+.reveal .slides section.slide::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:radial-gradient(circle,var(--line) 1px,transparent 1px);
+  background-size:30px 30px;
+  opacity:.5;
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 88% -5%,#000 0%,transparent 70%);
+  mask-image:radial-gradient(ellipse 70% 60% at 88% -5%,#000 0%,transparent 70%);
+  z-index:0;
+}
+.slide__top,.slide__foot,.slide__main{position:relative;z-index:2}
+
+.slide__top{
+  position:absolute;
+  top:38px;
+  left:var(--pad);
+  right:var(--pad);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:30px;
+  z-index:2;
+}
+.top__event{
+  font:500 11px/1 var(--font-mono);
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.logo{display:block;color:var(--fg)}
+.logo--sm{width:54px;height:22px}
+.logo--lg{width:96px;height:39px}
+
+.slide__foot{
+  position:absolute;
+  bottom:26px;
+  left:var(--pad);
+  right:var(--pad);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font:500 11px/1 var(--font-mono);
+  letter-spacing:.08em;
+  color:var(--muted);
+  z-index:2;
+}
+.slide__foot .pager{display:flex;gap:6px;align-items:baseline}
+.slide__foot .pager b{color:var(--fg);font-weight:500}
+.slide__foot .pager i{font-style:normal;opacity:.5}
+.slide__foot--only{justify-content:flex-end}
+
+.slide__main{
+  position:absolute;
+  top:86px;
+  bottom:62px;
+  left:var(--pad);
+  right:var(--pad);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:22px;
+  min-height:0;
+  z-index:2;
+}
+
+/* ---------- tipografia ---------- */
+.kicker{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:0;
+  font:500 12px/1 var(--font-mono);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.kicker::before{content:"//";opacity:.55;letter-spacing:0}
+
+h1.title,h2.title,h3.subtitle{
+  margin:0;
+  font-family:var(--font-display);
+  font-weight:600;
+  letter-spacing:-.03em;
+  color:var(--fg);
+}
+h1.title{font-size:82px;line-height:.98;letter-spacing:-.035em;max-width:1000px}
+h2.title{font-size:46px;line-height:1.06;max-width:940px}
+h3.subtitle{font-size:26px;line-height:1.3;font-weight:500;color:var(--muted)}
+
+p{margin:0;font-size:24px;line-height:1.5}
+.lead{font-size:27px;line-height:1.45;color:var(--fg);max-width:840px}
+.muted{color:var(--muted)}
+.mono{font-family:var(--font-mono)}
+.small{font-size:15px;line-height:1.5}
+
+/* ---------- listas ---------- */
+.bullets{list-style:none;margin:0;padding:0;display:grid;gap:16px;max-width:980px}
+.bullets li{position:relative;padding-left:34px;font-size:24px;line-height:1.45}
+.bullets li::before{
+  content:"";
+  position:absolute;left:0;top:.66em;
+  width:18px;height:2px;background:var(--brand);
+}
+.bullets--tight{gap:10px}
+.bullets--tight li{font-size:21px}
+
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:14px;max-width:980px}
+.checks li{position:relative;padding-left:38px;font-size:23px;line-height:1.4}
+.checks li::before{
+  content:"✓";
+  position:absolute;left:0;top:-2px;
+  font:600 20px var(--font-mono);
+  color:var(--brand);
+}
+
+.agenda{
+  list-style:none;
+  margin:0;padding:0;
+  counter-reset:ag;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px 64px;
+}
+.agenda li{
+  counter-increment:ag;
+  position:relative;
+  padding:0 0 14px 46px;
+  border-bottom:1px solid var(--line);
+  font-size:22px;
+  line-height:1.35;
+}
+.agenda li::before{
+  content:counter(ag,decimal-leading-zero);
+  position:absolute;left:0;top:4px;
+  font:500 13px var(--font-mono);
+  color:var(--brand);
+  letter-spacing:.08em;
+}
+
+/* ---------- capa ---------- */
+.cover__top{
+  position:absolute;top:44px;left:var(--pad);right:var(--pad);
+  display:flex;align-items:flex-start;justify-content:space-between;z-index:2;
+}
+.cover__main{
+  position:absolute;top:112px;bottom:206px;left:var(--pad);right:var(--pad);
+  display:flex;flex-direction:column;justify-content:center;gap:24px;
+  max-width:1000px;z-index:2;
+}
+.cover__meta{
+  position:absolute;bottom:44px;left:var(--pad);right:var(--pad);
+  display:flex;justify-content:space-between;align-items:flex-end;gap:40px;
+  border-top:1px solid var(--line);padding-top:20px;z-index:2;
+}
+.meta__label{
+  font:500 11px var(--font-mono);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:7px;
+}
+.meta__value{font:500 19px/1.2 var(--font-body);color:var(--fg)}
+.meta__sub{font-size:15px;color:var(--muted);margin-top:2px}
+.cover__ring{
+  position:absolute;right:16px;top:96px;width:300px;height:300px;
+  color:var(--brand);opacity:.14;z-index:1;pointer-events:none;
+}
+
+/* ---------- divisor de seção ---------- */
+.section__num{
+  position:absolute;right:28px;top:50%;transform:translateY(-50%);
+  font:700 196px/1 var(--font-display);
+  letter-spacing:-.06em;
+  color:transparent;
+  -webkit-text-stroke:2px var(--line);
+  z-index:1;pointer-events:none;
+}
+.slide--section .slide__main{gap:14px;z-index:2}
+
+/* ---------- bio ---------- */
+.bio{display:grid;grid-template-columns:250px 1fr;gap:56px;align-items:center}
+.bio__photo{
+  width:230px;height:230px;border-radius:50%;
+  background:var(--surface-2);border:1px solid var(--line);
+  display:grid;place-items:center;
+  font:600 62px var(--font-display);color:var(--muted);
+  overflow:hidden;
+}
+.bio__photo img{width:100%;height:100%;object-fit:cover}
+.bio__body{display:grid;gap:18px}
+
+/* ---------- duas colunas ---------- */
+.cols{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.cols__left{display:grid;gap:16px}
+.stack{display:grid;gap:10px}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 20px;display:grid;gap:4px;
+}
+.card__label{font:500 11px var(--font-mono);letter-spacing:.14em;color:var(--brand)}
+.card h3{margin:0;font:600 20px/1.2 var(--font-display);letter-spacing:-.01em}
+.card p{font-size:15px;line-height:1.45;color:var(--muted)}
+
+/* ---------- código ---------- */
+/* Código e terminal são sempre escuros, nos dois temas: é uma decisão de design
+   (contraste de strings amarelas) e evita código ilegível no tema claro. */
+.code-card{
+  background:#0E0E0D;
+  border:1px solid #2B2B28;
+  border-radius:12px;
+  overflow:hidden;
+  max-width:960px;
+}
+.code-card__bar{
+  display:flex;align-items:center;gap:7px;
+  padding:10px 16px;
+  border-bottom:1px solid #2B2B28;
+  background:#181816;
+}
+.dot{width:8px;height:8px;border-radius:50%;background:#3A3A36}
+.code-card__name{margin-left:10px;font:500 11px var(--font-mono);color:#8A8A84;letter-spacing:.04em}
+.reveal pre{margin:0;width:100%;box-shadow:none}
+.reveal pre code{
+  display:block;
+  padding:20px 22px;
+  background:transparent;
+  font-family:var(--font-mono);
+  font-size:18px;
+  line-height:1.55;
+  max-height:none;
+  color:#F2F2EE;
+}
+.hljs-comment{color:#6E6E66;font-style:italic}
+.hljs-string{color:var(--brand)}
+.hljs-keyword,.hljs-built_in,.hljs-literal{color:#8FD3FF}
+.hljs-number{color:#FFA26B}
+.hljs-title,.hljs-function .hljs-title,.hljs-section{color:#F2F2EE;font-weight:600}
+.hljs-attr,.hljs-attribute{color:#B6E39A}
+.hljs-bullet,.hljs-symbol{color:var(--brand)}
+
+/* ---------- terminal ---------- */
+.term{
+  max-width:940px;
+  border:1px solid #2B2B28;
+  border-radius:12px;
+  overflow:hidden;
+  background:#0E0E0D;
+}
+.term__bar{
+  display:flex;align-items:center;gap:7px;
+  padding:10px 16px;background:#181816;
+  border-bottom:1px solid #2B2B28;
+  font:500 11px var(--font-mono);color:#8A8A84;letter-spacing:.08em;
+}
+.term__body{padding:20px 22px;display:grid;gap:10px;font:400 19px/1.55 var(--font-mono);color:#F2F2EE}
+.term__body .p{color:var(--brand);margin-right:10px;user-select:none}
+.term__body .out{color:var(--muted);padding-left:26px}
+.term__body .ok{color:#B6E39A}
+
+/* ---------- destaque: citação ou número ---------- */
+.quote{
+  margin:0;max-width:940px;
+  font:500 46px/1.16 var(--font-display);
+  letter-spacing:-.025em;
+}
+.quote::before{
+  content:"“";
+  display:block;
+  font:600 90px/0.6 var(--font-display);
+  color:var(--brand);
+  margin-bottom:10px;
+}
+.quote cite{
+  display:block;margin-top:26px;
+  font:400 17px/1.4 var(--font-body);
+  font-style:normal;color:var(--muted);
+}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;align-items:end}
+.stat{display:grid;gap:8px;padding-top:16px;border-top:2px solid var(--brand)}
+.stat b{
+  font:600 76px/1 var(--font-display);
+  letter-spacing:-.045em;
+}
+.stat b span{font-size:.42em;letter-spacing:0;margin-left:2px;color:var(--muted)}
+.stat p{font-size:16px;line-height:1.4;color:var(--muted)}
+
+/* ---------- figura ---------- */
+figure{margin:0;display:grid;gap:12px;max-width:1000px}
+.figure__frame{
+  border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface);
+  padding:18px;display:grid;place-items:center;
+  min-height:300px;
+}
+.figure__frame img{max-width:100%;max-height:340px;display:block}
+.figure__frame svg{width:100%;height:auto;display:block}
+figcaption{
+  font:500 12px/1.4 var(--font-mono);
+  color:var(--muted);letter-spacing:.04em;
+}
+
+/* ---------- exercício ---------- */
+.exercise{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:3px solid var(--brand);
+  border-radius:var(--radius);
+  padding:26px 32px;
+  display:grid;gap:18px;
+  max-width:940px;
+}
+.exercise__meta{
+  font:500 11px var(--font-mono);
+  letter-spacing:.16em;text-transform:uppercase;color:var(--brand);
+}
+.exercise h3{
+  margin:0;font:600 30px/1.15 var(--font-display);letter-spacing:-.02em;
+}
+.steps{counter-reset:st;list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.steps li{
+  counter-increment:st;
+  position:relative;padding-left:38px;
+  font-size:19px;line-height:1.4;
+}
+.steps li::before{
+  content:counter(st);
+  position:absolute;left:0;top:1px;
+  width:22px;height:22px;border-radius:50%;
+  display:grid;place-items:center;
+  font:500 11px var(--font-mono);
+  color:var(--on-brand);background:var(--brand);
+}
+.exercise__goal{
+  border-top:1px solid var(--line);padding-top:14px;
+  font-size:16px;line-height:1.45;color:var(--muted);
+}
+
+/* ---------- referências ---------- */
+.refs{display:grid;max-width:980px;border-top:1px solid var(--line)}
+.refs a{
+  display:grid;grid-template-columns:1fr auto 16px;
+  align-items:baseline;gap:24px;
+  padding:16px 2px;
+  border-bottom:1px solid var(--line);
+  transition:padding-left .15s ease;
+}
+.refs a:hover{padding-left:8px}
+.refs a:hover .refs__label{color:var(--brand)}
+.refs__label{font:500 21px/1.3 var(--font-body)}
+.refs__url{font:400 13px var(--font-mono);color:var(--muted)}
+.refs a::after{content:"↗";font-size:15px;color:var(--muted)}
+
+/* ---------- encerramento ---------- */
+.closing__main{
+  position:absolute;top:96px;left:var(--pad);right:var(--pad);
+  display:flex;flex-direction:column;gap:16px;z-index:2;
+}
+.closing__title{
+  margin:0;font:600 96px/1 var(--font-display);letter-spacing:-.045em;color:var(--brand);
+}
+.slide--closing .refs{
+  position:absolute;left:var(--pad);right:var(--pad);bottom:118px;margin:0;
+}
+.closing__foot{
+  position:absolute;left:var(--pad);right:var(--pad);bottom:38px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--line);padding-top:16px;z-index:2;
+}
+/* ---------- diagrama ---------- */
+.diagram .node{fill:var(--surface);stroke:var(--line);stroke-width:1}
+.diagram .num{fill:var(--brand);font-family:var(--font-mono);font-size:13px;letter-spacing:.12em}
+.diagram .lbl{fill:var(--fg);font-family:var(--font-display);font-size:22px;font-weight:600}
+.diagram .arrow{fill:none;stroke:var(--muted);stroke-width:1.5}
+.diagram .hint{fill:var(--muted);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em}
+
+/* ---------- light theme ---------- */
+html[data-theme="light"] .bullets li::before,
+html[data-theme="light"] .stat,
+html[data-theme="light"] .exercise{border-color:var(--line)}
+html[data-theme="light"] .exercise{border-left-color:var(--brand)}
+html[data-theme="light"] .closing__title{color:var(--ink)}
+html[data-theme="light"] .quote::before{color:var(--brand)}
+html[data-theme="light"] .hljs-comment{color:#8A8A80}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  .reveal .slides section.slide{height:720px;break-inside:avoid}
+  .slide::after{display:none}
+}
+
+/* Acessibilidade: quem pede menos movimento no sistema não recebe transição. */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    transition-duration:.01ms !important;
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Símbolos de marca: um logo e um anel, reaproveitados por todos os slides -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="dio-logo" viewBox="0 0 98 40">
+    <path fill="currentColor" d="M97.058 32.674a6.446 6.446 0 01-3.963 5.96 6.428 6.428 0 01-7.016-1.389 6.443 6.443 0 014.545-10.999c1.704 0 3.338.678 4.544 1.883a6.446 6.446 0 011.89 4.545zM77.737 35.135a16.805 16.805 0 004.415-21.243 16.778 16.778 0 00-8.662-7.637 16.757 16.757 0 00-11.54-.227 16.776 16.776 0 00-8.954 7.292 16.805 16.805 0 003.58 21.4 16.762 16.762 0 0021.16.415zM33.963 20.765V0A12.847 12.847 0 0023 6.138 16.751 16.751 0 003.948 11.66a16.796 16.796 0 00-.458 19.85 16.77 16.77 0 008.342 6.278 16.752 16.752 0 0018.921-5.959 16.797 16.797 0 003.25-9.927c0-.384-.02-.762-.04-1.138zM42.208 12.934a6.387 6.387 0 00-4.517 1.873 6.4 6.4 0 00-1.871 4.522v19.364c3.41 0 6.68-1.356 9.091-3.77a12.878 12.878 0 003.766-9.101v-6.405a6.487 6.487 0 00-1.894-4.582 6.473 6.473 0 00-4.575-1.901z"/>
+    <path fill="currentColor" d="M48.687 6.44a6.445 6.445 0 01-3.971 5.95 6.427 6.427 0 01-7.012-1.396A6.443 6.443 0 0142.254 0c1.706 0 3.342.68 4.548 1.887a6.447 6.447 0 011.885 4.553z"/>
+  </symbol>
+  <symbol id="dio-dots" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <circle cx="90" cy="50" r="5"/><circle cx="80.64" cy="75.71" r="5"/>
+      <circle cx="56.95" cy="89.39" r="5"/><circle cx="30" cy="84.64" r="5"/>
+      <circle cx="12.41" cy="63.68" r="5"/><circle cx="12.41" cy="36.32" r="5"/>
+      <circle cx="30" cy="15.36" r="5"/><circle cx="56.95" cy="10.61" r="5"/>
+      <circle cx="80.64" cy="24.29" r="5"/>
+    </g>
+  </symbol>
+</svg>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- 01 · CAPA -->
+<section class="slide slide--cover" data-chrome="none">
+  <div class="cover__top">
+    <span class="kicker">Spec-Driven Development · DIO</span>
+    <svg class="logo logo--lg" viewBox="0 0 98 40" role="img" aria-label="DIO"><use href="#dio-logo"/></svg>
+  </div>
+  <div class="cover__main">
+    <h1 class="title" data-bind="title"></h1>
+    <p class="lead" data-bind="subtitle"></p>
+  </div>
+  <div class="cover__meta">
+    <div>
+      <p class="meta__label">Expert</p>
+      <p class="meta__value" data-bind="instructor.name"></p>
+      <p class="meta__sub" data-bind="instructor.role"></p>
+    </div>
+    <div>
+      <p class="meta__label">Quando</p>
+      <p class="meta__value" data-bind="date"></p>
+    </div>
+  </div>
+  <svg class="cover__ring" viewBox="0 0 100 100" aria-hidden="true"><use href="#dio-dots"/></svg>
+  <aside class="notes">
+    Abra com a promessa em uma frase: você vai ver um sistema de verdade evoluir
+    por spec — não um TODO app. O que a pessoa sai sabendo fazer ao final.
+  </aside>
+</section>
+
+<!-- 02 · AGENDA -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Roteiro</p>
+    <h2 class="title">O que a gente vai ver</h2>
+    <ol class="agenda">
+      <li>A semana em que o jogo lançou — o problema de mercado</li>
+      <li>O sistema: Game Copilot rodando, antes de qualquer evolução</li>
+      <li>SDD para infraestrutura — evolução de arquitetura começa na spec</li>
+      <li>SDD para agentes — comportamento não-determinístico sob contrato</li>
+      <li>Recap, homework e onde continuar</li>
+    </ol>
+  </div>
+  <aside class="notes">
+    15 + 10 + 15 + 20 + 5 minutos. As duas features do meio são construídas ao vivo.
+  </aside>
+</section>
+
+<!-- 03 · BIO -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main bio">
+    <div class="bio__photo" aria-hidden="true"><img src="https://github.com/thpoiani.png?size=460" alt="Thiago Poiani"></div>
+    <div class="bio__body">
+      <p class="kicker">Quem está falando</p>
+      <h2 class="title">Thiago Poiani</h2>
+      <ul class="bullets bullets--tight">
+        <li>Principal Software Engineer @ Skip.</li>
+        <li>Spec-Driven Development na prática: specs, tickets e PRs como processo.</li>
+        <li>O repositório do Game Copilot é a aula — cada estágio, um ciclo completo.</li>
+        <li>@thpoiani no GitHub e no LinkedIn.</li>
+      </ul>
+    </div>
+  </div>
+  <aside class="notes">
+    Duas linhas bastam; o repositório público fala por si. Criar confiança, não currículo.
+  </aside>
+</section>
+
+<!-- 04 · DIVISOR PARTE 01 -->
+<section class="slide slide--section" data-chrome="min">
+  <div class="slide__main">
+    <p class="kicker">Parte 01</p>
+    <h2 class="title">A semana em que<br>o jogo lançou</h2>
+    <p class="lead muted">O jogador não pode pausar para buscar estratégia — e nenhum detonado cobre tudo.</p>
+  </div>
+  <span class="section__num" aria-hidden="true">01</span>
+  <aside class="notes">
+    Tendência de mercado como gancho, use case como resposta. Não comece pela tecnologia.
+  </aside>
+</section>
+
+<!-- 05 · BULLETS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">O gancho</p>
+    <h2 class="title">GTA VI: o lançamento da década</h2>
+    <ul class="bullets">
+      <li>19/11/2026 — o jogo mais esperado do década nas mãos de milhões de jogadores.</li>
+      <li>Mundo gigante: nenhum detonado cobre tudo.</li>
+      <li>Buscar estratégia hoje = pausar o jogo — quebra a imersão.</li>
+      <li>Lançamento com audiência massiva: a janela é agora.</li>
+    </ul>
+  </div>
+  <aside class="notes">
+    "Na semana em que esta aula sai, o jogo mais esperado da década está nas mãos
+    de milhões de jogadores." O problema é real e tem data.
+  </aside>
+</section>
+
+<!-- 06 · DUAS COLUNAS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">A tendência</p>
+    <h2 class="title">A TV virou plataforma computacional</h2>
+    <div class="cols">
+      <div class="cols__left">
+        <p class="lead">Se a TV é aberta, um assistente de gameplay é produto — não hack.</p>
+        <p class="muted">Sistemas operacionais para TV já existem e já competem por esse espaço.</p>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <span class="card__label">01</span>
+          <h3>A TV fechada</h3>
+          <p>Sistemas que travam o aparelho, empurram ads e telemetria.</p>
+        </div>
+        <div class="card">
+          <span class="card__label">02</span>
+          <h3>A TV aberta</h3>
+          <p>Sistemas que removem ads, melhoram performance (cleanyour.tv) — e abrem a porta para copilotos de jogo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    cleanyour.tv é o exemplo vivo. O copiloto de jogo é a próxima categoria de produto.
+  </aside>
+</section>
+
+<!-- 07 · DIAGRAMA -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">O use case</p>
+    <h2 class="title">Telemetria → perfil → recomendação</h2>
+    <figure>
+      <div class="figure__frame">
+        <svg class="diagram" viewBox="0 0 900 230" role="img" aria-label="Fluxo: eventos de gameplay viram perfil do jogador, cruzam com a base de conhecimento e viram dicas no console">
+          <defs>
+            <marker id="arw1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#8A8A84"/>
+            </marker>
+          </defs>
+          <g>
+            <rect class="node" x="0" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="20" y="66">01</text>
+            <text class="lbl" x="20" y="104">eventos</text>
+
+            <rect class="node" x="236" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="256" y="66">02</text>
+            <text class="lbl" x="256" y="104">perfil</text>
+
+            <rect class="node" x="472" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="492" y="66">03</text>
+            <text class="lbl" x="492" y="104">conhecimento</text>
+
+            <rect class="node" x="708" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="728" y="66">04</text>
+            <text class="lbl" x="728" y="104">dicas</text>
+
+            <path class="arrow" d="M196 82 H230" marker-end="url(#arw1)"/>
+            <path class="arrow" d="M432 82 H466" marker-end="url(#arw1)"/>
+            <path class="arrow" d="M668 82 H702" marker-end="url(#arw1)"/>
+
+            <text class="hint" x="450" y="214" text-anchor="middle">gameplay → jogador → wiki do mundo → recomendação com evidência</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Do evento de gameplay à dica com evidência. Amanhã você pluga o jogo que quiser na mesma interface.</figcaption>
+    </figure>
+  </div>
+  <aside class="notes">
+    Corte didático: começamos na telemetria — a captura de screenshot (OCR/vision) fica fora.
+    Super Mario World na demo; GTA VI no futuro.
+  </aside>
+</section>
+
+<!-- 08 · BULLETS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Escopo</p>
+    <h2 class="title">O que fica fora</h2>
+    <ul class="bullets">
+      <li>Captura e análise de screenshot real (OCR/vision) — começamos nos eventos.</li>
+      <li>LLM no caminho determinístico — regras puras no motor.</li>
+      <li>UI/overlay — o sistema termina nas recomendações no console.</li>
+      <li>Non-goal explícito vale ouro: o que a spec não diz, o agente inventa.</li>
+    </ul>
+  </div>
+  <aside class="notes">
+    Non-goals como slide: o escopo negativo é decisão de spec, não ausência de planejamento.
+  </aside>
+</section>
+
+<!-- 09 · DIVISOR PARTE 02 -->
+<section class="slide slide--section" data-chrome="min">
+  <div class="slide__main">
+    <p class="kicker">Parte 02</p>
+    <h2 class="title">O sistema:<br>Game Copilot</h2>
+    <p class="lead muted">Um sistema de verdade rodando antes de qualquer evolução — o brownfield onde o SDD brilha.</p>
+  </div>
+  <span class="section__num" aria-hidden="true">02</span>
+  <aside class="notes">
+    Mostrar o sistema existente: a wiki, o barramento, o profiler, o advisor. Demo ao final do bloco.
+  </aside>
+</section>
+
+<!-- 10 · DIAGRAMA -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Arquitetura</p>
+    <h2 class="title">Um contrato, consumidores independentes</h2>
+    <figure>
+      <div class="figure__frame">
+        <svg class="diagram" viewBox="0 0 900 230" role="img" aria-label="Arquitetura: telemetria atravessa o barramento de eventos e alimenta os consumidores, que publicam recomendações no console">
+          <defs>
+            <marker id="arw2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#8A8A84"/>
+            </marker>
+          </defs>
+          <g>
+            <rect class="node" x="0" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="20" y="66">01</text>
+            <text class="lbl" x="20" y="104">telemetria</text>
+
+            <rect class="node" x="236" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="256" y="66">02</text>
+            <text class="lbl" x="256" y="104">barramento</text>
+
+            <rect class="node" x="472" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="492" y="66">03</text>
+            <text class="lbl" x="492" y="104">consumidores</text>
+
+            <rect class="node" x="708" y="36" width="192" height="92" rx="10"/>
+            <text class="num" x="728" y="66">04</text>
+            <text class="lbl" x="728" y="104">console</text>
+
+            <path class="arrow" d="M196 82 H230" marker-end="url(#arw2)"/>
+            <path class="arrow" d="M432 82 H466" marker-end="url(#arw2)"/>
+            <path class="arrow" d="M668 82 H702" marker-end="url(#arw2)"/>
+
+            <text class="hint" x="450" y="214" text-anchor="middle">um contrato de evento governa todos os consumidores</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>A interface EventBus é a seam: trocar o transporte não toca nos consumidores.</figcaption>
+    </figure>
+  </div>
+  <aside class="notes">
+    Profiler e advisor são serviços @OnEvent no barramento in-memory. Guarde a seam — ela é a decisão da Parte 03.
+  </aside>
+</section>
+
+<!-- 11 · DUAS COLUNAS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">A base de conhecimento</p>
+    <h2 class="title">A wiki também tem spec</h2>
+    <div class="cols">
+      <div class="cols__left">
+        <p class="lead">OpenWiki/OKF gerada de um detonado de Super Mario World.</p>
+        <p class="muted">39 páginas — e nenhuma camada paralela: sem drift entre dado e texto.</p>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <span class="card__label">01</span>
+          <h3>Frontmatter</h3>
+          <p>Dado estruturado que o motor consome (áreas, saídas, pré-requisitos).</p>
+        </div>
+        <div class="card">
+          <span class="card__label">02</span>
+          <h3>Prosa</h3>
+          <p>A leitura rica do conteúdo — o "porquê" com a evidência da fonte.</p>
+        </div>
+        <div class="card">
+          <span class="card__label">03</span>
+          <h3>Schema</h3>
+          <p>A spec da base: tipos de página e campos obrigatórios, validados no CI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    Frase-tese do bloco: frontmatter = motor · prosa = leitura rica · schema = spec da base.
+    O grafo do openwiki visualize mostra as conexões ao vivo.
+  </aside>
+</section>
+
+<!-- 12 · TERMINAL -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Demo</p>
+    <h2 class="title">Três jogadores, três perfis</h2>
+    <div class="term">
+      <div class="term__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>terminal</span></div>
+      <div class="term__body">
+        <p><span class="p">$</span>npm run demo -- fita=casual speed=2</p>
+        <p class="out">▶ Game Copilot — fita "casual" (speed 2x)</p>
+        <p class="out ok">[profile] casual (confiança 1.0) — bootstrap em 5 eventos</p>
+        <p class="out ok">[advisor] Forest of Illusion 4 não progride — busque a keyhole</p>
+        <p class="out">          do túnel azul (evidência: forest-of-illusion-4)</p>
+      </div>
+    </div>
+    <p class="small muted">O momento canônico: o casual entra em loop na Forest of Illusion e o ProgressionAdvisor aponta a saída secreta.</p>
+  </div>
+  <aside class="notes">
+    Rodar em tempo real; se falhar, cortar para a fita acelerada.
+    Fechar o bloco: "o sistema já recomenda. Agora vamos evoluir ele — com spec, não com chute."
+  </aside>
+</section>
+
+<!-- 13 · DIVISOR PARTE 03 -->
+<section class="slide slide--section" data-chrome="min">
+  <div class="slide__main">
+    <p class="kicker">Parte 03</p>
+    <h2 class="title">SDD para<br>infraestrutura</h2>
+    <p class="lead muted">A evolução de arquitetura também começa na spec — feature nova não é o único gatilho.</p>
+  </div>
+  <span class="section__num" aria-hidden="true">03</span>
+  <aside class="notes">
+    O ciclo é o mesmo da feature nova; o que a spec precisa fixar muda.
+  </aside>
+</section>
+
+<!-- 14 · CITAÇÃO -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <blockquote class="quote">
+      "Quero que os eventos do jogo passem por um barramento de verdade, não por uma fila em memória."
+      <cite>— a iniciativa, vaga de propósito</cite>
+    </blockquote>
+  </div>
+  <aside class="notes">
+    A entrevista transforma a vaga em decisões — não em suposições. Este é o grill ao vivo da aula.
+  </aside>
+</section>
+
+<!-- 15 · BULLETS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">O grill</p>
+    <h2 class="title">O que a entrevista tira da vaga</h2>
+    <ul class="bullets">
+      <li>A interface <span class="mono">EventBus</span> é a seam — e fica intacta.</li>
+      <li>Os consumidores não mudam: o contrato sobrevive à troca.</li>
+      <li>Sem persistência — non-goal registrado na spec.</li>
+      <li>O glossário ganha os termos de infra: barramento, tópico, telemetria.</li>
+    </ul>
+  </div>
+  <aside class="notes">
+    Artefatos na tela: spec, tickets com dependências, glossário. O método transforma cada resposta em requisito testável.
+  </aside>
+</section>
+
+<!-- 16 · TERMINAL -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Implementação</p>
+    <h2 class="title">A mesma execução, o transporte trocado</h2>
+    <div class="term">
+      <div class="term__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>terminal</span></div>
+      <div class="term__body">
+        <p><span class="p">$</span>npm test</p>
+        <p class="out ok">✓ 31 passed (31) — a suíte é o gabarito da migração</p>
+        <p><span class="p">$</span>npm run demo</p>
+        <p class="out">▶ mesma fita, mesmas recomendações — novo transporte</p>
+      </div>
+    </div>
+    <p class="small muted">TDD + code-review acelerados na edição; a suíte verde prova que nenhum consumidor quebrou.</p>
+  </div>
+  <aside class="notes">
+    A seam na prática: o contrato sobrevive à troca. É por isso que a interface EventBus existia desde o bootstrap.
+  </aside>
+</section>
+
+<!-- 17 · DIVISOR PARTE 04 -->
+<section class="slide slide--section" data-chrome="min">
+  <div class="slide__main">
+    <p class="kicker">Parte 04</p>
+    <h2 class="title">SDD para<br>agentes</h2>
+    <p class="lead muted">Comportamento não-determinístico também entra no contrato — o que um agente exige da spec.</p>
+  </div>
+  <span class="section__num" aria-hidden="true">04</span>
+  <aside class="notes">
+    O bloco mais rico: a spec de um agente fixa quando ele reage, o que entrega e o que nunca faz.
+  </aside>
+</section>
+
+<!-- 18 · BULLETS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">A spec do agente</p>
+    <h2 class="title">O que a spec fixa num agente</h2>
+    <ul class="bullets">
+      <li>Quando reage: eventos relevantes + throttle — nunca a cada evento.</li>
+      <li>Contrato de saída: a mesma recomendação, com <span class="mono">evidence</span> citando a wiki.</li>
+      <li>Guardrail: "não invente segredo que não está na wiki" — sem evidência, não publica.</li>
+      <li>Provider é decisão de spec, não de código.</li>
+    </ul>
+  </div>
+  <aside class="notes">
+    A diferença para a Parte 03: aqui a spec fixa o que o agente exige — não só o que o código recebe.
+  </aside>
+</section>
+
+<!-- 19 · TERMINAL -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Demo final</p>
+    <h2 class="title">Dois consumidores, um contrato</h2>
+    <div class="term">
+      <div class="term__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>console</span></div>
+      <div class="term__body">
+        <p class="out ok">[advisor] source=progression-advisor · FoI 4 não progride — keyhole</p>
+        <p class="out ok">[advisor] source=world-advisor · "o túnel azul flutuante com Lakitu</p>
+        <p class="out ok">          esconde a keyhole" (wiki: forest-of-illusion-4)</p>
+      </div>
+    </div>
+    <p class="small muted">Regras e agente no mesmo barramento — a spec definiu o evento.</p>
+  </div>
+  <aside class="notes">
+    A demo que fecha a aula: mesmo evento, dois consumidores — o determinístico e o inteligente, cada um com sua evidência.
+  </aside>
+</section>
+
+<!-- 20 · EXERCÍCIO -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Homework</p>
+    <h2 class="title">Expanda o mundo</h2>
+    <div class="exercise">
+      <p class="exercise__meta">no seu ritmo · individual</p>
+      <h3>Rode o ciclo SDD completo sozinho</h3>
+      <ol class="steps">
+        <li>Escolha uma região do mundo que ainda não está na wiki.</li>
+        <li>Escreva a spec: o que entra, quais páginas, quais campos.</li>
+        <li>Gere as páginas com o agente e valide com o <span class="mono">check:wiki</span>.</li>
+        <li>Abra o PR com as evidências das fontes.</li>
+      </ol>
+      <p class="exercise__goal">Critério de sucesso: PR com a wiki expandida passando no check do CI — e o grafo do visualize mostrando as novas conexões.</p>
+    </div>
+  </div>
+  <aside class="notes">
+    A expansão do conhecimento é o homework ideal: toca em spec, agente e validação — sem tocar no código.
+  </aside>
+</section>
+
+<!-- 21 · RECAP -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Recapitulando</p>
+    <h2 class="title">Cinco coisas para levar</h2>
+    <ul class="checks">
+      <li>A spec é o contrato que sobrevive à sessão.</li>
+      <li>O que você não diz, o agente inventa.</li>
+      <li>SDD serve para feature nova, arquitetura e agentes — o ciclo é o mesmo.</li>
+      <li>A base de conhecimento também tem spec: o schema da wiki.</li>
+      <li>O método transforma cada decisão em requisito testável.</li>
+    </ul>
+  </div>
+  <aside class="notes">
+    A versão que a pessoa repete no elevador.
+  </aside>
+</section>
+
+<!-- 22 · REFERÊNCIAS -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Para saber mais</p>
+    <h2 class="title">Onde continuar</h2>
+    <div class="refs">
+      <a href="https://docs.langchain.com/oss/openwiki/overview" target="_blank" rel="noopener">
+        <span class="refs__label">OpenWiki — a wiki viva do repositório</span>
+        <span class="refs__url">docs.langchain.com/oss/openwiki</span>
+      </a>
+      <a href="https://docs.langchain.com/oss/python/langchain/overview" target="_blank" rel="noopener">
+        <span class="refs__label">LangChain</span>
+        <span class="refs__url">docs.langchain.com/oss/python/langchain</span>
+      </a>
+      <a href="https://docs.nestjs.com/" target="_blank" rel="noopener">
+        <span class="refs__label">NestJS</span>
+        <span class="refs__url">docs.nestjs.com</span>
+      </a>
+      <a href="https://opencode.ai/" target="_blank" rel="noopener">
+        <span class="refs__label">OpenCode — o agente do curso</span>
+        <span class="refs__url">opencode.ai</span>
+      </a>
+      <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">
+        <span class="refs__label">Skills do Matt Pocock</span>
+        <span class="refs__url">github.com/mattpocock/skills</span>
+      </a>
+    </div>
+  </div>
+  <aside class="notes">
+    Deixe este slide no ar durante as perguntas — os mesmos cinco links do encerramento (DECK.links).
+  </aside>
+</section>
+
+<!-- 23 · ENCERRAMENTO -->
+<section class="slide slide--closing" data-chrome="none">
+  <div class="closing__main">
+    <p class="kicker">Fim · obrigado</p>
+    <h2 class="closing__title">Comece pela próxima spec</h2>
+    <p class="lead muted">Transforme o próximo prompt vago em contrato — a ferramenta é escolha sua; o processo é o que muda o jogo.</p>
+  </div>
+  <div class="refs" data-list="links"></div>
+  <div class="closing__foot">
+    <svg class="logo logo--sm" viewBox="0 0 98 40" role="img" aria-label="DIO"><use href="#dio-logo"/></svg>
+    <span class="mono small muted" data-bind="event"></span>
+  </div>
+  <aside class="notes">
+    Convite concreto: escolha a ferramenta (Spec Kit, OpenSpec, Skills) e comece pela próxima spec. Nunca terminar com "era isso, obrigado".
+  </aside>
+</section>
+
+</div>
+</div>
+
+<script type="module">
+import Reveal from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.mjs';
+import Highlight from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/highlight.mjs';
+import Notes from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/notes.mjs';
+import Zoom from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/zoom.mjs';
+
+/* ============================================================
+   CONFIGURAÇÃO — é o único bloco que muda de aula para aula.
+   ============================================================ */
+const DECK = {
+  title: 'Spec-Driven Development: da spec ao produto',
+  subtitle: 'construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato',
+  event: 'Spec-Driven Development',
+  date: 'Novembro 2026',
+  theme: 'dark',            // 'dark' | 'light'
+  instructor: {
+    name: 'Thiago Poiani',
+    role: 'Principal Software Engineer, Skip',
+  },
+  links: [
+    { label: 'OpenWiki — a wiki viva do repositório', url: 'https://docs.langchain.com/oss/openwiki/overview' },
+    { label: 'LangChain', url: 'https://docs.langchain.com/oss/python/langchain/overview' },
+    { label: 'NestJS', url: 'https://docs.nestjs.com/' },
+    { label: 'OpenCode — o agente do curso', url: 'https://opencode.ai/' },
+    { label: 'Skills do Matt Pocock', url: 'https://github.com/mattpocock/skills' },
+  ],
+};
+
+/* ---------- tema ---------- */
+const params = new URLSearchParams(location.search);
+const theme = params.get('theme')
+  || localStorage.getItem('dio-deck-theme')
+  || DECK.theme
+  || 'dark';
+document.documentElement.dataset.theme = theme;
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 't' || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.target instanceof Element && e.target.closest('input, textarea, [contenteditable]')) return;
+  const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem('dio-deck-theme', next);
+});
+
+/* ---------- bindings ---------- */
+const get = (obj, path) => path.split('.').reduce((acc, key) => acc?.[key], obj);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+document.title = DECK.title;
+
+document.querySelectorAll('[data-bind]').forEach((el) => {
+  const value = get(DECK, el.dataset.bind);
+  if (value == null) return;
+  el.textContent = value;
+});
+
+const linkList = document.querySelector('[data-list="links"]');
+if (linkList) {
+  linkList.innerHTML = DECK.links.map((l) => `
+    <a href="${esc(l.url)}" target="_blank" rel="noopener">
+      <span class="refs__label">${esc(l.label)}</span>
+      <span class="refs__url">${esc(l.url.replace(/^https?:\/\//, ''))}</span>
+    </a>`).join('');
+}
+
+document.querySelectorAll('[data-initials]').forEach((el) => {
+  el.textContent = DECK.instructor.name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0].toUpperCase())
+    .join('');
+});
+
+/* ---------- chrome automático ---------- */
+const logo = '<svg class="logo logo--sm" viewBox="0 0 98 40" role="img" aria-label="DIO"><use href="#dio-logo"/></svg>';
+const slides = [...document.querySelectorAll('.slides > section')];
+const total = String(slides.length).padStart(2, '0');
+
+slides.forEach((slide, i) => {
+  const mode = slide.dataset.chrome || 'full';
+  if (mode === 'none') return;
+
+  const page = `<span class="pager"><b>${String(i + 1).padStart(2, '0')}</b><i>/</i>${total}</span>`;
+
+  if (mode === 'full') {
+    const top = document.createElement('div');
+    top.className = 'slide__top';
+    top.innerHTML = `<span class="top__event">${esc(DECK.event)} · ${esc(DECK.date)}</span>${logo}`;
+    slide.prepend(top);
+
+    const foot = document.createElement('div');
+    foot.className = 'slide__foot';
+    foot.innerHTML = `<span>${esc(DECK.instructor.name)}</span>${page}`;
+    slide.append(foot);
+  } else {
+    const foot = document.createElement('div');
+    foot.className = 'slide__foot slide__foot--only';
+    foot.innerHTML = page;
+    slide.append(foot);
+  }
+});
+
+/* ---------- reveal ---------- */
+Reveal.initialize({
+  width: 1280,
+  height: 720,
+  margin: 0,
+  center: false,
+  hash: true,
+  history: true,
+  controls: false,
+  progress: true,
+  slideNumber: false,
+  transition: 'fade',
+  transitionSpeed: 'fast',
+  backgroundTransition: 'fade',
+  plugins: [Highlight, Notes, Zoom],
+  highlight: { escapeHTML: false },
+});
+</script>
+</body>
+</html>
