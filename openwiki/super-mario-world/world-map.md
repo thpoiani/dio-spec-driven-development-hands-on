@@ -4,10 +4,12 @@ type: "Referência"
 openwiki_generated: true
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-16T17:58:26.636Z
+    at: 2026-11-16T18:04:15.378Z
 sources:
   - id: openwiki-source-362e06c30ccfdafd87339cb0
     resource: repo://ARCHITECTURE.md
+  - id: openwiki-source-653c703774f368e1bb4f62f3
+    resource: repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md
 generated: { by: "opencode", at: "2026-11-16T17:58:26.636Z" }
 ---
 

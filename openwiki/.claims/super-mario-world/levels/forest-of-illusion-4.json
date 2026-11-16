@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:8963cf228b635041c959b16d375fa581d84fce009ddba73064ac94b9975d3a45",
+  "claims": [
+    {
+      "id": "claim_c908e9d758ea4a35abdd45c7daf6264e",
+      "statement": "A saída normal da Forest of Illusion 4 não progride — leva de volta a um ponto já desbloqueado do mapa (canônico na Super Mario Wiki).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L23-L23",
+          "version": "repo-lines-v1:sha256:572eb48da2e96e640a9cd0e24929156abd2a16b76308eda424468453a8af6367:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e981f26972384d44a06d7061acad58c0",
+      "statement": "A saída secreta da Forest of Illusion 4 (keyhole no túnel azul flutuante com Lakitu) leva à Forest Secret Area — única forma de sair da floresta.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L23-L23",
+          "version": "repo-lines-v1:sha256:572eb48da2e96e640a9cd0e24929156abd2a16b76308eda424468453a8af6367:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_31429a42039348bf99450cd0245d8963",
+      "statement": "O caminho da keyhole: entrar no túnel azul flutuante com Lakitu; chegar ao topo sem voar é difícil, mas possível — com a Cape é mais fácil.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L23-L23",
+          "version": "repo-lines-v1:sha256:572eb48da2e96e640a9cd0e24929156abd2a16b76308eda424468453a8af6367:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:04:15.378Z"
+  }
+}

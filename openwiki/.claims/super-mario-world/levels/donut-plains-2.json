@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ce10d46d1e85511bad8200dad80e94a4880f820529f4dd67f89b669529abce58",
+  "claims": [
+    {
+      "id": "claim_8a5129265d944dd282f470c198c5541c",
+      "statement": "A saída secreta da Donut Plains 2 leva ao Green Switch Palace, que ativa os blocos ! verdes que desbloqueiam caminhos nos mundos seguintes.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L12-L12",
+          "version": "repo-lines-v1:sha256:02162371b1c949f06fbbcf6a4d0f1765ef0ef19f278cd6f2e08e45131dbbf806:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGEyNzRhMGViYTYwYzVjZTExMDVjNmY4ZTcwOWI1Mjg1ZTgyMDUxNDQxNGU2MjU2MzYyNzU2YjY5MGQ3MTllMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjhiNTMzYmYwMDJkOGVlOTA5YjBjYmQwNTFjZmRkNGZjYWFmZjE1M2JkOTAyMDYzMzI4MGJlYmJmZDI0N2Y0NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_594cb224f69849d1a9ca7c193aa738e7",
+      "statement": "O caminho da secret exit da Donut Plains 2: blocos no teto levam a uma área escondida; soltar a casca azul no bloco amarelo mais alto (exigindo Super Mario) cria a parreira até a keyhole.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L12-L12",
+          "version": "repo-lines-v1:sha256:02162371b1c949f06fbbcf6a4d0f1765ef0ef19f278cd6f2e08e45131dbbf806:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDIxNjIzNzFiMWM5NDlmMDZmYmJjZjZhNGQwZjE3NjVlZjBlZjE5ZjI3OGNkNmYyZTA4ZTQ1MTMxZGJiZjgwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGEyNzRhMGViYTYwYzVjZTExMDVjNmY4ZTcwOWI1Mjg1ZTgyMDUxNDQxNGU2MjU2MzYyNzU2YjY5MGQ3MTllMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjhiNTMzYmYwMDJkOGVlOTA5YjBjYmQwNTFjZmRkNGZjYWFmZjE1M2JkOTAyMDYzMzI4MGJlYmJmZDI0N2Y0NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_486c2d2b422049ffa735a9a5eff1024b",
+      "statement": "Sem o botão verde pisado, a keyhole da Donut Plains 1 é acessada voando de Cape sobre o túnel amarelo após os 4 Koopa Paratroopas em fileira.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L11-L11",
+          "version": "repo-lines-v1:sha256:a696a66ab53b45f884febf79b30ab9d33010f68ae400e5631a544e1736978a0e:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDZlMzcwZjNmYjZiYTI4ZDM2Y2Q2YThlMTQxOWU1ODVlZTBmZjRmZjY5NzY4MzJmM2ZlODI0NDE1ZTczYWU3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ1MGViNTgyOThlMjJmODUwMjdkNjE5YzZkYjc3NmJiYjhiYTNlZWNkMjJmNTI0NzEyNjkzYzUxNGRiZTU1OSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:04:15.378Z"
+  }
+}

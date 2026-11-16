@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:73d352e08b554915ad95f7461f21144be1a470a5b99c3828aeba1a41900085a3",
+  "claims": [
+    {
+      "id": "claim_c85d26dc14634ae7bd58fc5abe0d4654",
+      "statement": "A saída secreta da Forest of Illusion 2 leva ao Blue Switch Palace, que ativa os blocos ! azuis do restante do mundo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L20-L20",
+          "version": "repo-lines-v1:sha256:70444eaa187057fa0ca269ca026527e089e49e959c340c5ce9274983dc877f9f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGE0YmRhNGUzNmIxYzlmZmZhMDAzODZhMzBkNGExYjY1NmQzMTEzMzRkY2IyZDQ1YWU3ZjQ3NGJhYzcwYmY4MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2Q2ODZmYjA5OTZkOTRiOTZhZGRjN2E2ZTgwZTU3OGUzNDViYTc5Y2FmNjcxNjA1M2UwMzE5NzExZDdhNzgxNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b01091f85d904a6ab08fdafed740d695",
+      "statement": "O caminho da secret exit: ao chegar ao bloco ! amarelo, ficar no fundo e nadar para a esquerda até a parede, onde há um compartimento secreto submerso.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L20-L20",
+          "version": "repo-lines-v1:sha256:70444eaa187057fa0ca269ca026527e089e49e959c340c5ce9274983dc877f9f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGE0YmRhNGUzNmIxYzlmZmZhMDAzODZhMzBkNGExYjY1NmQzMTEzMzRkY2IyZDQ1YWU3ZjQ3NGJhYzcwYmY4MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2Q2ODZmYjA5OTZkOTRiOTZhZGRjN2E2ZTgwZTU3OGUzNDViYTc5Y2FmNjcxNjA1M2UwMzE5NzExZDdhNzgxNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:04:15.378Z"
+  }
+}

@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:f65120d4c84c8f19743cfabb30543a9b3a34239d1c6f620bdea4f8bc2465794c",
+  "pageVersion": "sha256:820ac58a472f1be0f433b5d67bfe9b53210df467a68451e16b9b903d2af30fb1",
   "claims": [
     {
       "id": "claim_c2320a0bcb8a4ddba2b754b17ac185e1",
       "statement": "O mundo curado de Super Mario World cobre 6 áreas — Yoshi's Island, Donut Plains, Forest of Illusion, Chocolate Island, Valley of Bowser e Star Road → Special Zone — com bosses (Iggy, Ludwig, Roy, Wendy, Larry), Switch Palaces (Green e Forest) e power-ups (Cape Feather, Fire Flower, Yoshi).",
       "evidence": [
         {
-          "resource": "repo://ARCHITECTURE.md#L202-L215",
-          "version": "repo-lines-v1:sha256:aa0fe7c3236e0c5f53a5f906fd8a6865fb2e61165e6b129664febea5b53b4090:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYzNGNiMzFlMTBiZjI2YTFhZWUzMjllODY3YjI2MjY5ZTgzOTg0ODRhOTYwMmI4YjMwMDcxNGQ5OTMzMzY1YzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2YWE5MWQxY2QzODk5ODMxYTlhNTMzNTFjZDc5MjkwZDFjZWI4NjQxODM5NDE2MGFiNmQ3ZWQ3MTQ2ZTgyZDcifQ"
+          "resource": "repo://ARCHITECTURE.md#L211-L221",
+          "version": "repo-lines-v1:sha256:a418621bed890f7af327f2735923805816e27966ffa9e575fe950e93025c78a9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2NTQyNjY0MGVhOTUwOWNmMTQ2NjMzMDc2MjBlNTIwY2Y0Mzg4Y2EyMWY3MDc5NTc4ZDNhMmZlMzMyZmE3MDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiODE0MzdlNDYyYTVmYThjMmQ1NWE4ODZmYjdiMjU4M2IzMGYzZTdhOTI4MTIwYjllMmZiMjIyZjQ1ZDBjNTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3OWYwZWYwNjFiZjFmOWUyYzU5OGM4NWMwOTA5ZWRiNTI3YzdkY2JhMjIwN2EzODQxMTZhMGQ0NzAxZmVjNzQifQ"
         }
       ]
     },
     {
       "id": "claim_821059d35bbe43d286d36511673d4747",
-      "statement": "As fontes do conhecimento do jogo são o detonado PC do Paulo (PT-BR, ingestão primária) e a Super Mario Wiki (validação canônica do gating — página Secret exit).",
+      "statement": "As fontes do conhecimento do jogo são o detonado PC do Paulo (PT-BR, ingestão primária) e a Super Mario Wiki (validação canônica do gating — página Secret exit), com a tabela completa de links (incluindo referência visual em vídeo) documentada em ARCHITECTURE.md §5.",
       "evidence": [
         {
-          "resource": "repo://ARCHITECTURE.md#L202-L204",
-          "version": "repo-lines-v1:sha256:ce9fb22cedeadb7ac202797ce8f252297e7cb845bb480db8854d54aeed327940:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjM0Y2IzMWUxMGJmMjZhMWFlZTMyOWU4NjdiMjYyNjllODM5ODQ4NGE5NjAyYjhiMzAwNzE0ZDk5MzMzNjVjMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmQ4ZjRlYjliM2FhMGY0Y2RiZjE0OWU5YjNjYWMzNGUzNWRiZDUxNTQxOTkxNjk1YjFiZDFiZjc5OGZiNjI3YSJ9"
+          "resource": "repo://ARCHITECTURE.md#L203-L210",
+          "version": "repo-lines-v1:sha256:9f98d28ade5ad44069325848d0ed9636700c8a10f1d3e5d1322c1f8681b61caa:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTIwMzViMmM3Mjg0YjA1MjI4MTk0ZjQzMWE5NzZhZTg3OTQ4M2M0YTc2NWE1MWU0YWNhYmI3ZWJhNTc3ODJhMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDZiMmJmZjA2OTFlMTFiMTkyYTFjZjAxZTYwM2ZhOGQ3MGYwOWI0M2Q3M2ExMTAwZjViYmNjYjg4NTU2ODY5MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWExYWQyZDcxNmU0ZGUyZWJmNjcxYTAxMzIzYTYyY2RmZjY5MTg0NmU3MWZiMWQ4YTIxZjgwOGMxMDViMGI3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjE3OTUwMTQ3Yjk1NmNjYmYwYTEzNjRkZmQ5ZTViOGU5NzFkNTk1YmU5ZDk2YTk4NTQ5YjE3ODU4MjdiNGVlMSJ9"
         }
       ]
     },
@@ -27,7 +27,7 @@
       "statement": "Na Forest of Illusion, a saída normal da Forest of Illusion 4 não progride para o próximo mundo — o progresso exige a saída secreta (Forest Secret Area), o que caracteriza o labirinto da área.",
       "evidence": [
         {
-          "resource": "repo://ARCHITECTURE.md#L210-L211",
+          "resource": "repo://ARCHITECTURE.md#L217-L218",
           "version": "repo-lines-v1:sha256:e96164925d33ca5b5c57b7243f22c388438eeaa08d542096f0e5d93d9564ff87:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2YwYzM1YzdjOGUxYzMzNDc4ZjM3Yjk5YzdmZjY1OThlYWFlZDZiNGQ1NWZjMTRhOGU3NmYxNjA2MTM3NDg5NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZkNWJkNDA2NzViNDZlNTQwYzY4OWRmM2JmMzExNzJjZDM1NDAzOGM5ZjI4Y2QyOWEwY2JmODIxNzgyODMxMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNmNjE2OWI1Y2NhYWEzNGViZDhkZDQ4YzBlYTE0MTIwYzYyMDI2NWQxZDg1MTQxZGJkYWViYzAzYzMyMjk3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDBjMzc4NTFlYjIyMmRmNTQzNDA4ZjUwN2RkY2EwODA4NDFlYmFjYzIzNTk5MzhlYWY0YThkNTIzOGM3ZWNmNiJ9"
         }
       ]
@@ -37,7 +37,7 @@
       "statement": "Completar Super Mario World exige no mínimo duas saídas secretas; das 96 saídas do jogo, 24 são secretas e todas são necessárias para 100%.",
       "evidence": [
         {
-          "resource": "repo://ARCHITECTURE.md#L211-L213",
+          "resource": "repo://ARCHITECTURE.md#L218-L220",
           "version": "repo-lines-v1:sha256:de3590351ffe03b3fad21e038527e379c38987b8a8c6bc6fecd83d90324a2bb1:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZkNWJkNDA2NzViNDZlNTQwYzY4OWRmM2JmMzExNzJjZDM1NDAzOGM5ZjI4Y2QyOWEwY2JmODIxNzgyODMxMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmQzNzMxMGY4Mzk4NTY0NTgxMzc4OWRmY2NkOWJjMDkwMzY4MGE2NWI4MWFhYjg0ZmIzNTQzYzMzMTZmYzcwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWM3MWIzMzY3N2QzYzlmZGM2ZGRkYjQzYjU0ZTliMzdiZDUxMTYxMjJkMmUyZGY4Njg4NWQ5YjRhM2RiY2U1NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTVjMzdkZDE1MDgzMjNmOWQxODZhYjRlOTY5MWM3Y2FmYzc4OWM2OTA2Mzg5Mzc5NzU3YTBkZTgwNWJjNmYxMSJ9"
         }
       ]
@@ -47,14 +47,28 @@
       "statement": "Os segredos de gating do mundo incluem Donut Plains 2 → Green Switch Palace, Forest of Illusion 2 → Blue Switch Palace, Donut Secret House → Star World 1 e Valley Ghost House → Larry's Castle (entrada secreta do castelo final).",
       "evidence": [
         {
-          "resource": "repo://ARCHITECTURE.md#L204-L210",
+          "resource": "repo://ARCHITECTURE.md#L211-L217",
           "version": "repo-lines-v1:sha256:44dde420c896105d1c2c7499b22ea03834c75d710dac8c60d16b686292069294:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2YwYzM1YzdjOGUxYzMzNDc4ZjM3Yjk5YzdmZjY1OThlYWFlZDZiNGQ1NWZjMTRhOGU3NmYxNjA2MTM3NDg5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjVlZmIzNDk5NjBiZjEwN2YzM2U0NGU5OGJjNWQ1YjVlYmY0NmIxNTE0ZTQxYTJkNDVmYzg2NjgzYTNhNzkwOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGUzNTkwMzUxZmZlMDNiM2ZhZDIxZTAzODUyN2UzNzljMzg5ODdiOGE4YzZiYzZmZWNkODNkOTAzMjRhMmJiMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_324e8b4ee11f40728a69d97b842e2cff",
+      "statement": "Os segredos de gating do mundo incluem Donut Plains 2 → Green Switch Palace, Forest of Illusion 2 → Blue Switch Palace, Forest of Illusion 3 → Roy's Castle, Forest of Illusion 4 → Forest Secret Area, Donut Secret House → Star World 1 e Valley Ghost House → Larry's Castle — cada um com o caminho descrito no digest da fonte.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L211-L221",
+          "version": "repo-lines-v1:sha256:a418621bed890f7af327f2735923805816e27966ffa9e575fe950e93025c78a9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2NTQyNjY0MGVhOTUwOWNmMTQ2NjMzMDc2MjBlNTIwY2Y0Mzg4Y2EyMWY3MDc5NTc4ZDNhMmZlMzMyZmE3MDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiODE0MzdlNDYyYTVmYThjMmQ1NWE4ODZmYjdiMjU4M2IzMGYzZTdhOTI4MTIwYjllMmZiMjIyZjQ1ZDBjNTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3OWYwZWYwNjFiZjFmOWUyYzU5OGM4NWMwOTA5ZWRiNTI3YzdkY2JhMjIwN2EzODQxMTZhMGQ0NzAxZmVjNzQifQ"
+        },
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L7-L33",
+          "version": "repo-lines-v1:sha256:c3400190cde21dc527ac51fe39c442ad286ccd471ab64c9de93ef0455385d560:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MzRiZDAzNGE2YjJjODFmYzExNjRjNmU1MGQxMDI3NWQyYjNhNzMxMTVkNjAxZDBhNjk5N2U5MmY1MzE1YzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5MDY5ZWM3ZWM1MGMwMDI1ZWYyMjFkMTFhZWY1NDIzNGI0NzQ4ZmFmYzFmNDA3MWE1OGUxOTRjMWQ0ODRjYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMwYzM5NGVkY2U3M2NlYzZmMTA3NGZlNTk1MjhkOTE5MzhmZTc2MzFmYmEwMjIxNTZlMTEwOTYyNGQyOGI3NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ5YjUxMTRlMWQwMTk3ZjNlMjNiMWVhYjFkNmEyOTUzMDMzNzM0MGQ4YTY1OWY4NTY4N2RiNzZkNjU5NmJiZWMifQ"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-16T17:58:26.636Z"
+    "at": "2026-11-16T18:04:15.378Z"
   }
 }

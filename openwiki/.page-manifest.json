@@ -2,25 +2,67 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/quickstart.md": {
+      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
+      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6",
       "pageVersion": "sha256:7438d43161eadf9e9695e390e2ffb87fdf928b923fc5e9cab137ae7790e4eacd",
       "completedBy": "opencode",
-      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e",
-      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
-      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6"
+      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e"
+    },
+    "/openwiki/super-mario-world/levels/donut-plains-2.md": {
+      "pageVersion": "sha256:ce10d46d1e85511bad8200dad80e94a4880f820529f4dd67f89b669529abce58",
+      "completedBy": "opencode",
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+    },
+    "/openwiki/super-mario-world/levels/donut-secret-house.md": {
+      "pageVersion": "sha256:483878acd4ecbffa7e165c531f3d8b69fa16417c03dca4290c220462d35dffe4",
+      "completedBy": "opencode",
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+    },
+    "/openwiki/super-mario-world/levels/forest-of-illusion-2.md": {
+      "pageVersion": "sha256:73d352e08b554915ad95f7461f21144be1a470a5b99c3828aeba1a41900085a3",
+      "completedBy": "opencode",
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+    },
+    "/openwiki/super-mario-world/levels/forest-of-illusion-3.md": {
+      "pageVersion": "sha256:e1135aa1ad2a9e9eed53e1d11c6af112cfea2bb0dd959cf783ee0a6917162231",
+      "completedBy": "opencode",
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+    },
+    "/openwiki/super-mario-world/levels/forest-of-illusion-4.md": {
+      "pageVersion": "sha256:8963cf228b635041c959b16d375fa581d84fce009ddba73064ac94b9975d3a45",
+      "completedBy": "opencode",
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+    },
+    "/openwiki/super-mario-world/levels/valley-ghost-house.md": {
+      "pageVersion": "sha256:f5467835fee86fd11c57b60a46f8a373e2137e3ae3d470ddfc9112d508243400",
+      "completedBy": "opencode",
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
     },
     "/openwiki/super-mario-world/schema.md": {
+      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
+      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6",
       "pageVersion": "sha256:db6c96caec0775eff8d0af0b85a2fdc2fd44d435b652dc50734d0c7d030d1899",
       "completedBy": "opencode",
-      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e",
-      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
-      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6"
+      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e"
     },
     "/openwiki/super-mario-world/world-map.md": {
-      "pageVersion": "sha256:f65120d4c84c8f19743cfabb30543a9b3a34239d1c6f620bdea4f8bc2465794c",
+      "pageVersion": "sha256:820ac58a472f1be0f433b5d67bfe9b53210df467a68451e16b9b903d2af30fb1",
       "completedBy": "opencode",
-      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e",
-      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
-      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
     }
   }
 }
