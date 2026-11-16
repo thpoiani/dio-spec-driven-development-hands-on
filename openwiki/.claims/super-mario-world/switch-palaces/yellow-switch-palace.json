@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7043a05a1b4eec08eef52425a7687243652a7e7c1e36eec44d6f18c9b33ade10",
+  "claims": [
+    {
+      "id": "claim_78679879e53a4cf3a73a039ef6b81d11",
+      "statement": "O Yellow Switch Palace é acessado pela saída secreta da Yoshi's Island 2 — o primeiro segredo do jogo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L30-L30",
+          "version": "repo-lines-v1:sha256:4fd456d004015e99e16bc5b9a934aaca4c1c266a87a234b33792ba9973f98c08:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGZkNDU2ZDAwNDAxNWU5OWUxNmJjNWI5YTkzNGFhY2E0YzFjMjY2YTg3YTIzNGIzMzc5MmJhOTk3M2Y5OGMwOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGZkNDU2ZDAwNDAxNWU5OWUxNmJjNWI5YTkzNGFhY2E0YzFjMjY2YTg3YTIzNGIzMzc5MmJhOTk3M2Y5OGMwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjRmZGUzMDA1MTY4NmJkMmM0OGIzMjg3ZjBhNjk3YTRhNTFhYjdlNTRkNDI0NzkzMThmYTY5MDAyNzYzMDExNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjcxMTgzMWM0NGVhNmFiYmYyNTIzNjJlNzUyZGU1MzUyYTNhZDUwMjM2MGRkMjMxMmNiY2ZmYjBlNjU4OWMxYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_8bf2a8e02c014acc8273040f9d115c65",
+      "statement": "Pisar no botão amarelo ativa os blocos ! amarelos do mundo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L30-L30",
+          "version": "repo-lines-v1:sha256:4fd456d004015e99e16bc5b9a934aaca4c1c266a87a234b33792ba9973f98c08:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGZkNDU2ZDAwNDAxNWU5OWUxNmJjNWI5YTkzNGFhY2E0YzFjMjY2YTg3YTIzNGIzMzc5MmJhOTk3M2Y5OGMwOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGZkNDU2ZDAwNDAxNWU5OWUxNmJjNWI5YTkzNGFhY2E0YzFjMjY2YTg3YTIzNGIzMzc5MmJhOTk3M2Y5OGMwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjRmZGUzMDA1MTY4NmJkMmM0OGIzMjg3ZjBhNjk3YTRhNTFhYjdlNTRkNDI0NzkzMThmYTY5MDAyNzYzMDExNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjcxMTgzMWM0NGVhNmFiYmYyNTIzNjJlNzUyZGU1MzUyYTNhZDUwMjM2MGRkMjMxMmNiY2ZmYjBlNjU4OWMxYSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:17:21.144Z"
+  }
+}

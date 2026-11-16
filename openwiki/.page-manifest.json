@@ -267,6 +267,27 @@
       "completedBy": "opencode",
       "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e"
     },
+    "/openwiki/super-mario-world/switch-palaces/blue-switch-palace.md": {
+      "pageVersion": "sha256:18bfec0bbb3886b7cf27e1bee8b0fe44d3c27e4c1470eb73e33b26ba01a60724",
+      "completedBy": "opencode",
+      "completedRunId": "6fb3f576-05c8-47f5-a7fe-483d0b27bf37",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/switch-palaces/green-switch-palace.md": {
+      "pageVersion": "sha256:35cfd8e921b24e0bf2f7c614a8e264b5894ba1a4b52c834b10eafd051553eea8",
+      "completedBy": "opencode",
+      "completedRunId": "6fb3f576-05c8-47f5-a7fe-483d0b27bf37",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/switch-palaces/yellow-switch-palace.md": {
+      "pageVersion": "sha256:7043a05a1b4eec08eef52425a7687243652a7e7c1e36eec44d6f18c9b33ade10",
+      "completedBy": "opencode",
+      "completedRunId": "6fb3f576-05c8-47f5-a7fe-483d0b27bf37",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
     "/openwiki/super-mario-world/world-map.md": {
       "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
       "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413",

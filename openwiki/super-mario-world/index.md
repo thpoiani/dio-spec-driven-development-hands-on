@@ -9,3 +9,4 @@
 - [bosses](bosses/)
 - [levels](levels/)
 - [power-ups](power-ups/)
+- [switch-palaces](switch-palaces/)
