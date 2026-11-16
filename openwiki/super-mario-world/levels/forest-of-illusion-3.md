@@ -20,6 +20,24 @@ Um dos dois níveis de saída da **Forest of Illusion**: sua saída secreta leva
 - **Normal**: segue o curso da floresta.
 - **Secret exit** → **Roy's Castle (#5)**: desça no último túnel verde da fase — a keyhole está no fundo, e você precisa estar com algum power-up (cogumelo, flor de fogo ou pena) para alcançá-la sem tomar dano.
 
+## Dados
+
+```yaml
+type: level
+id: forest-of-illusion-3
+name: Forest of Illusion 3
+area: forest-of-illusion
+kind: main
+exits:
+  - kind: normal
+    goes-to: forest-of-illusion-4
+  - kind: secret
+    goes-to: roys-castle
+prerequisites: [forest-of-illusion-2]
+rewards: []
+boss: false
+```
+
 ## Estratégia
 
 É a rota de gating pelo chefe: quem não quer (ou não consegue) achar o caminho da Forest of Illusion 4 pode sair da floresta pela keyhole do túnel verde — mas o power-up não é opcional: sem ele, apanhar a chave custa vida.

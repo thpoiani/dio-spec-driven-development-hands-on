@@ -20,6 +20,24 @@ Casa fantasma de **Donut Plains** — e a **porta de entrada da Star Road**: sua
 - **Normal**: ao encontrar as cinco moedas no contorno de uma porta, colete pelo menos duas, pise no botão 'P' e atravesse a porta que aparece.
 - **Secret exit** → **Star World 1**: pise no botão 'P' perto da porta flutuante — três blocos "?" aparecem. Bata no bloco diretamente acima da porta: uma parreira cresce levando ao **The Big Boo**, que guarda a saída secreta.
 
+## Dados
+
+```yaml
+type: level
+id: donut-secret-house
+name: Donut Secret House
+area: donut-plains
+kind: side
+exits:
+  - kind: normal
+    goes-to: donut-plains-3
+  - kind: secret
+    goes-to: star-world-1
+prerequisites: [donut-plains-1]
+rewards: []
+boss: false
+```
+
 ## Estratégia
 
 O nível é o pivô do completionist: sem o secret exit da Donut Secret House, a Star Road (e toda a Special Zone) permanece inacessível — exatamente o tipo de bloqueio que a base de conhecimento declara nos `exits` do nível.

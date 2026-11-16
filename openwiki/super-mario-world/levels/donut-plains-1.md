@@ -19,3 +19,21 @@ Primeira fase de **Donut Plains**. Sua saída secreta leva à **Donut Secret 1**
 
 - **Normal**: segue para a Donut Plains 2.
 - **Secret exit** → **Donut Secret 1**: com o Green Switch Palace ativado, a keyhole está no topo da pilha de blocos "!" verdes perto do final (correr com Y para subir). Sem o botão verde: passe pelos 4 Koopa Paratroopas em fileira, corra e voe (de Cape) sobre o túnel amarelo onde está a chave.
+
+## Dados
+
+```yaml
+type: level
+id: donut-plains-1
+name: Donut Plains 1
+area: donut-plains
+kind: main
+exits:
+  - kind: normal
+    goes-to: donut-plains-2
+  - kind: secret
+    goes-to: donut-secret-1
+prerequisites: [iggys-castle]
+rewards: []
+boss: false
+```

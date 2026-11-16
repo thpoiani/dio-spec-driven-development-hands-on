@@ -33,3 +33,13 @@ Quinta área — o **fim do caminho principal**. Fases **Valley of Bowser 1 a 4*
 | Valley of Bowser 4 | normal + secret (→ Front Door + Star World 5) | Dupla saída |
 | Valley Ghost House | normal + secret (→ Larry's Castle) | Keyhole no alto, exige Cape |
 | Larry's Castle | boss **Larry** | Fim do caminho principal |
+
+## Dados
+
+```yaml
+type: area
+id: valley-of-bowser
+name: Valley of Bowser
+order: 5
+unlocks: [front-door]
+```

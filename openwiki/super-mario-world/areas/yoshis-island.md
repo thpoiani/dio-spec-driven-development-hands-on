@@ -30,3 +30,13 @@ Primeira área — o **hub de tutorial**. Fases **Yoshi's Island 1 a 4**, a **Yo
 | Yoshi's Island 4 | normal | Caminho principal |
 | Yoshi's House | especial | Sem saída de progresso (cenário do final) |
 | Iggy's Castle | boss **Iggy** | Libera Donut Plains |
+
+## Dados
+
+```yaml
+type: area
+id: yoshis-island
+name: Yoshi's Island
+order: 1
+unlocks: [donut-plains]
+```

@@ -30,3 +30,13 @@ Quarta área do caminho principal. Fases **Chocolate Island 1, 2 e 3**, com a **
 | Chocolate Island 2 | normal + secret (→ Chocolate Secret) | Timer e moedas mudam o caminho |
 | Chocolate Island 3 | normal (não progride) + secret (→ Chocolate Fortress) | Exige Cape no final |
 | Wendy's Castle | boss **Wendy** | Libera o Valley of Bowser |
+
+## Dados
+
+```yaml
+type: area
+id: chocolate-island
+name: Chocolate Island
+order: 4
+unlocks: [valley-of-bowser]
+```

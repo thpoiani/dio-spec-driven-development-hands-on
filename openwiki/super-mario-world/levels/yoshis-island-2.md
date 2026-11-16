@@ -19,3 +19,21 @@ Segunda fase do caminho principal — com o **primeiro segredo do jogo**: a saí
 
 - **Normal**: → Yoshi's Island 3.
 - **Secret exit** → **Yellow Switch Palace**.
+
+## Dados
+
+```yaml
+type: level
+id: yoshis-island-2
+name: Yoshi's Island 2
+area: yoshis-island
+kind: main
+exits:
+  - kind: normal
+    goes-to: yoshis-island-3
+  - kind: secret
+    goes-to: yellow-switch-palace
+prerequisites: [yoshis-island-1]
+rewards: []
+boss: false
+```

@@ -20,6 +20,24 @@ Nível aquático da **Forest of Illusion** — sua saída secreta ativa o **Blue
 - **Normal**: segue o curso submerso da floresta.
 - **Secret exit** → **Blue Switch Palace**: ao chegar ao bloco "!" amarelo, fique no fundo e nade para a esquerda, direto para a parede — há um compartimento secreto na água.
 
+## Dados
+
+```yaml
+type: level
+id: forest-of-illusion-2
+name: Forest of Illusion 2
+area: forest-of-illusion
+kind: main
+exits:
+  - kind: normal
+    goes-to: forest-of-illusion-3
+  - kind: secret
+    goes-to: blue-switch-palace
+prerequisites: [forest-of-illusion-1]
+rewards: []
+boss: false
+```
+
 ## Estratégia
 
 O Blue Switch Palace é o que abre os blocos "!" azuis — sem ele, trechos de Vanilla Dome e da Forest of Illusion ficam inacessíveis. É um dos dois palácios declarados no esqueleto curado do mundo.
