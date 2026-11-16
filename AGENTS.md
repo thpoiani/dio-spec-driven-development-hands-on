@@ -1,6 +1,6 @@
-# AGENTS.md · Game Copilot (aula 2 — hands-on SDD)
+# AGENTS.md · Game Copilot
 
-Projeto da segunda aula do curso DIO de Spec-Driven Development: assistente de gameplay com telemetria mockada, motor de regras e console. O curso e a aula 1 (estudo comparativo) vivem em `thpoiani/dio-spec-driven-development`.
+Assistente de gameplay: a telemetria do jogo atravessa um barramento de eventos, alimenta um motor de regras determinístico e um console de recomendações.
 
 ## Fontes de verdade (leia antes de qualquer trabalho)
 
@@ -8,7 +8,6 @@ Projeto da segunda aula do curso DIO de Spec-Driven Development: assistente de g
 |---|---|
 | [SCOPE.md](./SCOPE.md) | Escopo, tese, as 13 decisões registradas, non-goals, estágios e checklist |
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | Componentes, contratos (eventos, perfis), base de conhecimento, fitas de demo, testes |
-| [PRESENTATION.md](./PRESENTATION.md) | Roteiro de gravação, protocolo (ao vivo vs. acelerado), esqueleto de slides |
 
 Em conflito entre código e documentos, **os documentos vencem** — e devem ser atualizados se uma decisão mudar (decisões são do Thiago; registre na tabela do SCOPE.md §4).
 
@@ -20,10 +19,10 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 - [x] **Etapa 03 — concluída** (`v0.3`): knowledge-loader (OKF → `KnowledgeIndex`, fail fast) + integração com as 36 páginas reais de SMW
 - [x] **Etapa 04 — concluída** (`v0.4`): `PlayerProfiler` (a inferência dos 3 perfis com thresholds explícitos) + `ProgressionAdvisor` (o gating, o power-up, o objetivo — com `source`/`evidence`) — PRs #25/#26
 - [x] **Etapa 05 — concluída** (`v0.5`): demo in-memory — 3 fitas JSON (casual/completionist/speedrunner), runner com `--speed`, console com a origem/evidência (Issue #27 fechada)
-- [ ] Etapa 06 — **upgrade NestJS 11 → 12** (ESM-only, Standard Schema; a observabilidade nativa `@nestjs/observe` disponível para quando o projeto precisar)
+- [x] **Etapa 06 — concluída** (`v0.6`): upgrade NestJS 11 → 12 (ESM-only, Standard Schema) — a observabilidade nativa (`@nestjs/observe`) fica disponível para quando o projeto precisar
 ## Fluxo de trabalho por etapa
 
-1. **Um ticket por vez, na ordem da fronteira** (issues com blockers fechados, ver §6). Cada **ticket** = uma branch `ticket/<issue>-<slug>` + um **PR próprio** para a `main` com `Closes #N` no corpo — o merge no fechamento do ticket (verde: TDD/review) mantém a `main` sempre com código funcional. Branches **nunca são deletadas**; PRs merged continuam acessíveis e, em ordem, contam a evolução do curso.
+1. **Um ticket por vez, na ordem da fronteira** (issues com blockers fechados, ver §6). Cada **ticket** = uma branch `ticket/<issue>-<slug>` + um **PR próprio** para a `main` com `Closes #N` no corpo — o merge no fechamento do ticket (verde: TDD/review) mantém a `main` sempre com código funcional. A branch é **removida após o merge**; o PR merged continua acessível e, em ordem, conta a evolução do projeto.
 2. Etapas com conteúdo de conhecimento (01, 10) são **manuais com apoio do agente** (Thiago roda o OpenWiki; o agente converte/valida páginas). Estágios de código seguem TDD.
 3. Os estágios gravados (o transporte e o consumidor inteligente) só existem como *gravação* — se estiver trabalhando neles fora de gravação, pare no preparo dos artefatos e confirme com o Thiago.
 
@@ -36,7 +35,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 
 ## Contratos e detalhes
 
-- Non-goals da aula (não implementar): captura/OCR de screenshot, LLM no caminho determinístico, UI, Kafka/RabbitMQ, agente reagindo a cada evento.
+- Non-goals do projeto (não implementar): captura/OCR de screenshot, LLM no caminho determinístico, UI, Kafka/RabbitMQ, agente reagindo a cada evento.
 
 ## Agent skills
 

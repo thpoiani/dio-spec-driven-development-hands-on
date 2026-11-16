@@ -28,9 +28,9 @@ When your output names a domain concept (in an issue title, a refactor proposal,
 
 If the concept you need isn't in the glossary yet, that's a signal: either you're inventing language the project doesn't use (reconsider) or there's a real gap (note it for `/domain-modeling`).
 
-## Domain vocabulary (aula 2)
+## Domain vocabulary
 
-O domínio é o do jogo (Super Mario World) e do evento: perfis `casual`, `completionist`, `speedrunner`; eventos `area_entered`, `level_started`, `level_completed`, `inventory_opened`, `boss_engaged`; componentes `PlayerProfiler`, `ProgressionAdvisor`, `WorldAdvisor`. **Avoid**: "quest", "batalha", "grafo tipado" — ver `SCOPE.md` §4 e `ARCHITECTURE.md` §4.3.
+O domínio é o do jogo (Super Mario World) e do evento: perfis `casual`, `completionist`, `speedrunner`; eventos `area_entered`, `level_started`, `level_completed`, `inventory_opened`, `boss_engaged`; componentes `PlayerProfiler`, `ProgressionAdvisor`. **Avoid**: "quest", "batalha", "grafo tipado" — ver `SCOPE.md` §4 e `ARCHITECTURE.md` §4.3.
 
 ## Flag ADR conflicts
 

@@ -36,7 +36,7 @@ O agente executa o ciclo: `begin` (planejamento) → plano de páginas canônica
 openwiki/
 ├── INSTRUCTIONS.md        # o brief (nossa spec da base): idioma, vocabulário, prioridades
 ├── quickstart.md          # ponto de entrada: mapa das páginas e como usar retrieval
-├── overview.md            # o projeto das duas aulas, tese e non-goals
+├── overview.md            # o projeto, a tese e os non-goals da base
 ├── hands-on/contracts.md  # componentes e contratos (EventBus, perfis, recomendações)
 ├── hands-on/stages.md     # os 10 estágios, branches empilhadas e tracker
 ├── knowledge/schema.md    # o schema OKF da base (tipos de página e campos obrigatórios)

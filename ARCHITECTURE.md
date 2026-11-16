@@ -1,6 +1,6 @@
 # ARCHITECTURE · Game Copilot
 
-> Arquitetura e componentes do sistema da aula 2. Escopo e decisões em [SCOPE.md](./SCOPE.md) · roteiro em [PRESENTATION.md](./PRESENTATION.md).
+> Arquitetura e componentes do sistema. Escopo e decisões em [SCOPE.md](./SCOPE.md).
 > Stack: TypeScript strict · Vitest · OpenWiki (OKF v0.2) · OpenCode + Skills do Matt Pocock como processo de desenvolvimento.
 
 ## 1. Visão geral
@@ -51,7 +51,7 @@ Princípios:
 ### 2.1 `playthrough-runner` (a "fita" do jogo)
 
 - Lê um arquivo de playthrough (`src/playthroughs/<perfil>.ts`) contendo uma sequência de eventos com timestamps e publica cada um no `EventBus`, respeitando o intervalo entre eles.
-- Representa o "jogo rodando" — no mundo real, seria o componente que captura a telemetria da tela de jogo (fora de escopo nesta aula).
+- Representa o "jogo rodando" — no mundo real, seria o componente que captura a telemetria da tela de jogo (fora de escopo).
 - 3 fitas oficiais: `casual.ts`, `completionist.ts`, `speedrunner.ts` (§6).
 
 ### 2.2 `event-bus` (a seam do sistema)
@@ -199,7 +199,7 @@ Envelope comum de todo evento: `{ type, sessionId, ts, data }`.
 > | Super Mario Wiki — *Super Mario World* | Validação por nível/área | <https://www.mariowiki.com/Super_Mario_World> |
 > | YouTube — Todas as Saídas Secretas | Referência visual das rotas | <https://www.youtube.com/watch?v=KjhSUdv5Lwo> |
 
-Estrutura real simplificada para caber em aula (~5 áreas principais + camada secreta). As evidências exatas de cada página vêm do detonado na autoria da wiki.
+Estrutura real simplificada para a demo (~5 áreas principais + camada secreta). As evidências exatas de cada página vêm do detonado na autoria da wiki.
 
 | Área | Conteúdo | Papel no gating |
 |---|---|---|

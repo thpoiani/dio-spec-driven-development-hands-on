@@ -1,6 +1,6 @@
 # INSTRUCTIONS.md — brief da wiki
 
-Esta wiki é a **base de conhecimento dos jogos** do Game Copilot (hands-on da aula 2 do curso DIO de Spec-Driven Development). Ela contém **apenas conhecimento de jogo** — nada de documentação de projeto (arquitetura, processos e decisões vivem nos docs da raiz: `SCOPE.md`, `ARCHITECTURE.md`, `AGENTS.md`).
+Esta wiki é a **base de conhecimento dos jogos** do Game Copilot. Ela contém **apenas conhecimento de jogo** — nada de documentação de projeto (arquitetura, processos e decisões vivem nos docs da raiz: `SCOPE.md`, `ARCHITECTURE.md`, `AGENTS.md`).
 
 ## Organização: um jogo por pasta
 
