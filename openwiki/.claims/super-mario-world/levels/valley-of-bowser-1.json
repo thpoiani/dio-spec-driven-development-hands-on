@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1bff563b0eda33de4c74fbbd095fe6ee03483631520efee907ca654319d3ca0f",
+  "claims": [
+    {
+      "id": "claim_dbb0531ca88f48ee871914fd926ba52d",
+      "statement": "Valley of Bowser 1 é a primeira fase do vale final, com pré-requisito Wendy's Castle e saída normal para a Valley of Bowser 2.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L22-L22",
+          "version": "repo-lines-v1:sha256:2a1b231427505c05225a0280ab880fd3679843b0ac0f85a75bce3ed0889c4c71:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmExYjIzMTQyNzUwNWMwNTIyNWEwMjgwYWI4ODBmZDM2Nzk4NDNiMGFjMGY4NWE3NWJjZTNlZDA4ODljNGM3MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmExYjIzMTQyNzUwNWMwNTIyNWEwMjgwYWI4ODBmZDM2Nzk4NDNiMGFjMGY4NWE3NWJjZTNlZDA4ODljNGM3MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODVjMGM3ZDhmYzFiMzRjZTY0ODQ2NTAwNTBjNmNmMWMzMTVjOTljYzZkMjc0N2JlNjUwYjRkZTRlZTkwMGRhYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTMyM2E5ODM1OTg2NjgwZjg3MTVjYWM5NTQwNWI1OWRiMmI0N2EzODE4MDg0ODIyMmM0ZGZlNTA4ZTE2YjE1MSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:01386145f98b4a8f62e233517d59a277ba8e39ec5bd63a6f6efac80b48099c11",
+  "claims": [
+    {
+      "id": "claim_2f5386c168774af6ae00c6070cfcff8c",
+      "statement": "Wendy's Castle é o castelo de Chocolate Island, com a boss Wendy — derrotá-la libera o Valley of Bowser.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L41-L47",
+          "version": "repo-lines-v1:sha256:d4780a2c16e8f21caa2a81f0569775482513c024dbdf043465b383262e55feae:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDNjOWExYjA4OTFkZTk5NTAwMGU3YTA5ODUzNDEzZWNjOTFiZTQ4OThhNTFjNDUxNGU1NzAxODgyNDcwNWY5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjY2M2ZmZTBjMzgxZGRkZGM5OThhY2QzOWJkNmUwZWU5YjA3N2Q0NjYzNzViMDkyMmU1Zjg1ZGRiNzU2MWM4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjBjMTUxYTczYzhkMTJjOTc0MDZhNjUzZTg1Y2UwM2M2MmUzNzRkNzI5YjEzMjE1Y2RjYjg1NzY2MzlmYWNmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGRmODU3NmQ2MDYyMWQ1YTE5OTlkNGRkYzM4MmRjZDEyZGE5ZTEzODM0YWQ2ZDhkZjMwNzYyNmJhNzgxYzBlOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ae71df483a69481db542ea2e9e0448b4",
+      "statement": "O castelo tem pré-requisitos Chocolate Island 1 e Chocolate Fortress (via secret da CI 3), e saída normal para a Valley of Bowser 1; a Cape é o power-up recomendado para castelos.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L20-L21",
+          "version": "repo-lines-v1:sha256:f242aae74f0c93ab86937992d2e7d25d1591fb31953b7e41b92f9f2da88da458:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGRlN2ZmMzg4YjRmNGIwZTc4OWVkNzUxMDI0MWM3YjAzZTE1YTUxZmM4ODVmZGI4NDdhNmUyZWI0NWRkZGFmOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWYyOTNiNGFhYmYxMzEzNjE4ODc5YzRkNTg4YmRkZTBlMGIxODhjMDZlMDMxMzZhZWM2MWUyNDEyYzA3MWVjNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTE0Y2RkZmZlY2M0ZjFlODA4ZWU3NWVhYjYyYzBkMWJlY2Y5NWQ3YjNkN2E2ZjgzYWNiMTUwODM3Yzg0ZWQ4ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWFkMWY0YjczZGY3ZTA1YjkyNTU4MjgwNWJjNGQzYjYyNmU3MTg3MGExOTIxOWU3OWEwMDYyNGRiYWNhNDg0ZSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

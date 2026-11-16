@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:14b7678a634291e46b78169988ddce61091250ab6ffb8032311d103cda8d9c28",
+  "claims": [
+    {
+      "id": "claim_66784fccabd5454abaa36790c744e3c7",
+      "statement": "Yoshi's Island 2 é a segunda fase do caminho principal, com saída normal para a Yoshi's Island 3.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L17-L17",
+          "version": "repo-lines-v1:sha256:14a19d7333e5be0da9765cee2cb68b08b173a6352e7cfe5ef0582f3d339d639b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTYwMjA1OTE5MGQ2MDZkMzgwOThlMjg1NzZmNjFkMjI4YTRlMzAxZTNlZWU4MTA1Mzk3N2ZiYmU1ZDg1NjEyZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjQxOWU0ODI3YzlkNjNkMTkwMTZkNGMyYWRlOWEwZGJjZTY4NzIxNjczZTNlNDI4NmRhNTI1MTM0M2NiZTMyNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_fd0fb9ea825241d7a2a674e482272b1c",
+      "statement": "A saída secreta da Yoshi's Island 2 leva ao Yellow Switch Palace, que ativa os blocos ! amarelos (o primeiro segredo do jogo).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L30-L30",
+          "version": "repo-lines-v1:sha256:4fd456d004015e99e16bc5b9a934aaca4c1c266a87a234b33792ba9973f98c08:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGZkNDU2ZDAwNDAxNWU5OWUxNmJjNWI5YTkzNGFhY2E0YzFjMjY2YTg3YTIzNGIzMzc5MmJhOTk3M2Y5OGMwOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGZkNDU2ZDAwNDAxNWU5OWUxNmJjNWI5YTkzNGFhY2E0YzFjMjY2YTg3YTIzNGIzMzc5MmJhOTk3M2Y5OGMwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjRmZGUzMDA1MTY4NmJkMmM0OGIzMjg3ZjBhNjk3YTRhNTFhYjdlNTRkNDI0NzkzMThmYTY5MDAyNzYzMDExNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjcxMTgzMWM0NGVhNmFiYmYyNTIzNjJlNzUyZGU1MzUyYTNhZDUwMjM2MGRkMjMxMmNiY2ZmYjBlNjU4OWMxYSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

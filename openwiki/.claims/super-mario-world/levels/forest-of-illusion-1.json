@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:373c716e9bac40915522db5d30a29630388c72c3ed0d0c9a4d5af92bd87de949",
+  "claims": [
+    {
+      "id": "claim_d44e28a307cd498d91052e878eb17d0f",
+      "statement": "A saída normal da Forest of Illusion 1 segue o curso da fase; a saída secreta leva à Forest Ghost House.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L19-L19",
+          "version": "repo-lines-v1:sha256:643f43dd1fea8928d118a0639ff7f3217c801ea63e372292cdd2c5d013410802:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQzZjQzZGQxZmVhODkyOGQxMThhMDYzOWZmN2YzMjE3YzgwMWVhNjNlMzcyMjkyY2RkMmM1ZDAxMzQxMDgwMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQzZjQzZGQxZmVhODkyOGQxMThhMDYzOWZmN2YzMjE3YzgwMWVhNjNlMzcyMjkyY2RkMmM1ZDAxMzQxMDgwMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDYxMjEwMDEyZDE5MjRjOTBjM2NlNWMxNDJiZTQ3ZGE5ZjVmNDhjMDI2ZjNkMTRiNzY1MmVkNWIwMmY2Y2FlMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2a0a50abc8c44645b6bea990d3de2779",
+      "statement": "O caminho da secret exit: após as toras com os Wigglers há um bloco ? com um Balão P; flutuar para baixo/à esquerda, abaixo das toras, revela a keyhole numa plataforma abaixo da tora mais longa.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L19-L19",
+          "version": "repo-lines-v1:sha256:643f43dd1fea8928d118a0639ff7f3217c801ea63e372292cdd2c5d013410802:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQzZjQzZGQxZmVhODkyOGQxMThhMDYzOWZmN2YzMjE3YzgwMWVhNjNlMzcyMjkyY2RkMmM1ZDAxMzQxMDgwMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQzZjQzZGQxZmVhODkyOGQxMThhMDYzOWZmN2YzMjE3YzgwMWVhNjNlMzcyMjkyY2RkMmM1ZDAxMzQxMDgwMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDYxMjEwMDEyZDE5MjRjOTBjM2NlNWMxNDJiZTQ3ZGE5ZjVmNDhjMDI2ZjNkMTRiNzY1MmVkNWIwMmY2Y2FlMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

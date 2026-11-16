@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:5aef6d6a2c92dce7b18e7886d99c39f4190c84e2daf5622c1e7659d4b043c9d5",
+  "claims": [
+    {
+      "id": "claim_0b1e8cb3a2ad4ec6b713d9b7a0c572e1",
+      "statement": "Iggy's Castle é o castelo de Yoshi's Island, com o boss Iggy — derrotá-lo libera Donut Plains. Castelos não têm secret exits (canônico).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L41-L47",
+          "version": "repo-lines-v1:sha256:d4780a2c16e8f21caa2a81f0569775482513c024dbdf043465b383262e55feae:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDNjOWExYjA4OTFkZTk5NTAwMGU3YTA5ODUzNDEzZWNjOTFiZTQ4OThhNTFjNDUxNGU1NzAxODgyNDcwNWY5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjY2M2ZmZTBjMzgxZGRkZGM5OThhY2QzOWJkNmUwZWU5YjA3N2Q0NjYzNzViMDkyMmU1Zjg1ZGRiNzU2MWM4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjBjMTUxYTczYzhkMTJjOTc0MDZhNjUzZTg1Y2UwM2M2MmUzNzRkNzI5YjEzMjE1Y2RjYjg1NzY2MzlmYWNmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGRmODU3NmQ2MDYyMWQ1YTE5OTlkNGRkYzM4MmRjZDEyZGE5ZTEzODM0YWQ2ZDhkZjMwNzYyNmJhNzgxYzBlOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f8f10b68ed5042db85d1d8970e5c4ed4",
+      "statement": "O castelo tem pré-requisito Yoshi's Island 4 e saída normal para a Donut Plains 1.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L17-L17",
+          "version": "repo-lines-v1:sha256:14a19d7333e5be0da9765cee2cb68b08b173a6352e7cfe5ef0582f3d339d639b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTYwMjA1OTE5MGQ2MDZkMzgwOThlMjg1NzZmNjFkMjI4YTRlMzAxZTNlZWU4MTA1Mzk3N2ZiYmU1ZDg1NjEyZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjQxOWU0ODI3YzlkNjNkMTkwMTZkNGMyYWRlOWEwZGJjZTY4NzIxNjczZTNlNDI4NmRhNTI1MTM0M2NiZTMyNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

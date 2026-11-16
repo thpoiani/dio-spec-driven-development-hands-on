@@ -5,4 +5,5 @@
 
 # Diretórios
 
+- [areas](areas/)
 - [levels](levels/)
