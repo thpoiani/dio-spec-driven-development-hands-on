@@ -8,47 +8,96 @@
       "completedBy": "opencode",
       "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e"
     },
+    "/openwiki/super-mario-world/areas/chocolate-island.md": {
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f",
+      "pageVersion": "sha256:e7ee845624883f90001d8f00743578fbc0fec694d99311c86e56a92337ff20ab",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/areas/donut-plains.md": {
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f",
+      "pageVersion": "sha256:65996bde5a2b78cf14042f476b0046627a96cf0e714ad1b2692ca4bb992bf6a5",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/areas/forest-of-illusion.md": {
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f",
+      "pageVersion": "sha256:5dc9c0099382c4cb2581d6b567ebd3baeef4dc0a604693db7d24f5393a68bb34",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/areas/star-road.md": {
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f",
+      "pageVersion": "sha256:9c5da684fae8a630830d5e09c7dfb8379629931b4f1e93b1bd95e4f6c5cd82fb",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/areas/valley-of-bowser.md": {
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f",
+      "pageVersion": "sha256:e94546f25448270b3b43d0b65d3c6d66f321a0d4ec23d2eaf89a49327ef5eb60",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/areas/yoshis-island.md": {
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f",
+      "pageVersion": "sha256:cbeb94cde9792d0122205213b66b23fc9dfa6a331e403b4b4af9a00c5c04c45f",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/levels/chocolate-island-1.md": {
+      "pageVersion": "sha256:d0160fc8f045c70383687b17b1c55018553d4797c63f8510a3fb77a8a9b85315",
+      "completedBy": "opencode",
+      "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7",
+      "gitHead": "8854ab81bb741924a7095f49c3624d8b9ffb665c",
+      "sourceFingerprint": "sha256:01da1f6ab800ee0e6912887e30a6bcb64997d041992d110fe89223f144e63c0f"
+    },
     "/openwiki/super-mario-world/levels/donut-plains-2.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:ce10d46d1e85511bad8200dad80e94a4880f820529f4dd67f89b669529abce58",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     },
     "/openwiki/super-mario-world/levels/donut-secret-house.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:483878acd4ecbffa7e165c531f3d8b69fa16417c03dca4290c220462d35dffe4",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     },
     "/openwiki/super-mario-world/levels/forest-of-illusion-2.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:73d352e08b554915ad95f7461f21144be1a470a5b99c3828aeba1a41900085a3",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     },
     "/openwiki/super-mario-world/levels/forest-of-illusion-3.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:e1135aa1ad2a9e9eed53e1d11c6af112cfea2bb0dd959cf783ee0a6917162231",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     },
     "/openwiki/super-mario-world/levels/forest-of-illusion-4.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:8963cf228b635041c959b16d375fa581d84fce009ddba73064ac94b9975d3a45",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     },
     "/openwiki/super-mario-world/levels/valley-ghost-house.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:f5467835fee86fd11c57b60a46f8a373e2137e3ae3d470ddfc9112d508243400",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     },
     "/openwiki/super-mario-world/schema.md": {
       "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
@@ -58,11 +107,11 @@
       "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e"
     },
     "/openwiki/super-mario-world/world-map.md": {
+      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
+      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e",
       "pageVersion": "sha256:820ac58a472f1be0f433b5d67bfe9b53210df467a68451e16b9b903d2af30fb1",
       "completedBy": "opencode",
-      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3",
-      "gitHead": "94aee49a8808f83042e3362771fdbf602a51bab5",
-      "sourceFingerprint": "sha256:a4053ae97a883ff31b15218a922151ffd6b16fdff5b553f9b074d6d558d2955e"
+      "completedRunId": "391d1fec-f3a8-46ac-874e-88b39aa517d3"
     }
   }
 }

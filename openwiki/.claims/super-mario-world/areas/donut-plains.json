@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:65996bde5a2b78cf14042f476b0046627a96cf0e714ad1b2692ca4bb992bf6a5",
+  "claims": [
+    {
+      "id": "claim_1ebb127dd9c8469dab3af118a7cb1bad",
+      "statement": "Donut Plains é a segunda área do caminho principal: fases Donut Plains 1-4, Donut Ghost House, Donut Secret 1, Donut Secret House e Ludwig's Castle.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L15-L24",
+          "version": "repo-lines-v1:sha256:32b9c2d8e9cb3890c21eca845aed3e8d64c4ce78c1216e008f18b366b9ebd7d9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhOGRkNzU5NWYwN2I3MWRlMDA1ZDM0YjI0OWE5Y2QxOTdmODVmNTRkNzVmM2U0MzM4NjZlNTcwNmU4ZWRkMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZGZiODE2MzQ2YzE2MzJkMDMwZjZmNjc1ZjQ3NmUzODEyM2YwNTFkNDcwMGI5YThjZmM2Y2RlNWEyZmVlZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1ZTYyODI2ZDIxZWYyNWMxOWEzYzE4YWI5YTQwNGFkNGM5NWRjZWRmYzc5NmM0ZjE5ZWI1NjcxNWVmYTE1NDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmMjAzMDM2ZmM4OGQ2MWI2ZTJiMGMwNDQ0NTRmNGEyYmRiMzIwOTMwOTE1N2Y2ZGIyMGU5NTFhOWRmNTJhZDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_77adba7c73c74096a2b9148ed195bdda",
+      "statement": "Derrotar Ludwig (Ludwig's Castle) libera a Forest of Illusion.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L18-L18",
+          "version": "repo-lines-v1:sha256:5cb0682bc5eec6af7d1330c8d2b9fd3a4a50a5891bc5acdc31f8da06e2308dea:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiMDY4MmJjNWVlYzZhZjdkMTMzMGM4ZDJiOWZkM2E0YTUwYTU4OTFiYzVhY2RjMzFmOGRhMDZlMjMwOGRlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiMDY4MmJjNWVlYzZhZjdkMTMzMGM4ZDJiOWZkM2E0YTUwYTU4OTFiYzVhY2RjMzFmOGRhMDZlMjMwOGRlYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjI1YzkwZGJmYjZkMzNjOWZjYjZlNzk0N2I1MWI2YzdkZWRkMDA5NDZjMmY0MTUyNzY1ZTQzNGY4YzYwYzE0OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODVjMGM3ZDhmYzFiMzRjZTY0ODQ2NTAwNTBjNmNmMWMzMTVjOTljYzZkMjc0N2JlNjUwYjRkZTRlZTkwMGRhYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4cb054ce4e81412dbedfbd5c5b56bb30",
+      "statement": "Os segredos de Donut Plains: DP 2 → Green Switch Palace, DP 1 → Donut Secret 1 e Donut Secret House → Star World 1 (a porta da Star Road).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L11-L14",
+          "version": "repo-lines-v1:sha256:f85b382375567dfadaa7d8e1a8e4264ec222895bf251e32067a76989cf237e78:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTI1MDViMzZiN2FhMzk3NDY1NTI3ZDg3Y2Y5ZTc3ODIyZGI4MzU3MzFhYmFiOWJjOThiYTcwYTI2MDc1NTc5ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDZlMzcwZjNmYjZiYTI4ZDM2Y2Q2YThlMTQxOWU1ODVlZTBmZjRmZjY5NzY4MzJmM2ZlODI0NDE1ZTczYWU3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWVjYjEwN2E2NTA1ZWEwMDIzMzg4MWI1Njg5OTYyMWRiNTIyODVhOTBkNDM4ZDdiYzhlMzgzY2ZlMWZiNDc2ZSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

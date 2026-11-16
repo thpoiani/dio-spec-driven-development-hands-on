@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:e94546f25448270b3b43d0b65d3c6d66f321a0d4ec23d2eaf89a49327ef5eb60",
+  "claims": [
+    {
+      "id": "claim_5bbfb39044e644d1b24149c03338ab64",
+      "statement": "Valley of Bowser é a quinta área e o fim do caminho principal: fases VoB 1-4, Valley Fortress (secret de VoB 2), Valley Ghost House (entrada secreta do castelo final) e Larry's Castle.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L15-L24",
+          "version": "repo-lines-v1:sha256:32b9c2d8e9cb3890c21eca845aed3e8d64c4ce78c1216e008f18b366b9ebd7d9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhOGRkNzU5NWYwN2I3MWRlMDA1ZDM0YjI0OWE5Y2QxOTdmODVmNTRkNzVmM2U0MzM4NjZlNTcwNmU4ZWRkMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZGZiODE2MzQ2YzE2MzJkMDMwZjZmNjc1ZjQ3NmUzODEyM2YwNTFkNDcwMGI5YThjZmM2Y2RlNWEyZmVlZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1ZTYyODI2ZDIxZWYyNWMxOWEzYzE4YWI5YTQwNGFkNGM5NWRjZWRmYzc5NmM0ZjE5ZWI1NjcxNWVmYTE1NDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmMjAzMDM2ZmM4OGQ2MWI2ZTJiMGMwNDQ0NTRmNGEyYmRiMzIwOTMwOTE1N2Y2ZGIyMGU5NTFhOWRmNTJhZDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ec5ef3ae0938496f84e548482b23abaa",
+      "statement": "O gating do vale: VoB 2 → Valley Fortress, Valley Ghost House → Larry's Castle pela entrada secreta (exige Cape), e Larry's Castle encerra o caminho principal.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L26-L27",
+          "version": "repo-lines-v1:sha256:00ecad127054b0f7af2ec10053af634fe7971ae54889005069d8545a9fcb08ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjdjMzNmMTU1MjgzNWViMTFkYTQyMGM1YjQ1Yjk3NjJlYTM1N2UyNTNlNTMyNjc1MGQwNDY3NDM4NzgyNGI5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjFmMTFlZDgxODAzYmYxZDQ3MDUwYTVkY2ZmYmNjMWYyOTdmZWM5YTFiZWU2ZWZhY2JkYzNkZDA1ZTA0NDQxOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2ff59ae5d2f44d5e8bc271ad782f657a",
+      "statement": "A saída secreta do Valley of Bowser 4 é dupla: leva à Front Door do castelo de Bowser e à Star World 5.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L28-L28",
+          "version": "repo-lines-v1:sha256:1bc855d819ae6c176c88f19d1bd47e7e3c6a6554e03d0e71df39ce69a7b281d0:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWJjODU1ZDgxOWFlNmMxNzZjODhmMTlkMWJkNDdlN2UzYzZhNjU1NGUwM2QwZTcxZGYzOWNlNjlhN2IyODFkMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWJjODU1ZDgxOWFlNmMxNzZjODhmMTlkMWJkNDdlN2UzYzZhNjU1NGUwM2QwZTcxZGYzOWNlNjlhN2IyODFkMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTVkNTRmNmJkY2Y5MWU3YmJkMmMwYTE2YzE5YWM2YWE0M2IyNmQ2NjUzZDM1NGRiOTZmMTUwZGZiNzI1MTkyMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmIxMjdlOThlNjhhYTg5YTFhOGYwN2M4NmM1NWNhOTJmZGYwYzIzZTZhMzA2NWVjN2Q3MjFmMjg4YWIwOWVmYyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}
