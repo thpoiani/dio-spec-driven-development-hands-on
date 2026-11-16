@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:5f624576ec4fb0401e1e297a0e5b617b1b8e71840eb8d35395872d9377cdae63",
+  "claims": [
+    {
+      "id": "claim_a6a7727203d24501bebe03d29666ab06",
+      "statement": "Yoshi é a montaria do jogo: alcance extra, flutuação segura e pulos especiais.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L35-L39",
+          "version": "repo-lines-v1:sha256:82f7c159e8c9a1b275764c12364feb2e4f892bba5dc1ae03225bf1b17b2011d9:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzg0M2Q0ZjVkNjgzYzhmMzZlOTRlMDBhYzg4NzQ3MTA0YmZjY2ZhZTJhMTk4ZThiODkwNjc5ODFiN2UxZGFlZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODRlMjA4ODk2MGFkNTkzZTU5MzJlZmJmMGRmMzkxMDE2NTY3NmI4YzIwM2QyN2VmMTY0YWYzZDU2ZGU0ZTA2YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzI3YTEzNmIwZDkyOGRhYWVmMDA4Yjk2MzI5MzU5NDQ4NmU4ZjU4MjRmNTIyN2M2MTg1YzUwM2M3MWFhNzYwYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTBlYmNmYWM5NDBkOTYxNWI0NjMzOTJjYzE4M2RkNmRhZjIyOWJmYTcwMjRhNzExYWEzZGQ0ZGExNWM0MmVmYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f1465aa417a74cbfba06bdf96e44615e",
+      "statement": "Na Cheese Bridge Area, chegar ao final com Yoshi e planar atrás do portal revela a saída secreta (Soda Lake); na Star World 2, nadar com o bebê Yoshi azul atravessa a fase rapidamente sem deixá-lo comer cinco inimigos.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L18-L30",
+          "version": "repo-lines-v1:sha256:f324e006f11d49644d47a2323ccbd715aa891603aa044faeb768bdd00236e583:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2ZTcxMzE5YWE5MTgxMjNlZDNlZTU3NDFiMDhjNDFiYmEwZDE3NTQ3MGY2MjA3ODc1NTk2NmVmYTk4ZDQ2MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkYmVjY2I1ZDQ1YzJkZmJmN2I5ZjI3NTFhOWFhZjAxNGUxN2Q4YTM4OGRjMzY3YTIzOWRiZGIwZmNlNDQxNTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlY2IxMDdhNjUwNWVhMDAyMzM4ODFiNTY4OTk2MjFkYjUyMjg1YTkwZDQzOGQ3YmM4ZTM4M2NmZTFmYjQ3NmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk4ODIxMTlkMTk2MGVhNDJmOTdjMGZiZWI1Y2NlYzlmZGJlMTNhMzIyYTQ4OGRhODJkMTdjNmE1MTQzNThmNTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:18:24.120Z"
+  }
+}

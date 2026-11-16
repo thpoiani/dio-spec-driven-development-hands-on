@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ed212b82e8420c074c29ce98c2ea491e63434fa8e81d4f8388e2b812419f22fc",
+  "claims": [
+    {
+      "id": "claim_5c69eb4de953497283a388f14da77cbc",
+      "statement": "Iggy é o boss do Iggy's Castle (Yoshi's Island) — derrotá-lo libera Donut Plains.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L41-L47",
+          "version": "repo-lines-v1:sha256:d4780a2c16e8f21caa2a81f0569775482513c024dbdf043465b383262e55feae:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDNjOWExYjA4OTFkZTk5NTAwMGU3YTA5ODUzNDEzZWNjOTFiZTQ4OThhNTFjNDUxNGU1NzAxODgyNDcwNWY5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjY2M2ZmZTBjMzgxZGRkZGM5OThhY2QzOWJkNmUwZWU5YjA3N2Q0NjYzNzViMDkyMmU1Zjg1ZGRiNzU2MWM4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjBjMTUxYTczYzhkMTJjOTc0MDZhNjUzZTg1Y2UwM2M2MmUzNzRkNzI5YjEzMjE1Y2RjYjg1NzY2MzlmYWNmNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGRmODU3NmQ2MDYyMWQ1YTE5OTlkNGRkYzM4MmRjZDEyZGE5ZTEzODM0YWQ2ZDhkZjMwNzYyNmJhNzgxYzBlOCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:18:24.120Z"
+  }
+}

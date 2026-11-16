@@ -50,6 +50,41 @@
       "completedBy": "opencode",
       "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
     },
+    "/openwiki/super-mario-world/bosses/iggy.md": {
+      "pageVersion": "sha256:ed212b82e8420c074c29ce98c2ea491e63434fa8e81d4f8388e2b812419f22fc",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/bosses/larry.md": {
+      "pageVersion": "sha256:705a6ca097d713340d8ad0958d494da9e493df37636e71d1ec1a828e40943085",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/bosses/ludwig.md": {
+      "pageVersion": "sha256:e4564556cf52fea30547a6e6aee8e0583e88d9257adaee31cc1c9acc7ec67cf6",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/bosses/roy.md": {
+      "pageVersion": "sha256:95f490988fa2b276ed627e163c950d12e5b43bebb7756bc9ac4e89386a48b60c",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/bosses/wendy.md": {
+      "pageVersion": "sha256:f9140640824a19f1fc54d874035b1ee7be04b7521d9afb4e757206e5983feb16",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
     "/openwiki/super-mario-world/levels/chocolate-island-1.md": {
       "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
       "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413",
@@ -203,6 +238,27 @@
       "pageVersion": "sha256:4abbc6a3a1920b920ec58d864de870116f9dafc49c9061af2e039f828f9128f9",
       "completedBy": "opencode",
       "completedRunId": "00e42214-9384-432d-85c7-d456defe51d7"
+    },
+    "/openwiki/super-mario-world/power-ups/cape-feather.md": {
+      "pageVersion": "sha256:80ab347a519b4205491a1e06d6581b9c87088dfcb50cd490950986bc7b3ae76f",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/power-ups/fire-flower.md": {
+      "pageVersion": "sha256:b9fd69210954ad1d7ed557fd56dacc309f0cbf2599ee44a474aee58ecaac25fc",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
+    },
+    "/openwiki/super-mario-world/power-ups/yoshi.md": {
+      "pageVersion": "sha256:5f624576ec4fb0401e1e297a0e5b617b1b8e71840eb8d35395872d9377cdae63",
+      "completedBy": "opencode",
+      "completedRunId": "cb432e66-93b3-445b-a7eb-f5e469ec9965",
+      "gitHead": "434ad3567099f81fa0b17d83168b9a7553316f8e",
+      "sourceFingerprint": "sha256:993e631c84ec9e3992531286482fe483b38c939a810cb18e40ca08e6e8999413"
     },
     "/openwiki/super-mario-world/schema.md": {
       "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",

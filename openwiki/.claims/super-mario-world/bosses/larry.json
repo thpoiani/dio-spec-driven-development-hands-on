@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:705a6ca097d713340d8ad0958d494da9e493df37636e71d1ec1a828e40943085",
+  "claims": [
+    {
+      "id": "claim_3e3e1c593bd14b8d8103e208e745a3c3",
+      "statement": "Larry é o boss do Larry's Castle #7 (Valley of Bowser) — o último do caminho principal, com duas entradas: a frente e a secreta pela Valley Ghost House (keyhole no alto, exige Cape).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L27-L27",
+          "version": "repo-lines-v1:sha256:5565ca573af3e7f2d80ef6f1a3b2da091136d01830bc637311e146f15c8d9dd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b3ad4130eca54e4a9ecf9ceefec2f7c1",
+      "statement": "Derrotar Larry abre o confronto final com Bowser (Front Door/Back Door), que tem três fases: MechaKoopas, Big Steelys e a perseguição em zigue-zague ao balão.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L23-L23",
+          "version": "repo-lines-v1:sha256:572eb48da2e96e640a9cd0e24929156abd2a16b76308eda424468453a8af6367:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:18:24.120Z"
+  }
+}

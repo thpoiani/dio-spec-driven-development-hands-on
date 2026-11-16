@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:80ab347a519b4205491a1e06d6581b9c87088dfcb50cd490950986bc7b3ae76f",
+  "claims": [
+    {
+      "id": "claim_0ac7a8badb874b1797620ecd210d3a02",
+      "statement": "A Cape Feather é o power-up de voo planado e ataque de giro, recomendado para castelos e fortrezas e para keyholes altos (Forest of Illusion 4, Valley Ghost House, Chocolate Island 3).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L23-L27",
+          "version": "repo-lines-v1:sha256:3ae7d97ba600177af750ad75247b0db0a01ab83ab9a5890134d153f7c8555a65:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_32de06eeb92a4b7ab1a3c31758784072",
+      "statement": "Cape Feather, Fire Flower e Yoshi aparecem como recompensas (rewards) de fases específicas do mundo curado.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L35-L39",
+          "version": "repo-lines-v1:sha256:82f7c159e8c9a1b275764c12364feb2e4f892bba5dc1ae03225bf1b17b2011d9:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzg0M2Q0ZjVkNjgzYzhmMzZlOTRlMDBhYzg4NzQ3MTA0YmZjY2ZhZTJhMTk4ZThiODkwNjc5ODFiN2UxZGFlZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODRlMjA4ODk2MGFkNTkzZTU5MzJlZmJmMGRmMzkxMDE2NTY3NmI4YzIwM2QyN2VmMTY0YWYzZDU2ZGU0ZTA2YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzI3YTEzNmIwZDkyOGRhYWVmMDA4Yjk2MzI5MzU5NDQ4NmU4ZjU4MjRmNTIyN2M2MTg1YzUwM2M3MWFhNzYwYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTBlYmNmYWM5NDBkOTYxNWI0NjMzOTJjYzE4M2RkNmRhZjIyOWJmYTcwMjRhNzExYWEzZGQ0ZGExNWM0MmVmYSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:18:24.120Z"
+  }
+}
