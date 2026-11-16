@@ -43,6 +43,22 @@ npm run typecheck    # tsc --noEmit
 npm run check:wiki   # valida o schema da wiki OpenWiki
 ```
 
+### Wiki visual (grafo do conhecimento)
+
+A base de conhecimento (`openwiki/`) pode ser explorada como grafo interativo com leitor Markdown lado a lado:
+
+```bash
+npm install -g openwiki   # CLI (uma vez; Node 22.22+)
+openwiki visualize        # abre o navegador (loopback, padrão porta 4321)
+```
+
+O grafo é construído dos links Markdown entre as páginas (`## Conexões` em cada conceito) e atualiza ao vivo conforme a wiki é editada. Opções úteis:
+
+```bash
+openwiki visualize --port 4400 --no-open    # porta específica, sem abrir o browser
+openwiki visualize openwiki --export site/graph   # export estático (hospedável)
+```
+
 ## O que roda hoje (`v0.6`)
 
 | Componente | O que faz |
