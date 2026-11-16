@@ -7,6 +7,8 @@ export const GAME_TOPIC = {
   levelCompleted: "game/telemetry/level_completed",
   inventoryOpened: "game/telemetry/inventory_opened",
   bossEngaged: "game/telemetry/boss_engaged",
+  profileChanged: "game/profile_changed",
+  recommendations: "game/recommendations",
 } as const;
 
 export type GameTopic = (typeof GAME_TOPIC)[keyof typeof GAME_TOPIC];
@@ -21,44 +23,61 @@ export type AreaId =
 
 export type ExitKind = "normal" | "secret" | "keyhole";
 
-export interface AreaEntered {
+export type PlayerProfile = "casual" | "completionist" | "speedrunner";
+
+export interface AreaEnteredData {
   area: AreaId;
 }
 
-export interface LevelStarted {
+export interface LevelStartedData {
   level: string;
 }
 
-export interface LevelCompleted {
+export interface LevelCompletedData {
   level: string;
   exit: ExitKind;
   durationMs: number;
 }
 
-export interface InventoryOpened {
+export interface InventoryOpenedData {
   reason: "check" | "collect";
 }
 
-export interface BossEngaged {
+export interface BossEngagedData {
   boss: string;
   level: string;
 }
 
-export interface GameEvent<T extends GameTopic = GameTopic> {
-  type: T;
-  sessionId: string;
-  ts: number;
-  data: EventData<T>;
+export interface ProfileChangedData {
+  profile: PlayerProfile;
+  confidence: number;
+  signals: string[];
 }
 
-export type EventData<T extends GameTopic> = T extends typeof GAME_TOPIC.areaEntered
-  ? AreaEntered
+export interface GameEventBase<T extends GameTopic> {
+  sessionId: string;
+  ts: number;
+}
+
+export type EventPayload<T extends GameTopic> = T extends typeof GAME_TOPIC.areaEntered
+  ? AreaEnteredData
   : T extends typeof GAME_TOPIC.levelStarted
-    ? LevelStarted
+    ? LevelStartedData
     : T extends typeof GAME_TOPIC.levelCompleted
-      ? LevelCompleted
+      ? LevelCompletedData
       : T extends typeof GAME_TOPIC.inventoryOpened
-        ? InventoryOpened
+        ? InventoryOpenedData
         : T extends typeof GAME_TOPIC.bossEngaged
-          ? BossEngaged
-          : never;
+          ? BossEngagedData
+          : T extends typeof GAME_TOPIC.profileChanged
+            ? ProfileChangedData
+            : never;
+
+export type GameEvent<T extends GameTopic = GameTopic> = T extends GameTopic
+  ? {
+      type: T;
+      sessionId: string;
+      ts: number;
+      data: EventPayload<T>;
+    }
+  : never;
