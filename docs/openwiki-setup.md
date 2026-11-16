@@ -65,6 +65,7 @@ Grafo interativo das páginas com leitor markdown lado a lado (export estático:
 
 - Depois de mudanças no código/docs, peça a atualização: o OpenWiki compara a fonte com as evidências dos Claims e só regenera o que ficou obsoleto (run limpa = no-op).
 - **Nunca edite páginas geradas à mão** — atualize a fonte e regenere. As próximas páginas do mundo (áreas, níveis, power-ups, bosses — tickets #3–#7) entram como update run quando o digest do detonado estiver no repositório.
+- **Índices de seção são regenerados no `finish`**: ao deletar páginas/pastas, rode um update run para que o `index.md` da raiz e das seções reflitam a mudança (índices órfãos de pastas deletadas saem só nessa regeneração). A conformidade com o schema das páginas é checada pelo `npm run check:wiki` (39/39 na etapa 01).
 
 ## 8. Fontes do mundo
 

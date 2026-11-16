@@ -8,6 +8,4 @@ okf_version: "0.2"
 
 # Diretórios
 
-- [hands-on](hands-on/)
-- [knowledge](knowledge/)
 - [super-mario-world](super-mario-world/)
