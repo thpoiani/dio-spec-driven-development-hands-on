@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { Inject, Injectable } from "@nestjs/common";
 import { EventEmitter2 } from "@nestjs/event-emitter";
 import { type GameEvent, type GameTopic } from "../../domain/events/game-events.js";
 
@@ -15,7 +15,9 @@ import { type GameEvent, type GameTopic } from "../../domain/events/game-events.
  */
 @Injectable()
 export class EventBusService {
-  constructor(private readonly emitter: EventEmitter2) {}
+  constructor(
+    @Inject(EventEmitter2) private readonly emitter: EventEmitter2,
+  ) {}
 
   publish<T extends GameTopic>(event: GameEvent<T>): void {
     this.emitter.emit(event.type, event);
