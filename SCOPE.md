@@ -63,8 +63,8 @@ O desenvolvimento acontece em **10 estágios** (que organizam as issues) e em **
 | 03 | issue do estágio | `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast) + fixtures | Offline | `v0.3` |
 | 04 | issue do estágio | `PlayerProfiler` (3 perfis) + `ProgressionAdvisor` (services `@OnEvent`) | Offline | `v0.4` |
 | 05 | issue do estágio | 3 fitas (JSON) + runner com `--speed` + console + `npm run demo` — **barramento in-memory** (sem broker, sem docker) | Offline | `v0.5` |
-| 06 | issue do estágio | Observabilidade: **`nestjs-otel`** + OpenObserve (traces por sessionId) | Offline | `v0.6` |
-| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + EMQX com **E2E tracing** (`traceparent` via User-Property MQTT 5 — o trace do produtor ao consumidor atravessa o broker) + **MQTTX** para a injeção manual ao vivo e o barramento visível | **Gravada ao vivo** | `v0.7` |
+| 06 | issue do estágio | **Upgrade NestJS 11 → 12**: os `@nestjs/*` na v12 (ESM-only — nosso `type: module` ✓), o migration guide revisado (hook ordering, lifecycle), a suíte verde; a **observabilidade nativa** (`@nestjs/observe`) fica disponível para quando o projeto precisar | Offline | `v0.6` |
+| 07 | issue do estágio | **Migração MQTT**: `@nestjs/microservices` (transporter MQTT) + EMQX | **Gravada ao vivo** | `v0.7` |
 | 08 | issue do estágio | `WorldAdvisor`: agente LangChain (Nest provider) | **Gravada ao vivo** | `v0.8` |
 | 09 | issue do estágio | Expansão do mundo (Star Road / Special Zone) | **Homework** dos alunos | `v0.9` |
 
@@ -72,7 +72,7 @@ Regras de repositório:
 
 - O projeto é este repositório; **cada ticket = branch + PR** com `Closes #N`; o merge acontece no fechamento do ticket e as branches permanecem — os PRs merged, em ordem, são a evolução do curso.
 - O estágio 07 é a **migração MQTT gravada ao vivo** (o contrato sobrevive, o transporte troca); o estágio 08 é o **agente gravado ao vivo**. O estágio 09 é o homework, com spec + tickets pré-produzidos.
-- `nestjs-otel` na raiz ✅ antes da gravação (tracker **GitHub Issues**, labels de triagem, single-context).
+- `-matt-pocock-skills` na raiz ✅ antes da gravação (tracker **GitHub Issues**, labels de triagem, single-context).
 
 ## 7. Roteiro da gravação (resumo)
 
@@ -80,9 +80,9 @@ Regras de repositório:
 |---|---|---|
 | Abertura | 15' | Gancho GTA VI (19/11) + tendência TV + use case + non-goals |
 | Tour do core | 10' | Arquitetura, base de conhecimento, demo dos 3 playthroughs |
-| Feature 1 (etapa 08) | ~15' | `event-broker` — SDD para infraestrutura |
-| Feature 2 (etapa 09) | ~20' | `world-advisor` — SDD para agentes |
-| Encerramento | 5' | Recap, homework (`feature/10`), convite |
+| Feature 1 (etapa 07) | ~15' | `event-broker` — SDD para infraestrutura |
+| Feature 2 (etapa 08) | ~20' | `world-advisor` — SDD para agentes |
+| Encerramento | 5' | Recap, homework (`feature/09`), convite |
 
 Detalhe completo (falas, telas, cortes): [PRESENTATION.md](./PRESENTATION.md).
 

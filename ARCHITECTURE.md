@@ -138,13 +138,13 @@ Atrás do bloco "!" há uma keyhole escondida... (prosa que o agente lê)
 
 ### 2.8 Infra
 
-- `docker-compose.yml`: serviço `emqx` (porta 1883 + dashboard 18083, OTLP para o OpenObserve). Única dependência de runtime fora do npm.
+- `docker-compose.yml`: serviço `emqx` (porta 1883 + dashboard 18083). Única dependência de runtime fora do npm.
 
 ## 3. Estrutura de pastas (proposta — NestJS com camadas DDD)
 
 ```text
 dio-spec-driven-development-hands-on/
-├── docker-compose.yml               # EMQX (etapa 07) + OpenObserve (etapa 06)
+├── docker-compose.yml               # EMQX (etapa 07)
 ├── package.json / tsconfig.json / vitest.config.ts
 ├── AGENTS.md / CODING_STANDARDS.md / GLOSSARY.md / docs/agents/
 ├── docs/openwiki-setup.md           # guia de setup da base de conhecimento

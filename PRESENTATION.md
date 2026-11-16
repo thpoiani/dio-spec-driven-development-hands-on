@@ -43,7 +43,7 @@
 - Demo (tempo real): `npm run demo` — as três fitas (`casual`, `completionist`, `speedrunner`) e o momento mágico: o casual entra em **loop na Forest of Illusion** e o ProgressionAdvisor aponta a saída secreta.
 - Fechar: "o sistema já recomenda. Agora vamos evoluir ele — com spec, não com chute."
 
-### Bloco C · Feature 1 (etapa 08): `event-broker` — SDD para infraestrutura (~15')
+### Bloco C · Feature 1 (etapa 07): `event-broker` — SDD para infraestrutura (~15')
 
 **Objetivo**: mostrar que SDD não é só para feature nova — é para evolução de arquitetura.
 **Tela**: grill ao vivo → artefatos na tela → implementação acelerada → demo.
@@ -54,7 +54,7 @@
 - Artefatos na tela: spec (com o non-goal "sem persistência"), tickets com dependências, glossário recebendo "broker", "tópico", "telemetria de gameplay".
 - Implementação acelerada (TDD + code-review) → demo real: `docker compose up` + `npm run demo` com o EMQX logando os tópicos — "a mesma demo de antes, agora fluindo por um broker de verdade."
 
-### Bloco D · Feature 2 (etapa 09): `world-advisor` — SDD para agentes (~20')
+### Bloco D · Feature 2 (etapa 08): `world-advisor` — SDD para agentes (~20')
 
 **Objetivo**: o mesmo ciclo para um comportamento não-determinístico — SDD para agentes.
 **Tela**: grill ao vivo (o mais rico da aula) → artefatos → implementação acelerada → demo lado a lado.
@@ -76,7 +76,7 @@
 **Tela**: slides.
 
 - Recap (a versão "elevador"): a spec é o contrato que sobrevive à sessão; o que você não diz, o agente inventa; SDD serve para feature nova, arquitetura e agente; a base de conhecimento também tem spec (o schema da wiki).
-- **Homework para os alunos**: `feature/10-knowledge-expansion` — a spec + tickets já estarão publicados como Issues no GitHub (repo do curso); o desafio é expandir o mundo (Star Road / Special Zone) na wiki e rodar o ciclo completo sozinho.
+- **Homework para os alunos**: `feature/09-knowledge-expansion` — a spec + tickets já estarão publicados como Issues no GitHub (repo do curso); o desafio é expandir o mundo (Star Road / Special Zone) na wiki e rodar o ciclo completo sozinho.
 - Convite: escolha a ferramenta que preferir (Spec Kit, OpenSpec, Skills) e transforme o próximo prompt vago em spec. Links no closing.
 
 ## 4. Esqueleto de slides (~24, template dio-slides)
@@ -104,7 +104,7 @@ Parte 04 · feature 02: SDD para agentes
  23 demo           mesmo evento, dois consumidores: regras + agente citando a wiki
 Parte 05 · encerramento
  25 recap          spec é contrato · não disse = inventou · infra e agente no mesmo ciclo
- 26 homework       feature/10-knowledge-expansion com spec pronta no repo
+ 26 homework       feature/09-knowledge-expansion com spec pronta no repo
  27 referências    OpenWiki · OKF · Skills · EMQX · cleanyour.tv
  28 convite        transforme o próximo prompt vago em spec
 ```

@@ -20,8 +20,8 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 - [x] **Etapa 03 — concluída** (`v0.3`): knowledge-loader (OKF → `KnowledgeIndex`, fail fast) + integração com as 36 páginas reais de SMW
 - [x] **Etapa 04 — concluída** (`v0.4`): `PlayerProfiler` (a inferência dos 3 perfis com thresholds explícitos) + `ProgressionAdvisor` (o gating, o power-up, o objetivo — com `source`/`evidence`) — PRs #25/#26
 - [x] **Etapa 05 — concluída** (`v0.5`): demo in-memory — 3 fitas JSON (casual/completionist/speedrunner), runner com `--speed`, console com a origem/evidência (Issue #27 fechada)
-- [ ] Etapa 06 — observabilidade (`nestjs-otel` + OpenObserve, traces por sessionId)
-- [ ] Etapa 07 — **gravação**: migração MQTT (EMQX com E2E tracing + `traceparent` via User-Property)
+- [ ] Etapa 06 — **upgrade NestJS 11 → 12** (ESM-only, Standard Schema; a observabilidade nativa `@nestjs/observe` disponível para quando o projeto precisar)
+- [ ] Etapa 07 — **gravação**: migração MQTT (EMQX como transporte)
 - [ ] Etapa 08 — **gravação**: `WorldAdvisor` (agente LangChain + Ollama local, Nest provider)
 - [ ] Etapa 09 — **homework**: expansão do mundo (Star Road / Special Zone) — spec + tickets pré-produzidos quando o resto estiver estável
 
