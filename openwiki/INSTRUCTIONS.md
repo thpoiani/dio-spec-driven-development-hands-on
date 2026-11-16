@@ -1,26 +1,28 @@
 # INSTRUCTIONS.md — brief da wiki
 
-Este repositório é o **Game Copilot**: o hands-on da aula 2 do curso DIO de Spec-Driven Development — assistente de gameplay com telemetria mockada, MQTT, motor de regras determinístico e agente LLM, desenvolvido em 10 estágios (um por branch) passando pelo ciclo das Skills do Matt Pocock.
+Esta wiki é a **base de conhecimento dos jogos** do Game Copilot (hands-on da aula 2 do curso DIO de Spec-Driven Development). Ela contém **apenas conhecimento de jogo** — nada de documentação de projeto (arquitetura, processos e decisões vivem nos docs da raiz: `SCOPE.md`, `ARCHITECTURE.md`, `AGENTS.md`).
 
-## Prioridades e escopo das páginas
+## Organização: um jogo por pasta
 
-1. Documente o **Game Copilot**: componentes, contratos, estágios e a base de conhecimento do mundo do jogo.
-2. Fontes de verdade (evidência preferencial dos Claims): `SCOPE.md` (escopo, decisões, non-goals), `ARCHITECTURE.md` (arquitetura e contratos), `PRESENTATION.md` (roteiro) e os issues do estágio no GitHub.
-3. **Idioma**: português (pt-BR). Identificadores canônicos de código/conhecimento em inglês kebab-case.
+Cada jogo tem uma pasta com o slug do título (`openwiki/<game-slug>/`), contendo:
 
-## Vocabulário do domínio (obrigatório)
+- `schema.md` — os tipos de página e campos obrigatórios do jogo (a spec daquele conhecimento);
+- `world-map.md` (ou equivalente) — o esqueleto curado do mundo e o gating;
+- páginas de entidades do jogo (níveis/áreas/objetos/personagens), geradas e curadas a partir de fontes registradas.
 
-- Perfis: `casual`, `completionist`, `speedrunner`.
-- Eventos: `area_entered`, `level_started`, `level_completed`, `inventory_opened`, `boss_engaged`.
-- Componentes: `EventBus` (interface) · `InMemoryEventBus`/`MqttEventBus` · `PlayerProfiler` · `ProgressionAdvisor` · `WorldAdvisor` · `knowledge-loader` · `console-ui`.
-- **Avoid**: "quest" (Mario tem fases/objetivos), "batalha" (é `boss_engaged`), "grafo tipado" (a wiki OpenWiki/OKF é a única camada de conhecimento).
+**Jogo novo no futuro = pasta nova** com o schema e as fontes daquele jogo. Os consumidores (motor de regras, agente) leem a wiki sem saber de qual jogo ela vem.
 
-## Non-goals do projeto (não apresentar como planos)
+## Estado atual
 
-Captura/OCR de screenshot; LLM fora do `WorldAdvisor`; UI/overlay; Kafka/RabbitMQ; agente reagindo a cada evento.
+- `super-mario-world/` — em construção (ingestão do detonado PC do Paulo + validação canônica via Super Mario Wiki).
 
-## Notas de geração
+## Regras de conteúdo (obrigatórias)
 
-- Evidência dos Claims: aponte para os arquivos de documentação na raiz (`repo://SCOPE.md`, `repo://ARCHITECTURE.md`) e, quando existirem, para código/testes.
-- Os estágios 08 e 09 são gravados ao vivo na aula; páginas sobre eles descrevem o contrato planejado, não código existente.
-- A Special Zone é o homework (`feature/10-knowledge-expansion`) — fora do escopo das páginas de conhecimento.
+1. **Somente conhecimento de jogo**: mundo, progressão, gating, itens, personagens, estratégias. Nunca arquitetura do projeto, componentes, processos ou issues.
+2. **Provenance em toda página**: `sources` apontando o detonado/fonte; afirmações materializadas como Claims com evidência.
+3. **Prosa em português (pt-BR)**; identificadores canônicos em inglês kebab-case.
+4. **Fail fast**: página fora do schema do jogo é erro de validação, não conteúdo aceito.
+
+## Vocabulário (por jogo)
+
+- **super-mario-world**: perfis `casual`, `completionist`, `speedrunner`; eventos `area_entered`, `level_started`, `level_completed`, `inventory_opened`, `boss_engaged`. **Avoid**: "quest", "batalha", "grafo tipado".

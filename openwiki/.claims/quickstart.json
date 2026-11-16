@@ -1,40 +1,40 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:292fa6489058fb5eab7ad74500c82ef1601cba6494724512debd4614fa7aadd7",
+  "pageVersion": "sha256:7438d43161eadf9e9695e390e2ffb87fdf928b923fc5e9cab137ae7790e4eacd",
   "claims": [
     {
-      "id": "claim_fe1808be547e4d30b30a9f005b912cd8",
-      "statement": "Esta wiki é a documentação viva do Game Copilot, o hands-on da aula 2 do curso DIO de Spec-Driven Development: um assistente de gameplay com telemetria via MQTT, perfil de jogador, motor de regras determinístico e agente LLM.",
+      "id": "claim_f5ae19cae97043ca984d3f6640c68558",
+      "statement": "Esta wiki é a base de conhecimento dos jogos do Game Copilot, organizada por título do jogo (uma pasta openwiki/<game-slug>/ por jogo) e contém apenas conhecimento de jogo — a documentação do projeto vive nos docs da raiz do repositório.",
       "evidence": [
         {
-          "resource": "repo://README.md#L1-L5",
-          "version": "repo-lines-v1:sha256:60d94dbb463a88b49330b094cdae54ba5c4f545ce40a081571c74d14a80cd97b:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzc5ZjAzYWI5MzlhMGYzMTE5NzFlNmY4ZGQ1YTlmMTg4NjA3MzM4ZjM3OThkY2QyMTU4OTJkZWIxOWQzZDhkYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzNiNWE3NWZhMGE5YmUzNTZhNmU0ZDlmMTYxYjQ0OGExYTdhOGEyZmU4OTk2ZTE5YWU4YjU1ZDNiODE2YjMyYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjk4NjUyZThmNTA2NjdkMGRhMTJkMDM0M2VlZmM0ZDUzNjBhNWU2ZmI2YWIxOWYzNDRmMjhjNmZkNjk5Y2NmMyJ9"
+          "resource": "repo://AGENTS.md#L35-L35",
+          "version": "repo-lines-v1:sha256:7a720ea365c364133a37bf3763bfa0f6cfcfe2f4d0685808740005b03bec6752:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjFjODc0YjU4OTZjYTEyZmQzNGIwYzFlY2QwNmYzYmE2ZThlYTJlYmM1ZDAyZGFmZjgxN2E3Zjc3OWMyYzljMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZjMmExNjY4NTkxZDBhODBmNjMzZDAwMGY3ZWM3MDM2NmE1OTdjMDVjNDgxY2U4ZWM2ODlmZmI3ZmZmMmMwNSJ9"
         }
       ]
     },
     {
-      "id": "claim_b45e5c12219a4a19879e3377b1e487ed",
-      "statement": "As páginas da wiki cobrem: visão geral do projeto (overview.md), componentes e contratos (hands-on/contracts.md), estágios e tracker (hands-on/stages.md), schema OKF da base de conhecimento (knowledge/schema.md) e o mundo curado de Super Mario World (knowledge/world-map.md).",
+      "id": "claim_6d8d2ad046ab43b6bd9189eaa081ddba",
+      "statement": "Adicionar um jogo novo segue quatro passos: criar a pasta openwiki/<game-slug>/, escrever o schema.md do jogo (tipos de página e campos obrigatórios), registrar as fontes e ingerir as entidades com provenance (sources), mantendo prosa em português e identificadores em inglês kebab-case.",
       "evidence": [
         {
-          "resource": "repo://README.md#L9-L14",
-          "version": "repo-lines-v1:sha256:a62bbb71af377a00f4224211a6ad09f146ca08897abbbb3dc441e0df797011f8:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjU5M2ZlMWJlYmY3NDFmMzEzODgwODhjYjhlZDA0NTZkOTFjM2RjZDdjZDNmMjJiYmU2N2E5NWU1ZGNlOTgwMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzNhMmExNjE4MDM4ZDA4NWY5NzJhYjU2YTg2NWNlNTkzODRiZDgyNTQ1NjRhMzAwYTlhNzNkMjgwZjY3ODRhYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjk4NjUyZThmNTA2NjdkMGRhMTJkMDM0M2VlZmM0ZDUzNjBhNWU2ZmI2YWIxOWYzNDRmMjhjNmZkNjk5Y2NmMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmJlMTA0YjBlZjhiZDFjY2RkMzNkZjJlMjA4MzgzYTExYTZkZmEzMmQyYTJhNjU2NDUyYmI0ZGM4ODU3NTkxMCJ9"
+          "resource": "repo://AGENTS.md#L35-L35",
+          "version": "repo-lines-v1:sha256:7a720ea365c364133a37bf3763bfa0f6cfcfe2f4d0685808740005b03bec6752:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjFjODc0YjU4OTZjYTEyZmQzNGIwYzFlY2QwNmYzYmE2ZThlYTJlYmM1ZDAyZGFmZjgxN2E3Zjc3OWMyYzljMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZjMmExNjY4NTkxZDBhODBmNjMzZDAwMGY3ZWM3MDM2NmE1OTdjMDVjNDgxY2U4ZWM2ODlmZmI3ZmZmMmMwNSJ9"
         }
       ]
     },
     {
-      "id": "claim_cf0a67d4e7374038ad84687046c66424",
-      "statement": "Os alunos acompanham o projeto pelas Issues (specs e tickets de cada estágio, com labels ready-for-agent/ready-for-human) e pelos Pull Requests empilhados — um por estágio, abertos para análise, com merge só no cenário final.",
+      "id": "claim_f778ece99ce34630bdb85754ced9eef7",
+      "statement": "Super Mario World é o primeiro jogo da wiki (em construção): o schema define cinco tipos de página — area, level, switch-palace, power-up e boss — e o mundo curado cobre 6 áreas com gating de secret exits/keyholes e Switch Palaces.",
       "evidence": [
         {
-          "resource": "repo://README.md#L16-L20",
-          "version": "repo-lines-v1:sha256:bc168ffcd1064e4f24451be92a63f72e15fdba850e7632f841317ea9ca55a773:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzQ5YjNmODczOGFjODVkZDZjMGZhY2UzODU4NGYzNDlkY2NmMTg5ODY3NjRmNTRkMDBlNzJmZWZkOTQwYzZhOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2U1OTdhNDhmNWQxY2RiNzMwNTJjMjhhYzBmZDAwZDU1NjgxNjY2YjBkOTU1OGI1YTQ3Mjc1NGFkNDZiMmZkZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmM0OWY1OTYzZGYwMDU0MjliYjE5MDUxOWI3MTFmNWVjNmE2Nzk4MzU5NDM1ODBiODljZWE0NGI0ZjFlMzA4MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+          "resource": "repo://ARCHITECTURE.md#L96-L102",
+          "version": "repo-lines-v1:sha256:b1ef13e3b55dc471899f080602e66e2be5d3a84c2601512f1dcfb603a60a4a3e:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2Q0NWI1MGRlYzY0MWQ0Yzc3OGQxNDA0ZmRlMjhjODg2N2E5YTdmODc4ODM3ODI0N2NjMzExMDdhOWZjNmQ3OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGM4N2EwZThlNzc5NGMwNjQzZTJiOWIzMDFiMjBhNmU4ZTc1MWM5N2QzZDc3NmU4MjY1ZGQ3MWI0OTBmNjE1YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGE1NWI0NGU5MDYxOGNkYWIyNTEyN2Q3M2E1ZDMwYTc0NGZkNDkzZWYwMzUwYzMyYWQ0ZGVlNjQyMGE3MmM5MiJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-16T17:26:03.041Z"
+    "at": "2026-11-16T17:58:26.636Z"
   }
 }

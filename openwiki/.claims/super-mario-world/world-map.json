@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f65120d4c84c8f19743cfabb30543a9b3a34239d1c6f620bdea4f8bc2465794c",
+  "claims": [
+    {
+      "id": "claim_c2320a0bcb8a4ddba2b754b17ac185e1",
+      "statement": "O mundo curado de Super Mario World cobre 6 áreas — Yoshi's Island, Donut Plains, Forest of Illusion, Chocolate Island, Valley of Bowser e Star Road → Special Zone — com bosses (Iggy, Ludwig, Roy, Wendy, Larry), Switch Palaces (Green e Forest) e power-ups (Cape Feather, Fire Flower, Yoshi).",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L202-L215",
+          "version": "repo-lines-v1:sha256:aa0fe7c3236e0c5f53a5f906fd8a6865fb2e61165e6b129664febea5b53b4090:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYzNGNiMzFlMTBiZjI2YTFhZWUzMjllODY3YjI2MjY5ZTgzOTg0ODRhOTYwMmI4YjMwMDcxNGQ5OTMzMzY1YzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2YWE5MWQxY2QzODk5ODMxYTlhNTMzNTFjZDc5MjkwZDFjZWI4NjQxODM5NDE2MGFiNmQ3ZWQ3MTQ2ZTgyZDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_821059d35bbe43d286d36511673d4747",
+      "statement": "As fontes do conhecimento do jogo são o detonado PC do Paulo (PT-BR, ingestão primária) e a Super Mario Wiki (validação canônica do gating — página Secret exit).",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L202-L204",
+          "version": "repo-lines-v1:sha256:ce9fb22cedeadb7ac202797ce8f252297e7cb845bb480db8854d54aeed327940:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjM0Y2IzMWUxMGJmMjZhMWFlZTMyOWU4NjdiMjYyNjllODM5ODQ4NGE5NjAyYjhiMzAwNzE0ZDk5MzMzNjVjMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmQ4ZjRlYjliM2FhMGY0Y2RiZjE0OWU5YjNjYWMzNGUzNWRiZDUxNTQxOTkxNjk1YjFiZDFiZjc5OGZiNjI3YSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_1f486ce245ac4a108c83934829edd320",
+      "statement": "Na Forest of Illusion, a saída normal da Forest of Illusion 4 não progride para o próximo mundo — o progresso exige a saída secreta (Forest Secret Area), o que caracteriza o labirinto da área.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L210-L211",
+          "version": "repo-lines-v1:sha256:e96164925d33ca5b5c57b7243f22c388438eeaa08d542096f0e5d93d9564ff87:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2YwYzM1YzdjOGUxYzMzNDc4ZjM3Yjk5YzdmZjY1OThlYWFlZDZiNGQ1NWZjMTRhOGU3NmYxNjA2MTM3NDg5NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZkNWJkNDA2NzViNDZlNTQwYzY4OWRmM2JmMzExNzJjZDM1NDAzOGM5ZjI4Y2QyOWEwY2JmODIxNzgyODMxMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNmNjE2OWI1Y2NhYWEzNGViZDhkZDQ4YzBlYTE0MTIwYzYyMDI2NWQxZDg1MTQxZGJkYWViYzAzYzMyMjk3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDBjMzc4NTFlYjIyMmRmNTQzNDA4ZjUwN2RkY2EwODA4NDFlYmFjYzIzNTk5MzhlYWY0YThkNTIzOGM3ZWNmNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_47780f31d40b4774a09c171a58760106",
+      "statement": "Completar Super Mario World exige no mínimo duas saídas secretas; das 96 saídas do jogo, 24 são secretas e todas são necessárias para 100%.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L211-L213",
+          "version": "repo-lines-v1:sha256:de3590351ffe03b3fad21e038527e379c38987b8a8c6bc6fecd83d90324a2bb1:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZkNWJkNDA2NzViNDZlNTQwYzY4OWRmM2JmMzExNzJjZDM1NDAzOGM5ZjI4Y2QyOWEwY2JmODIxNzgyODMxMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmQzNzMxMGY4Mzk4NTY0NTgxMzc4OWRmY2NkOWJjMDkwMzY4MGE2NWI4MWFhYjg0ZmIzNTQzYzMzMTZmYzcwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWM3MWIzMzY3N2QzYzlmZGM2ZGRkYjQzYjU0ZTliMzdiZDUxMTYxMjJkMmUyZGY4Njg4NWQ5YjRhM2RiY2U1NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTVjMzdkZDE1MDgzMjNmOWQxODZhYjRlOTY5MWM3Y2FmYzc4OWM2OTA2Mzg5Mzc5NzU3YTBkZTgwNWJjNmYxMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2f8d5b2d6a1a4e86ba8cd59b5a369424",
+      "statement": "Os segredos de gating do mundo incluem Donut Plains 2 → Green Switch Palace, Forest of Illusion 2 → Blue Switch Palace, Donut Secret House → Star World 1 e Valley Ghost House → Larry's Castle (entrada secreta do castelo final).",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L204-L210",
+          "version": "repo-lines-v1:sha256:44dde420c896105d1c2c7499b22ea03834c75d710dac8c60d16b686292069294:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2YwYzM1YzdjOGUxYzMzNDc4ZjM3Yjk5YzdmZjY1OThlYWFlZDZiNGQ1NWZjMTRhOGU3NmYxNjA2MTM3NDg5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjVlZmIzNDk5NjBiZjEwN2YzM2U0NGU5OGJjNWQ1YjVlYmY0NmIxNTE0ZTQxYTJkNDVmYzg2NjgzYTNhNzkwOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGUzNTkwMzUxZmZlMDNiM2ZhZDIxZTAzODUyN2UzNzljMzg5ODdiOGE4YzZiYzZmZWNkODNkOTAzMjRhMmJiMSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T17:58:26.636Z"
+  }
+}

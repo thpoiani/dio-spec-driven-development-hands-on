@@ -1,34 +1,38 @@
 ---
-title: "Quickstart — como usar esta wiki"
+title: "Quickstart — base de conhecimento dos jogos"
 type: "Referência"
 openwiki_generated: true
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-16T17:26:03.041Z
+    at: 2026-11-16T17:58:26.636Z
 sources:
-  - id: openwiki-source-23775c3de52f3ab95a13cb8b
-    resource: repo://README.md
-generated: { by: "opencode", at: "2026-11-16T17:26:03.041Z" }
+  - id: openwiki-source-8037e2358a2c4f9b2c722a11
+    resource: repo://AGENTS.md
+  - id: openwiki-source-362e06c30ccfdafd87339cb0
+    resource: repo://ARCHITECTURE.md
+generated: { by: "opencode", at: "2026-11-16T17:58:26.636Z" }
 ---
 
-# Quickstart — como usar esta wiki
+# Quickstart — base de conhecimento dos jogos
 
-Esta wiki é a **documentação viva do Game Copilot** — o hands-on da aula 2 do curso DIO de Spec-Driven Development: um assistente de gameplay que consome a telemetria do jogo (MQTT), infere o perfil do jogador e publica recomendações por um motor de regras determinístico e por um agente LLM.
+Esta wiki é a **base de conhecimento dos jogos** do Game Copilot: mundo, progressão, gating, itens e estratégias — organizada por título do jogo, uma pasta por jogo. Contém **apenas conhecimento de jogo**; a documentação do projeto vive nos docs da raiz do repositório.
 
-## Mapa das páginas
+## Jogos nesta wiki
 
-| Página | O que responde |
-|---|---|
-| `overview.md` | O projeto das duas aulas, a tese e os non-goals |
-| `hands-on/contracts.md` | Componentes do sistema e os contratos (eventos, tópicos, perfis, recomendações) |
-| `hands-on/stages.md` | Os 10 estágios, branches empilhadas, política de main e o tracker de issues |
-| `knowledge/schema.md` | O schema OKF da base de conhecimento (tipos de página e campos obrigatórios) |
-| `knowledge/world-map.md` | O mundo de Super Mario World curado e o momento da demo |
+| Jogo | Pasta | Estado |
+|---|---|---|
+| Super Mario World | `super-mario-world/` | em construção — schema e mundo curado; entidades em ingestão |
+
+- **`super-mario-world/schema.md`** — os tipos de página (`area`, `level`, `switch-palace`, `power-up`, `boss`) e campos obrigatórios.
+- **`super-mario-world/world-map.md`** — áreas, gating (secret exits/keyholes/Switch Palaces), power-ups, bosses e fontes.
+
+## Como adicionar um jogo novo
+
+1. Crie a pasta `openwiki/<game-slug>/` com o slug do título.
+2. Escreva o `schema.md` do jogo: os tipos de página do domínio daquele jogo e os campos obrigatórios.
+3. Registre as fontes (detonados/guias) e ingira as entidades com provenance (`sources`) — afirmação sem fonte não é conhecimento.
+4. Prosa em português; identificadores em inglês kebab-case.
 
 ## Como recuperar
 
-Agentes usam **retrieval sob demanda**: `openwiki_search` para localizar a seção relevante (ex.: "qual o payload de game/recommendations?", "como o profiler infere o perfil?") e `openwiki_read` para ler a seção completa. Não há necessidade de ler a wiki inteira antes de qualquer tarefa.
-
-## Quando a wiki atualiza
-
-A wiki segue o processo do OpenWiki (`begin` → plano → páginas → `finish`) e é regenerada por estágio: cada branch `feature/NN-...` atualiza as páginas afetadas pelo código novo. A wiki nunca substitui o código e os testes — eles são a autoridade; ela é o índice com evidência.
+Agentes usam retrieval sob demanda: `openwiki_search` para localizar a seção (ex.: "o que desbloqueia a Star Road?") e `openwiki_read` para ler a seção completa. A wiki nunca substitui as fontes — ela é o conhecimento compilado com evidência.

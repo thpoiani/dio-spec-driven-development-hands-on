@@ -1,47 +1,26 @@
 {
   "schemaVersion": 1,
   "pages": {
-    "/openwiki/hands-on/contracts.md": {
-      "pageVersion": "sha256:64e15abd4092a6b268dd915928c791a1f3128a40eabd352b925999f02724aaa2",
-      "completedBy": "opencode",
-      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
-      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
-      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
-    },
-    "/openwiki/hands-on/stages.md": {
-      "pageVersion": "sha256:485d332524bf49ca7b90eac60acdb2a502a405d45b282651287c4da1175fb7ea",
-      "completedBy": "opencode",
-      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
-      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
-      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
-    },
-    "/openwiki/knowledge/schema.md": {
-      "pageVersion": "sha256:f1afa963d6d390ecb4b0bfc74bb71461f8bdf472aa60031c0a81e2120eec3e00",
-      "completedBy": "opencode",
-      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
-      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
-      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
-    },
-    "/openwiki/knowledge/world-map.md": {
-      "pageVersion": "sha256:8de223fee3b9adffb3f9d4a83a81d6b4e8782fb28a01e38d08ee0700d3c5020e",
-      "completedBy": "opencode",
-      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
-      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
-      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
-    },
-    "/openwiki/overview.md": {
-      "pageVersion": "sha256:9be031e15cf6841015a35e2411bfb04d4824a0ea0c180084595feeb46329e251",
-      "completedBy": "opencode",
-      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
-      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
-      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
-    },
     "/openwiki/quickstart.md": {
-      "pageVersion": "sha256:292fa6489058fb5eab7ad74500c82ef1601cba6494724512debd4614fa7aadd7",
+      "pageVersion": "sha256:7438d43161eadf9e9695e390e2ffb87fdf928b923fc5e9cab137ae7790e4eacd",
       "completedBy": "opencode",
-      "completedRunId": "ba049950-5b96-4680-a822-716461166324",
-      "gitHead": "fc09063ed3251dfcd5c32065e7ab98fe077eb692",
-      "sourceFingerprint": "sha256:ec405b0a30c8650660b99d606ac5829fc9f84c95cc810b8ad75457c9689324c9"
+      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e",
+      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
+      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6"
+    },
+    "/openwiki/super-mario-world/schema.md": {
+      "pageVersion": "sha256:db6c96caec0775eff8d0af0b85a2fdc2fd44d435b652dc50734d0c7d030d1899",
+      "completedBy": "opencode",
+      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e",
+      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
+      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6"
+    },
+    "/openwiki/super-mario-world/world-map.md": {
+      "pageVersion": "sha256:f65120d4c84c8f19743cfabb30543a9b3a34239d1c6f620bdea4f8bc2465794c",
+      "completedBy": "opencode",
+      "completedRunId": "92f96f2d-13ea-46fa-a525-bce3d13b6c4e",
+      "gitHead": "2da3767ddc26e24cd7bcdf6be96af3333b16a574",
+      "sourceFingerprint": "sha256:f9a473c0211475513b2271c271aa00107b419207f73070831b1933c258ae75b6"
     }
   }
 }

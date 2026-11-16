@@ -32,7 +32,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 ## Decisões vinculantes (não reabrir sem o Thiago)
 
 - **Jogo**: Super Mario World. Vocabulário Mario em código, wiki e glossário — *Avoid*: "quest", "batalha" (são `level`, `boss_engaged`, power-ups).
-- **Camada de conhecimento única**: `openwiki/` no formato OKF v0.2, commitada. O motor de regras consome o **frontmatter** (via knowledge-loader); o agente consome a **prosa**. Não criar `graph.ts` paralelo.
+- **Camada de conhecimento única**: `openwiki/` no formato OKF v0.2, commitada, **organizada por jogo** (`openwiki/<game-slug>/` — jogo novo = pasta nova). O motor de regras consome o **frontmatter** (via knowledge-loader); o agente consome a **prosa**. Não criar `graph.ts` paralelo. **A wiki contém apenas conhecimento de jogo** — nada de documentação de projeto.
 - **Broker**: Mosquitto (MQTT) em docker-compose; `InMemoryEventBus` permanece para testes — a interface `EventBus` é a seam.
 - **LLM só no WorldAdvisor**: `PlayerProfiler` e `ProgressionAdvisor` são regras puras, determinísticos e testáveis. Non-goal: agente reagir a cada evento.
 - **Zero deps no core** (bootstrap); dependências externas (`mqtt.js`, LangChain, OpenTelemetry, Mosquitto) entram a partir das etapas 07/08.
