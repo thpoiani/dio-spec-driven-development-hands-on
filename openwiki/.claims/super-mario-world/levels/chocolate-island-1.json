@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7b18eff8d808f10010d7dd1845ff141c52d00d4796a71840aa13cbaac8224e6c",
+  "claims": [
+    {
+      "id": "claim_488f582e349d4d6dbb54fe29746b203e",
+      "statement": "Chocolate Island 1 é a primeira fase regular de Chocolate Island, no caminho principal após a Forest of Illusion (prerequisites: roy-castle).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L15-L24",
+          "version": "repo-lines-v1:sha256:32b9c2d8e9cb3890c21eca845aed3e8d64c4ce78c1216e008f18b366b9ebd7d9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhOGRkNzU5NWYwN2I3MWRlMDA1ZDM0YjI0OWE5Y2QxOTdmODVmNTRkNzVmM2U0MzM4NjZlNTcwNmU4ZWRkMTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZGZiODE2MzQ2YzE2MzJkMDMwZjZmNjc1ZjQ3NmUzODEyM2YwNTFkNDcwMGI5YThjZmM2Y2RlNWEyZmVlZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1ZTYyODI2ZDIxZWYyNWMxOWEzYzE4YWI5YTQwNGFkNGM5NWRjZWRmYzc5NmM0ZjE5ZWI1NjcxNWVmYTE1NDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmMjAzMDM2ZmM4OGQ2MWI2ZTJiMGMwNDQ0NTRmNGEyYmRiMzIwOTMwOTE1N2Y2ZGIyMGU5NTFhOWRmNTJhZDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_776584712f98487bab7a44f702ff7a00",
+      "statement": "A saída normal da Chocolate Island 1 leva à Chocolate Island 2; a fase não tem segredos declarados — os segredos da área estão em Chocolate Island 2 e 3.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L24-L25",
+          "version": "repo-lines-v1:sha256:74592e4bf373dbc7f49bb1d7c3da37fcd93d0a8df3d8d7123088d77000ad56dd:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmFlMDU0MzViYzMzNWExOWJlNzExNTgyNGFmYmQyNTU3NmY2Y2VlOGY2N2MzMjhmMjVkZDIzNzFjMzg1OTNjYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmIzYzBmNDBmZjI4OWM2MjdiYTRhNWI2N2E4YmU0ODA2ODExNTQ1MjM0NTY4NzU2NTFmM2E5NTZhMDQ5ZDk4OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2Q2ODZmYjA5OTZkOTRiOTZhZGRjN2E2ZTgwZTU3OGUzNDViYTc5Y2FmNjcxNjA1M2UwMzE5NzExZDdhNzgxNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDgyMjkyN2RkMjRjYWUxMmMyZGRiYWRlYmJhNGM2ZTg3ZDJiOGZkMDMyYThkMTNjZTZhZWFmZGYxZGRjNzljMyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

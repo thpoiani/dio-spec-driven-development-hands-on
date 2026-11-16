@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:cda0f3f60f518676fe9727fa0ac159d5eb9f29d1e4247169a26a825484d43104",
+  "claims": [
+    {
+      "id": "claim_cd2f1d9723bb4e60a619684e2e12426e",
+      "statement": "Valley of Bowser 4 é a última fase regular antes do Larry's Castle, com saída normal para o castelo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L23-L23",
+          "version": "repo-lines-v1:sha256:65c20b22eb377c114558db48faa9f785cc8684d6cfdb8098bf9290cc001f5f0d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVjMjBiMjJlYjM3N2MxMTQ1NThkYjQ4ZmFhOWY3ODVjYzg2ODRkNmNmZGI4MDk4YmY5MjkwY2MwMDFmNWYwZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVjMjBiMjJlYjM3N2MxMTQ1NThkYjQ4ZmFhOWY3ODVjYzg2ODRkNmNmZGI4MDk4YmY5MjkwY2MwMDFmNWYwZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmYxMWNjNTFjNzE4YjhkZDE4NWE2MjVhZThkYzliZDNlZDFhMWZmYzkwYjhlNDYxNzY5YzY4ZDM5ZTNmOWY5OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjA1YWM5MzA3ZWZhYjNkNGMwOTFjMzI5YzA1N2U2NzZmYTQ3M2JjOTNkZTNkZDNiZGMyYjNhOTE4MDVmZjBlYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a0ee4fe48b4c482f9713bd55062e6ba8",
+      "statement": "A saída secreta do Valley of Bowser 4 é dupla: leva à Front Door do castelo final e à Star World 5.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L28-L28",
+          "version": "repo-lines-v1:sha256:1bc855d819ae6c176c88f19d1bd47e7e3c6a6554e03d0e71df39ce69a7b281d0:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWJjODU1ZDgxOWFlNmMxNzZjODhmMTlkMWJkNDdlN2UzYzZhNjU1NGUwM2QwZTcxZGYzOWNlNjlhN2IyODFkMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWJjODU1ZDgxOWFlNmMxNzZjODhmMTlkMWJkNDdlN2UzYzZhNjU1NGUwM2QwZTcxZGYzOWNlNjlhN2IyODFkMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTVkNTRmNmJkY2Y5MWU3YmJkMmMwYTE2YzE5YWM2YWE0M2IyNmQ2NjUzZDM1NGRiOTZmMTUwZGZiNzI1MTkyMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmIxMjdlOThlNjhhYTg5YTFhOGYwN2M4NmM1NWNhOTJmZGYwYzIzZTZhMzA2NWVjN2Q3MjFmMjg4YWIwOWVmYyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

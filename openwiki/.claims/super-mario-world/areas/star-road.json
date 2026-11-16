@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b6ed11026a4934c88423e5c66917d34b4072cb6279836256440e6853e744f01a",
+  "claims": [
+    {
+      "id": "claim_0382392aa5d14fa9b7818e6143e08d5f",
+      "statement": "A Star Road → Special Zone é a camada secreta do mundo: o acesso se dá somente por secret exits/keyholes espalhados pelas áreas.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L29-L33",
+          "version": "repo-lines-v1:sha256:9b68f51df27e1aacedb18fad3cd627a0a6f14e335bdcf6cbf558548aa2eeb2b9:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTAzMmM3NzcwZjdiMjZmMmJiNTg2MmFhNzBhZDE1MjY5MmQyYzJjMGQ1MGRjNGRlZGZiMTY1YWMyODc1ZTljMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjkwNjllYzdlYzUwYzAwMjVlZjIyMWQxMWFlZjU0MjM0YjQ3NDhmYWZjMWY0MDcxYTU4ZTE5NGMxZDQ4NGNhMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDgyMjkyN2RkMjRjYWUxMmMyZGRiYWRlYmJhNGM2ZTg3ZDJiOGZkMDMyYThkMTNjZTZhZWFmZGYxZGRjNzljMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDliNTExNGUxZDAxOTdmM2UyM2IxZWFiMWQ2YTI5NTMwMzM3MzQwZDhhNjU5Zjg1Njg3ZGI3NmQ2NTk2YmJlYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b11a647e217e436aba6399884d7ff10c",
+      "statement": "As cinco entradas da Star Road vêm de secret exits: Donut Secret House → Star World 1, Vanilla Secret 1 → Star Road 2, Soda Lake (Cheese Bridge) → Star Road 3, Chocolate Secret → Star Road 4 e Valley of Bowser 4 → Star World 5.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L7-L14",
+          "version": "repo-lines-v1:sha256:baba4cbc0750fb69054326a5069c3814bc60de5381f3357153e221492b0df3ab:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTlhZTA4ZDg1MjExMjIwMWYzZmE2YzZiOGRlNTUyYzJiY2ZkNzI4NDFmY2I4ZWVlZGI2N2VhM2Q1YjU0YzQ3OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWE5YjQ5MzMwZTVhZjA0MzE3N2ZjYjViNmNkMTAxMDgwMzY1MTMyMTcxYjNhN2M1ZGY4OTI5ZTU1MGRlM2UxYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjI1YzkwZGJmYjZkMzNjOWZjYjZlNzk0N2I1MWI2YzdkZWRkMDA5NDZjMmY0MTUyNzY1ZTQzNGY4YzYwYzE0OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_33fa0f5bb3d349fd9193cbefc352b86e",
+      "statement": "A Special Zone tem 8 níveis especiais sem segredos, alcançados pela Star Road no cume da Star World 5.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L31-L31",
+          "version": "repo-lines-v1:sha256:2b0a8316a31948ceee9c384f67ee91b7b1bf2836286c387573b79991ada7e1d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmIwYTgzMTZhMzE5NDhjZWVlOWMzODRmNjdlZTkxYjdiMWJmMjgzNjI4NmMzODc1NzNiNzk5OTFhZGE3ZTFkNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmIwYTgzMTZhMzE5NDhjZWVlOWMzODRmNjdlZTkxYjdiMWJmMjgzNjI4NmMzODc1NzNiNzk5OTFhZGE3ZTFkNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGVjYmYyZTc0NzQxOGUwYTgwNzI0YjQ2ODNlZTBjNWJkM2Q4MmJkNjU2MTg0YzY2ZTQyMzQ4MjAwY2NmOWM2NCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

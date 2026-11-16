@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7b0baeefa8866ba7603c2c914097b973d96b86500ecf8a43bc6bd01d749fdb81",
+  "claims": [
+    {
+      "id": "claim_36b00c3dca8744daa38f200493f0c723",
+      "statement": "A saída normal da Donut Plains 1 segue para a Donut Plains 2; a saída secreta leva à Donut Secret 1.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L11-L11",
+          "version": "repo-lines-v1:sha256:a696a66ab53b45f884febf79b30ab9d33010f68ae400e5631a544e1736978a0e:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDZlMzcwZjNmYjZiYTI4ZDM2Y2Q2YThlMTQxOWU1ODVlZTBmZjRmZjY5NzY4MzJmM2ZlODI0NDE1ZTczYWU3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ1MGViNTgyOThlMjJmODUwMjdkNjE5YzZkYjc3NmJiYjhiYTNlZWNkMjJmNTI0NzEyNjkzYzUxNGRiZTU1OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d066912482b94c4987f695e25c40ba2c",
+      "statement": "O caminho da secret exit da Donut Plains 1: com o Green Switch Palace ativado, a keyhole está no topo da pilha de blocos ! verdes no final da fase; sem o botão verde, voa-se de Cape sobre o túnel amarelo após os 4 Koopa Paratroopas em fileira.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L11-L11",
+          "version": "repo-lines-v1:sha256:a696a66ab53b45f884febf79b30ab9d33010f68ae400e5631a544e1736978a0e:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY5NmE2NmFiNTNiNDVmODg0ZmViZjc5YjMwYWI5ZDMzMDEwZjY4YWU0MDBlNTYzMWE1NDRlMTczNjk3OGEwZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDZlMzcwZjNmYjZiYTI4ZDM2Y2Q2YThlMTQxOWU1ODVlZTBmZjRmZjY5NzY4MzJmM2ZlODI0NDE1ZTczYWU3YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ1MGViNTgyOThlMjJmODUwMjdkNjE5YzZkYjc3NmJiYjhiYTNlZWNkMjJmNTI0NzEyNjkzYzUxNGRiZTU1OSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

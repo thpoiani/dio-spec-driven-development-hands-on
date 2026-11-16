@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:555ffca3ca089ab0decba06f51d916af79fb331a5021e5683b4961960365bf8d",
+  "claims": [
+    {
+      "id": "claim_ad73cbf3f353442b941e99b80c171941",
+      "statement": "Larry's Castle é o castelo #7, o fim do caminho principal: o boss Larry encerra o caminho; a saída normal leva à Front Door do confronto com Bowser.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L23-L23",
+          "version": "repo-lines-v1:sha256:65c20b22eb377c114558db48faa9f785cc8684d6cfdb8098bf9290cc001f5f0d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVjMjBiMjJlYjM3N2MxMTQ1NThkYjQ4ZmFhOWY3ODVjYzg2ODRkNmNmZGI4MDk4YmY5MjkwY2MwMDFmNWYwZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVjMjBiMjJlYjM3N2MxMTQ1NThkYjQ4ZmFhOWY3ODVjYzg2ODRkNmNmZGI4MDk4YmY5MjkwY2MwMDFmNWYwZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmYxMWNjNTFjNzE4YjhkZDE4NWE2MjVhZThkYzliZDNlZDFhMWZmYzkwYjhlNDYxNzY5YzY4ZDM5ZTNmOWY5OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjA1YWM5MzA3ZWZhYjNkNGMwOTFjMzI5YzA1N2U2NzZmYTQ3M2JjOTNkZTNkZDNiZGMyYjNhOTE4MDVmZjBlYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_21cad972c8fa43d48dc7467fd1dcdcb2",
+      "statement": "A entrada secreta do castelo final vem da Valley Ghost House (keyhole no alto da sala, exige Cape) — uma alternativa à frente do castelo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L27-L27",
+          "version": "repo-lines-v1:sha256:5565ca573af3e7f2d80ef6f1a3b2da091136d01830bc637311e146f15c8d9dd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a8f4ac1c7e7b44efa0e99d197d95f130",
+      "statement": "O confronto com Bowser tem três fases (MechaKoopas, Big Steelys e a perseguição em zigue-zague ao balão), com Princesa Toadstool lançando Super Cogumelos entre as fases.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L23-L23",
+          "version": "repo-lines-v1:sha256:572eb48da2e96e640a9cd0e24929156abd2a16b76308eda424468453a8af6367:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTQxMTZmMTVjYzU2Mzg5Mjc0MmQ2ZTQzNTNjMDZmNTNlZmViODNkYjc3OWY4OTY5NWQ2NGUwZjc4NDExNjViNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

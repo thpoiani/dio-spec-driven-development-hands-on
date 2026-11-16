@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:e8e2cac887e30609b06e71781ce58caf7d26c0b6c8547eb9d948e58a4fe748e6",
+  "claims": [
+    {
+      "id": "claim_820541dce77b43059517e5fa5530191d",
+      "statement": "Forest of Illusion é a terceira área: fases FoI 1-4, Forest Ghost House, Forest Secret Area e Roy's Castle — a floresta só se abre por secret exits (as saídas normais repetem a área).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L18-L18",
+          "version": "repo-lines-v1:sha256:5cb0682bc5eec6af7d1330c8d2b9fd3a4a50a5891bc5acdc31f8da06e2308dea:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiMDY4MmJjNWVlYzZhZjdkMTMzMGM4ZDJiOWZkM2E0YTUwYTU4OTFiYzVhY2RjMzFmOGRhMDZlMjMwOGRlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiMDY4MmJjNWVlYzZhZjdkMTMzMGM4ZDJiOWZkM2E0YTUwYTU4OTFiYzVhY2RjMzFmOGRhMDZlMjMwOGRlYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjI1YzkwZGJmYjZkMzNjOWZjYjZlNzk0N2I1MWI2YzdkZWRkMDA5NDZjMmY0MTUyNzY1ZTQzNGY4YzYwYzE0OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODVjMGM3ZDhmYzFiMzRjZTY0ODQ2NTAwNTBjNmNmMWMzMTVjOTljYzZkMjc0N2JlNjUwYjRkZTRlZTkwMGRhYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3d0188463eac431ab8f1d41203c0b5ce",
+      "statement": "O gating da floresta: FoI 2 → Blue Switch Palace, FoI 3 → Roy's Castle (derrotar Roy abre a Chocolate Island) e FoI 4 → Forest Secret Area.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L20-L23",
+          "version": "repo-lines-v1:sha256:9598ca0faf09042f7e510780a666d6a023a4e4df2068f06d29e83b7782b2272e:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzA0NDRlYWExODcwNTdmYTBjYTI2OWNhMDI2NTI3ZTA4OWU0OWU5NTljMzQwYzVjZTkyNzQ5ODNkYzg3N2Y5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTcyZWI0OGRhMmU5NmU2NDBhOWNkMGUyNDkyOTE1NmFiZDJhMTZiNzYzMDhlZGE0MjQ0Njg0NTNhOGFmNjM2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGE0YmRhNGUzNmIxYzlmZmZhMDAzODZhMzBkNGExYjY1NmQzMTEzMzRkY2IyZDQ1YWU3ZjQ3NGJhYzcwYmY4MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c40d3422aa534f059eeb4c416ce880f1",
+      "statement": "A saída normal da Forest of Illusion 4 não progride — leva de volta a um ponto já desbloqueado (canônico na Super Mario Wiki).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L36-L38",
+          "version": "repo-lines-v1:sha256:c579fddf36b24a32224dfb01e32375be92dd67d4bf8bbc42710ad4005b9dd0dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmQ0NGM3NWJmMDc3NTZhOTYxMTMxOWU2ZWEwOTlmYWQ1ZjU4ZTE2MGQzMjU5NmUwYTg4NDZmNDJkYTFkMWY3NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGNmYmIzZTJkNzY0OTI2NDZmMmYzNDIzMGQ1YmI2OGRmYjE2NGIxNTRjYjE4YjI3NTIxOTFmOGZiMDMwODczNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDc5OGZmNWQ3MGMzZGE5MzFmYTEyZTU0NTQ3NDk2ODkyZjNhOTRjZGRjZjUyZjRlMGFmNWNiNWRjOGYzNmEzOSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4abbc6a3a1920b920ec58d864de870116f9dafc49c9061af2e039f828f9128f9",
+  "claims": [
+    {
+      "id": "claim_f1a780769c234a5c99c61a1778d376bf",
+      "statement": "Yoshi's Island 4 é a última fase regular de Yoshi's Island antes do Iggy's Castle (pré-requisito Yoshi's Island 3), com saída normal para o castelo.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L17-L17",
+          "version": "repo-lines-v1:sha256:14a19d7333e5be0da9765cee2cb68b08b173a6352e7cfe5ef0582f3d339d639b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTYwMjA1OTE5MGQ2MDZkMzgwOThlMjg1NzZmNjFkMjI4YTRlMzAxZTNlZWU4MTA1Mzk3N2ZiYmU1ZDg1NjEyZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjQxOWU0ODI3YzlkNjNkMTkwMTZkNGMyYWRlOWEwZGJjZTY4NzIxNjczZTNlNDI4NmRhNTI1MTM0M2NiZTMyNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

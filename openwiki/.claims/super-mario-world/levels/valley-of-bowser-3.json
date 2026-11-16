@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:28df49690952d8895d9c3da3e7123989e42a6ea7bef847c8dc77edafaea6f57e",
+  "claims": [
+    {
+      "id": "claim_16e39954f678472db34a63ddf3f2d126",
+      "statement": "Valley of Bowser 3 é uma fase regular do caminho principal do vale (após a VoB 2), com saída normal para a Valley of Bowser 4.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L23-L23",
+          "version": "repo-lines-v1:sha256:65c20b22eb377c114558db48faa9f785cc8684d6cfdb8098bf9290cc001f5f0d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVjMjBiMjJlYjM3N2MxMTQ1NThkYjQ4ZmFhOWY3ODVjYzg2ODRkNmNmZGI4MDk4YmY5MjkwY2MwMDFmNWYwZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjVjMjBiMjJlYjM3N2MxMTQ1NThkYjQ4ZmFhOWY3ODVjYzg2ODRkNmNmZGI4MDk4YmY5MjkwY2MwMDFmNWYwZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmYxMWNjNTFjNzE4YjhkZDE4NWE2MjVhZThkYzliZDNlZDFhMWZmYzkwYjhlNDYxNzY5YzY4ZDM5ZTNmOWY5OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjA1YWM5MzA3ZWZhYjNkNGMwOTFjMzI5YzA1N2U2NzZmYTQ3M2JjOTNkZTNkZDNiZGMyYjNhOTE4MDVmZjBlYyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

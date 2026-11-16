@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d054067e11cd43177ca8262eb93c094be33abccd22b4394c7fd41dc3af287909",
+  "claims": [
+    {
+      "id": "claim_aed7cc8190854c4ca9ec2f9b91645558",
+      "statement": "Donut Plains 4 é a última fase regular de Donut Plains antes do Ludwig's Castle, com saída normal para o castelo e sem segredos declarados no esqueleto curado.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/super-mario-wiki-progress.md#L17-L17",
+          "version": "repo-lines-v1:sha256:14a19d7333e5be0da9765cee2cb68b08b173a6352e7cfe5ef0582f3d339d639b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRhMTlkNzMzM2U1YmUwZGE5NzY1Y2VlMmNiNjhiMDhiMTczYTYzNTJlN2NmZTVlZjA1ODJmM2QzMzlkNjM5YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTYwMjA1OTE5MGQ2MDZkMzgwOThlMjg1NzZmNjFkMjI4YTRlMzAxZTNlZWU4MTA1Mzk3N2ZiYmU1ZDg1NjEyZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjQxOWU0ODI3YzlkNjNkMTkwMTZkNGMyYWRlOWEwZGJjZTY4NzIxNjczZTNlNDI4NmRhNTI1MTM0M2NiZTMyNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:09:34.647Z"
+  }
+}

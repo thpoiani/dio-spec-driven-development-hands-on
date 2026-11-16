@@ -215,7 +215,7 @@ Estrutura real simplificada para caber em aula (~5 áreas principais + camada se
 |---|---|---|
 | **Yoshi's Island** (hub) | Fases 1–4, Yoshi's House, **Iggy's Castle** | Tutorial; boss libera Donut Plains |
 | **Donut Plains** | Fases 1–4, **Green Switch Palace**, Donut Secret 1 (keyhole → **Star Road**), **Ludwig's Castle** | Switch Palace desbloqueia blocos "!" nos mundos seguintes; boss libera Forest of Illusion |
-| **Forest of Illusion** | Fases com **múltiplas saídas** (labirinto: sem a saída secreta certa, repete-se a área), Forest Switch Palace, **Roy's Castle** | O **momento da demo**: casual entra em loop na floresta |
+| **Forest of Illusion** | Fases com **múltiplas saídas** (labirinto: sem a saída secreta certa, repete-se a área), **Blue Switch Palace**, **Roy's Castle** | O **momento da demo**: casual entra em loop na floresta |
 | **Chocolate Island** | Fases, Chocolate Secret, **Wendy's Castle** | Boss libera o acesso ao Valley of Bowser |
 | **Valley of Bowser** | Fases 1–4, **Larry's Castle** (final) | Fim do caminho principal |
 | **Star Road → Special Zone** | Acesso só por **secret exits/keyholes**; 8 níveis especiais | Conteúdo do completionist; expansão do homework (`feature/10`) |
