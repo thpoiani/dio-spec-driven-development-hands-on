@@ -15,13 +15,15 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 ## Estado atual (atualize esta seção a cada etapa concluída)
 
 - [x] Bootstrap: documentação + scaffold (TS strict + Vitest, zero deps no core) + `@setup-matt-pocock-skills` (tracker **GitHub Issues** + labels de triagem, single-context: `GLOSSARY.md` + `docs/adr/`)
-- [~] **Etapa 01 — concluída**: spec **Issue #1** fechada com todos os tickets ✅ (#2 setup · #3 ingestão · #4 caminho principal · #5 Switch Palaces · #6 power-ups/bosses · #7 validação 39/39). Wiki do SMW estável (`openwiki/super-mario-world/`, 39 páginas com schema completo, Claims com evidência) — **tag `v0.1`**
-- [ ] Etapa 02 — eventos + interface `EventBus` + `InMemoryEventBus`
-- [ ] Etapa 03 — `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast)
-- [ ] Etapa 04 — `PlayerProfiler` (casual/completionist/speedrunner) + `ProgressionAdvisor`
-- [ ] Etapa 05 — `game/recommendations` + playthroughs + `npm run demo` + testes
-- [ ] Etapa 06/07 — observabilidade (OTel + OpenObserve, traces por sessionId)
-- Itens 08–10: 08/09 são **gravação** (ver fluxo abaixo) e 10 é o homework — spec + tickets pré-produzidos por agente quando o resto estiver estável.
+- [x] **Etapa 01 — concluída** (`v0.1`): wiki OpenWiki do SMW — 39 páginas com schema completo, Claims com evidência (Issue #1 fechada)
+- [x] **Etapa 02 — concluída** (`v0.2`): bootstrap NestJS + DDD (domain puro sem Nest) + tipos de evento + EventBus in-memory (`@nestjs/event-emitter`) — PRs #17/#18, CI verde
+- [ ] Etapa 03 — `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast) + fixtures
+- [ ] Etapa 04 — `PlayerProfiler` + `ProgressionAdvisor` (services `@OnEvent`)
+- [ ] Etapa 05 — fitas de playthrough + console + `npm run demo`
+- [ ] Etapa 06 — observabilidade (`nestjs-otel` + OpenObserve, traces por sessionId)
+- [ ] Etapa 07 — **gravação**: migração MQTT (`@nestjs/microservices` + Mosquitto)
+- [ ] Etapa 08 — **gravação**: `WorldAdvisor` (agente LangChain, Nest provider)
+- [ ] Etapa 09 — **homework**: expansão do mundo (Star Road / Special Zone) — spec + tickets pré-produzidos quando o resto estiver estável
 
 ## Fluxo de trabalho por etapa
 
