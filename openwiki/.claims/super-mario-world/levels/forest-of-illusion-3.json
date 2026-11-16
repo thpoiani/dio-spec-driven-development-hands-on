@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:e1135aa1ad2a9e9eed53e1d11c6af112cfea2bb0dd959cf783ee0a6917162231",
+  "claims": [
+    {
+      "id": "claim_37d73075ab9546ce88f19114e8915e61",
+      "statement": "A saída secreta da Forest of Illusion 3 leva ao castelo #5 do Roy — derrotar Roy abre o caminho para a Chocolate Island.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L22-L22",
+          "version": "repo-lines-v1:sha256:b15352d5447c568b6685a3fc4fd4e1e2adb69734bd679cdeac005a4708e80048:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjE1MzUyZDU0NDdjNTY4YjY2ODVhM2ZjNGZkNGUxZTJhZGI2OTczNGJkNjc5Y2RlYWMwMDVhNDcwOGU4MDA0OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjE1MzUyZDU0NDdjNTY4YjY2ODVhM2ZjNGZkNGUxZTJhZGI2OTczNGJkNjc5Y2RlYWMwMDVhNDcwOGU4MDA0OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjFiMjllMzgyZDUyYzRmN2JhYWZkNDA4ODFhNDgyMWY5ZjZhOTdkY2I0YzlmOWM5M2M4Y2NiNmQ3YTc0NzZmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjFmMTFlZDgxODAzYmYxZDQ3MDUwYTVkY2ZmYmNjMWYyOTdmZWM5YTFiZWU2ZWZhY2JkYzNkZDA1ZTA0NDQxOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_83360e02cb8a46d78c57f3824be750a9",
+      "statement": "O caminho da secret exit: descer no último túnel verde da fase, onde a keyhole está no fundo — é preciso estar com algum power-up (cogumelo, flor de fogo ou pena) para apanhá-la sem tomar dano.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L22-L22",
+          "version": "repo-lines-v1:sha256:b15352d5447c568b6685a3fc4fd4e1e2adb69734bd679cdeac005a4708e80048:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjE1MzUyZDU0NDdjNTY4YjY2ODVhM2ZjNGZkNGUxZTJhZGI2OTczNGJkNjc5Y2RlYWMwMDVhNDcwOGU4MDA0OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjE1MzUyZDU0NDdjNTY4YjY2ODVhM2ZjNGZkNGUxZTJhZGI2OTczNGJkNjc5Y2RlYWMwMDVhNDcwOGU4MDA0OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjFiMjllMzgyZDUyYzRmN2JhYWZkNDA4ODFhNDgyMWY5ZjZhOTdkY2I0YzlmOWM5M2M4Y2NiNmQ3YTc0NzZmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjFmMTFlZDgxODAzYmYxZDQ3MDUwYTVkY2ZmYmNjMWYyOTdmZWM5YTFiZWU2ZWZhY2JkYzNkZDA1ZTA0NDQxOCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:04:15.378Z"
+  }
+}

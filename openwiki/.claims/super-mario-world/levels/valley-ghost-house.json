@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f5467835fee86fd11c57b60a46f8a373e2137e3ae3d470ddfc9112d508243400",
+  "claims": [
+    {
+      "id": "claim_91f860532a634dae9c6c17774f62149b",
+      "statement": "A saída secreta do Valley Ghost House leva ao castelo #7 do Larry — entrada secreta do castelo final, pulando as fases restantes do vale.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L27-L27",
+          "version": "repo-lines-v1:sha256:5565ca573af3e7f2d80ef6f1a3b2da091136d01830bc637311e146f15c8d9dd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3c228e10001843179f0fd3a958a33e1e",
+      "statement": "O caminho da secret exit: bater o bloco acima da primeira porta, pisar no botão P, seguir pela esquerda e entrar na porta — a keyhole está escondida no alto da sala, e exige Cape para voar até a fenda entre as pilhas de blocos (agachar na brecha e, agachado, apertar B e para frente).",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/sources/detonado-pc-do-paulo-secret-exits.md#L27-L27",
+          "version": "repo-lines-v1:sha256:5565ca573af3e7f2d80ef6f1a3b2da091136d01830bc637311e146f15c8d9dd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2NWNhNTczYWYzZTdmMmQ4MGVmNmYxYTNiMmRhMDkxMTM2ZDAxODMwYmM2MzczMTFlMTQ2ZjE1YzhkOWRkOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWEwNzExYTM1ZmQxNjhkNzg1NzMyOTQ3MDQ3M2QzNzlhYjcwYmUzOGUwNGMyMzhiYmI2ZjNlMmRlNTY2NGU4MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2UxMmY5YTNkNjI0ZGEyYTgxYzY5YmJlYmU0NzIzNDY4ZWZmMjA2NGQ2NzFjZjBhYWM5OGZiNmY2ODEzY2ViYiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T18:04:15.378Z"
+  }
+}

@@ -15,7 +15,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 ## Estado atual (atualize esta seção a cada etapa concluída)
 
 - [x] Bootstrap: documentação + scaffold (TS strict + Vitest, zero deps no core) + `@setup-matt-pocock-skills` (tracker **GitHub Issues** + labels de triagem, single-context: `GLOSSARY.md` + `docs/adr/`)
-- [~] **Etapa 01 — em andamento**: spec publicada como **Issue #1** (`ready-for-human`); tickets #2–#7 como sub-issues com dependências nativas. Setup do OpenWiki em curso (Ticket #2); pendente: ingestão do detonado (PC do Paulo) + validação contra a Super Mario Wiki
+- [~] **Etapa 01 — em andamento**: spec **Issue #1** (`ready-for-human`); tickets #2–#7 como sub-issues. **Ticket #2 (setup do OpenWiki) concluído**: `openwiki/` gerado (6 páginas OKF + Claims + índices), schema documentado (`openwiki/knowledge/schema.md`), fontes registradas (PC do Paulo + Super Mario Wiki). Pendente: tickets #3–#7 (ingestão do detonado → páginas do mundo → validação do gating)
 - [ ] Etapa 02 — eventos + interface `EventBus` + `InMemoryEventBus`
 - [ ] Etapa 03 — `knowledge-loader`: OKF → `KnowledgeIndex` (fail fast)
 - [ ] Etapa 04 — `PlayerProfiler` (casual/completionist/speedrunner) + `ProgressionAdvisor`
@@ -32,7 +32,7 @@ Em conflito entre código e documentos, **os documentos vencem** — e devem ser
 ## Decisões vinculantes (não reabrir sem o Thiago)
 
 - **Jogo**: Super Mario World. Vocabulário Mario em código, wiki e glossário — *Avoid*: "quest", "batalha" (são `level`, `boss_engaged`, power-ups).
-- **Camada de conhecimento única**: `openwiki/` no formato OKF v0.2, commitada. O motor de regras consome o **frontmatter** (via knowledge-loader); o agente consome a **prosa**. Não criar `graph.ts` paralelo.
+- **Camada de conhecimento única**: `openwiki/` no formato OKF v0.2, commitada, **organizada por jogo** (`openwiki/<game-slug>/` — jogo novo = pasta nova). O motor de regras consome o **frontmatter** (via knowledge-loader); o agente consome a **prosa**. Não criar `graph.ts` paralelo. **A wiki contém apenas conhecimento de jogo** — nada de documentação de projeto.
 - **Broker**: Mosquitto (MQTT) em docker-compose; `InMemoryEventBus` permanece para testes — a interface `EventBus` é a seam.
 - **LLM só no WorldAdvisor**: `PlayerProfiler` e `ProgressionAdvisor` são regras puras, determinísticos e testáveis. Non-goal: agente reagir a cada evento.
 - **Zero deps no core** (bootstrap); dependências externas (`mqtt.js`, LangChain, OpenTelemetry, Mosquitto) entram a partir das etapas 07/08.
@@ -60,3 +60,20 @@ Single-context: one `GLOSSARY.md` + `docs/adr/` at the project root. See `docs/a
 ### Naming
 
 The `Avoid:` lists in `GLOSSARY.md` bind identifiers too — reviewers treat them as the naming standard. Vocabulário do domínio é o do jogo (Super Mario World): *Avoid* "quest" e "batalha" — see `GLOSSARY.md` (criado pelo `/domain-modeling`) e `SCOPE.md` §4.
+
+<!-- OPENWIKI:START -->
+
+## OpenWiki
+
+This repository has a generated `openwiki/` evidence index. It is optional just-in-time context, not required startup reading.
+
+- Do not enumerate, preload, or search wikis at task start. Use retrieval when the user asks for it, when unfamiliar architecture or dependency behavior materially affects the task, or when source inspection leaves an important uncertainty. Stop once the question is grounded.
+- When those conditions apply and OpenWiki retrieval tools are available, use `openwiki_search` for just-in-time context and `openwiki_read` for the relevant complete sections. If search returns `workspace_required`, ask which listed workspace to use and retry with its ID.
+- Use `openwiki_list_workspaces` or `openwiki_list_wikis` when workspace membership itself needs to be discovered.
+- If the retrieval tools are unavailable, read `openwiki/quickstart.md` and follow its links to the relevant pages.
+- Treat source code and tests as authoritative. A brief's unknowns and review items are verification gaps, not automatic requirements.
+- Prefer the narrowest quiet validation that proves the changed behavior. Preserve complete failure output.
+
+Use the repository's documented maintenance process to refresh generated pages after source changes. Check its configuration and completed runs before relying on automatic updates. Do not hand-edit generated OpenWiki pages unless explicitly asked; prefer updating source code/docs and letting OpenWiki regenerate.
+
+<!-- OPENWIKI:END -->

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7438d43161eadf9e9695e390e2ffb87fdf928b923fc5e9cab137ae7790e4eacd",
+  "claims": [
+    {
+      "id": "claim_f5ae19cae97043ca984d3f6640c68558",
+      "statement": "Esta wiki é a base de conhecimento dos jogos do Game Copilot, organizada por título do jogo (uma pasta openwiki/<game-slug>/ por jogo) e contém apenas conhecimento de jogo — a documentação do projeto vive nos docs da raiz do repositório.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L35-L35",
+          "version": "repo-lines-v1:sha256:7a720ea365c364133a37bf3763bfa0f6cfcfe2f4d0685808740005b03bec6752:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjFjODc0YjU4OTZjYTEyZmQzNGIwYzFlY2QwNmYzYmE2ZThlYTJlYmM1ZDAyZGFmZjgxN2E3Zjc3OWMyYzljMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZjMmExNjY4NTkxZDBhODBmNjMzZDAwMGY3ZWM3MDM2NmE1OTdjMDVjNDgxY2U4ZWM2ODlmZmI3ZmZmMmMwNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6d8d2ad046ab43b6bd9189eaa081ddba",
+      "statement": "Adicionar um jogo novo segue quatro passos: criar a pasta openwiki/<game-slug>/, escrever o schema.md do jogo (tipos de página e campos obrigatórios), registrar as fontes e ingerir as entidades com provenance (sources), mantendo prosa em português e identificadores em inglês kebab-case.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L35-L35",
+          "version": "repo-lines-v1:sha256:7a720ea365c364133a37bf3763bfa0f6cfcfe2f4d0685808740005b03bec6752:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2E3MjBlYTM2NWMzNjQxMzNhMzdiZjM3NjNiZmEwZjZjZmNmZTJmNGQwNjg1ODA4NzQwMDA1YjAzYmVjNjc1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjFjODc0YjU4OTZjYTEyZmQzNGIwYzFlY2QwNmYzYmE2ZThlYTJlYmM1ZDAyZGFmZjgxN2E3Zjc3OWMyYzljMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZjMmExNjY4NTkxZDBhODBmNjMzZDAwMGY3ZWM3MDM2NmE1OTdjMDVjNDgxY2U4ZWM2ODlmZmI3ZmZmMmMwNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f778ece99ce34630bdb85754ced9eef7",
+      "statement": "Super Mario World é o primeiro jogo da wiki (em construção): o schema define cinco tipos de página — area, level, switch-palace, power-up e boss — e o mundo curado cobre 6 áreas com gating de secret exits/keyholes e Switch Palaces.",
+      "evidence": [
+        {
+          "resource": "repo://ARCHITECTURE.md#L96-L102",
+          "version": "repo-lines-v1:sha256:b1ef13e3b55dc471899f080602e66e2be5d3a84c2601512f1dcfb603a60a4a3e:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2Q0NWI1MGRlYzY0MWQ0Yzc3OGQxNDA0ZmRlMjhjODg2N2E5YTdmODc4ODM3ODI0N2NjMzExMDdhOWZjNmQ3OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGM4N2EwZThlNzc5NGMwNjQzZTJiOWIzMDFiMjBhNmU4ZTc1MWM5N2QzZDc3NmU4MjY1ZGQ3MWI0OTBmNjE1YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGE1NWI0NGU5MDYxOGNkYWIyNTEyN2Q3M2E1ZDMwYTc0NGZkNDkzZWYwMzUwYzMyYWQ0ZGVlNjQyMGE3MmM5MiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-16T17:58:26.636Z"
+  }
+}

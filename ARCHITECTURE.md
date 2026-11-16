@@ -95,7 +95,7 @@ Princípios:
 
 ### 2.6 `knowledge-loader` + `openwiki/` (a camada de conhecimento)
 
-- **`openwiki/`**: wiki do mundo de Super Mario World no formato **OKF v0.2** (markdown com frontmatter estruturado + evidências), commitada no repo e gerada/curada a partir de um detonado (autoria com OpenCode + OpenWiki — offline, pré-gravação).
+- **`openwiki/`**: a base de conhecimento dos **jogos**, no formato **OKF v0.2** (markdown com frontmatter estruturado + evidências), commitada no repo e **organizada por título do jogo** (`openwiki/<game-slug>/` — ex.: `super-mario-world/`). Jogo novo no futuro = pasta nova com o schema do jogo; os advisors consomem a wiki sem saber de qual jogo. Gerada/curada a partir de detonados (autoria com OpenCode + OpenWiki — offline, pré-gravação). **A wiki contém apenas conhecimento de jogo** — a documentação do projeto vive nos docs da raiz (`SCOPE.md`, `ARCHITECTURE.md`, `AGENTS.md`).
 - Exemplo de página de nível:
 
 ```markdown
@@ -147,12 +147,13 @@ dio-spec-driven-development-hands-on/
 ├── docker-compose.yml
 ├── package.json / tsconfig.json / vitest.config.ts
 ├── AGENTS.md / GLOSSARY.md / docs/agents/     (gerados pelo @setup-matt-pocock-skills)
-├── openwiki/                                  # base de conhecimento (OKF v0.2, commitada)
-│   ├── INSTRUCTIONS.md                        # spec da base (tipos de página, campos)
-│   ├── entities/areas/*.md                    # yoshis-island, donut-plains, ...
-│   ├── entities/levels/*.md                   # fases, castelos, secret exits
-│   ├── entities/power-ups/*.md                # cape-feather, fire-flower, yoshi
-│   └── entities/switch-palaces/*.md
+├── openwiki/                    # base de conhecimento dos jogos (OKF v0.2, por título)
+│   ├── INSTRUCTIONS.md          # brief: apenas conhecimento de jogo, multi-jogo
+│   ├── quickstart.md            # índice dos jogos + retrieval
+│   └── super-mario-world/       # um jogo por pasta (slug do título)
+│       ├── schema.md            # tipos de página e campos do jogo
+│       ├── world-map.md         # esqueleto curado + gating
+│       └── entities/...         # páginas por nível/área/power-up (tickets #3–#7)
 ├── src/
 │   ├── events/            # tipos, EventBus, InMemoryEventBus, MqttEventBus
 │   ├── knowledge/         # loader OKF → KnowledgeIndex
@@ -198,6 +199,15 @@ Envelope comum de todo evento: `{ type, sessionId, ts, data }`.
 - *Avoid*: "quest" (Mario tem fases/objetivos, não quests), "batalha" (boss_engaged), "grafo tipado" (a wiki é a única camada).
 
 ## 5. Mundo de Super Mario World (esqueleto curado)
+
+> **Fontes**: detonado **PC do Paulo** (PT-BR, ingestão primária) + **Super Mario Wiki** (validação canônica do gating — página *Secret exit*). Escolha registrada no Ticket #2 da etapa 01.
+>
+> | Fonte | Uso | Link |
+> |---|---|---|
+> | PC do Paulo — Detonado Super Mario World (2024, PT-BR) | **Ingestão primária** (texto completo, secret exits e Star World) | <https://www.pcdopaulo.com/2024/09/detonado-super-nintendo-super-mario.html> |
+> | Super Mario Wiki — *Secret exit* | **Validação canônica do gating** (as 24 saídas secretas) | <https://www.mariowiki.com/Secret_exit> |
+> | Super Mario Wiki — *Super Mario World* | Validação por nível/área | <https://www.mariowiki.com/Super_Mario_World> |
+> | YouTube — Todas as Saídas Secretas | Referência visual das rotas | <https://www.youtube.com/watch?v=KjhSUdv5Lwo> |
 
 Estrutura real simplificada para caber em aula (~5 áreas principais + camada secreta). As evidências exatas de cada página vêm do detonado na autoria da wiki.
 

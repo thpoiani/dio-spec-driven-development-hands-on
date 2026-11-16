@@ -101,6 +101,8 @@ Detalhe completo (falas, telas, cortes): [PRESENTATION.md](./PRESENTATION.md).
 
 ## 9. Referências
 
+- **Fontes do jogo (etapa 01)**: [Detonado PC do Paulo](https://www.pcdopaulo.com/2024/09/detonado-super-nintendo-super-mario.html) · [Super Mario Wiki — Secret exit](https://www.mariowiki.com/Secret_exit) · [SM Wiki — Super Mario World](https://www.mariowiki.com/Super_Mario_World) · [YouTube — Saídas Secretas](https://www.youtube.com/watch?v=KjhSUdv5Lwo)
+
 - [Matt Pocock Skills](https://github.com/mattpocock/skills) · [OpenCode](https://opencode.ai/docs) (agente do curso)
 - [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) · [Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
 - [Eclipse Mosquitto](https://mosquitto.org/) · [MQTT.org](https://mqtt.org/) · [mqtt.js](https://github.com/mqttjs/MQTT.js) · [LangChain.js](https://js.langchain.com/)
