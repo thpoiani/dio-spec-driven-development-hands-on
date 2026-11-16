@@ -4,7 +4,7 @@ type: "Referência"
 openwiki_generated: true
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-16T17:58:26.636Z
+    at: 2026-11-16T19:04:45.295Z
 sources:
   - id: openwiki-source-362e06c30ccfdafd87339cb0
     resource: repo://ARCHITECTURE.md
