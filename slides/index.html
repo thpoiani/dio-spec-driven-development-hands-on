@@ -8,7 +8,7 @@
 
 <!-- Metadata para compartilhamento. OWNER/REPO são placeholders: troque ao publicar
      (Passo 5 da SKILL.md) pelo URL final do Pages. -->
-<meta name="description" content="construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato">
+<meta name="description" content="construindo um Game Copilot — feature, arquitetura e agentes sob o mesmo contrato">
 <link rel="canonical" href="https://thpoiani.github.io/dio-spec-driven-development-hands-on/">
 <meta name="theme-color" content="#0C0C0C">
 <link rel="icon" href="https://www.dio.me/favicon.ico">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="DIO — Master Class">
 <meta property="og:url" content="https://thpoiani.github.io/dio-spec-driven-development-hands-on/">
 <meta property="og:title" content="Spec-Driven Development: da spec ao produto">
-<meta property="og:description" content="construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato">
+<meta property="og:description" content="construindo um Game Copilot — feature, arquitetura e agentes sob o mesmo contrato">
 <meta property="og:image" content="https://thpoiani.github.io/dio-spec-driven-development-hands-on/og-image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -27,7 +27,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Spec-Driven Development: da spec ao produto">
-<meta name="twitter:description" content="construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato">
+<meta name="twitter:description" content="construindo um Game Copilot — feature, arquitetura e agentes sob o mesmo contrato">
 <meta name="twitter:image" content="https://thpoiani.github.io/dio-spec-driven-development-hands-on/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -518,7 +518,6 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
 
 <div class="reveal">
 <div class="slides">
-
 <!-- 01 · CAPA -->
 <section class="slide slide--cover" data-chrome="none">
   <div class="cover__top">
@@ -547,7 +546,25 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 02 · AGENDA -->
+<!-- 02 · BIO -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main bio">
+    <div class="bio__photo" aria-hidden="true"><img src="https://github.com/thpoiani.png?size=460" alt="Thiago Poiani"></div>
+    <div class="bio__body">
+      <p class="kicker">Quem está falando</p>
+      <h2 class="title">Thiago Poiani</h2>
+      <ul class="bullets bullets--tight">
+        <li>Principal Software Engineer @ Skip.</li>
+        <li>@thpoiani no LinkedIn e redes.</li>
+      </ul>
+    </div>
+  </div>
+  <aside class="notes">
+    Duas linhas bastam; o repositório público fala por si. Criar confiança, não currículo.
+  </aside>
+</section>
+
+<!-- 03 · AGENDA -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Roteiro</p>
@@ -565,26 +582,6 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 03 · BIO -->
-<section class="slide" data-chrome="full">
-  <div class="slide__main bio">
-    <div class="bio__photo" aria-hidden="true"><img src="https://github.com/thpoiani.png?size=460" alt="Thiago Poiani"></div>
-    <div class="bio__body">
-      <p class="kicker">Quem está falando</p>
-      <h2 class="title">Thiago Poiani</h2>
-      <ul class="bullets bullets--tight">
-        <li>Principal Software Engineer @ Skip.</li>
-        <li>Spec-Driven Development na prática: specs, tickets e PRs como processo.</li>
-        <li>O repositório do Game Copilot é a aula — cada estágio, um ciclo completo.</li>
-        <li>@thpoiani no GitHub e no LinkedIn.</li>
-      </ul>
-    </div>
-  </div>
-  <aside class="notes">
-    Duas linhas bastam; o repositório público fala por si. Criar confiança, não currículo.
-  </aside>
-</section>
-
 <!-- 04 · DIVISOR PARTE 01 -->
 <section class="slide slide--section" data-chrome="min">
   <div class="slide__main">
@@ -598,8 +595,10 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 05 · BULLETS -->
+<!-- 05 · BULLETS · GTA -->
 <section class="slide" data-chrome="full">
+  <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/ak3ak31a49a221/c8c033070a0bfb2e3ec6ae7ff047ebe8ec551326.jpg"
+       alt="Grand Theft Auto VI" style="position:absolute;top:92px;right:64px;width:500px;mix-blend-mode:screen">
   <div class="slide__main">
     <p class="kicker">O gancho</p>
     <h2 class="title">GTA VI: o lançamento da década</h2>
@@ -616,7 +615,7 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 06 · DUAS COLUNAS -->
+<!-- 06 · DUAS COLUNAS · TV -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">A tendência</p>
@@ -645,7 +644,7 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 07 · DIAGRAMA -->
+<!-- 07 · DIAGRAMA · USE CASE -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">O use case</p>
@@ -692,7 +691,7 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 08 · BULLETS -->
+<!-- 08 · BULLETS · NON-GOALS -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Escopo</p>
@@ -714,7 +713,7 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   <div class="slide__main">
     <p class="kicker">Parte 02</p>
     <h2 class="title">O sistema:<br>Game Copilot</h2>
-    <p class="lead muted">Um sistema de verdade rodando antes de qualquer evolução — o brownfield onde o SDD brilha.</p>
+    <p class="lead muted">Um sistema rodando antes de qualquer evolução — o brownfield onde o SDD brilha.</p>
   </div>
   <span class="section__num" aria-hidden="true">02</span>
   <aside class="notes">
@@ -722,7 +721,51 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 10 · DIAGRAMA -->
+<!-- 10 · BIG PICTURE -->
+<section class="slide" data-chrome="full">
+  <div class="slide__main">
+    <p class="kicker">Big picture</p>
+    <h2 class="title">O sistema completo, ponta a ponta</h2>
+    <div style="display:flex;align-items:stretch;width:100%;margin-top:6px">
+      <div class="card" style="flex:1">
+        <span class="card__label">01</span>
+        <h3>Clientes</h3>
+        <p>PlayStation 5 · PC · Xbox · Switch 2</p>
+        <p style="font-size:13px"><span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">visão</span> o jogo rodando — de onde sai a telemetria</p>
+      </div>
+      <span style="align-self:center;color:var(--muted);font:600 22px var(--font-display);padding:0 12px">→</span>
+      <div class="card" style="flex:1">
+        <span class="card__label">02</span>
+        <h3>Captura</h3>
+        <p>OCR/vision da tela <span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">visão</span></p>
+        <p>eventos de gameplay <span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">hoje</span> — mockados por fitas</p>
+      </div>
+      <span style="align-self:center;color:var(--muted);font:600 22px var(--font-display);padding:0 12px">→</span>
+      <div class="card" style="flex:1.15;border-color:var(--brand)">
+        <span class="card__label">03</span>
+        <h3>Game Copilot</h3>
+        <p>barramento de eventos <span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">hoje</span></p>
+        <p>motor de regras: perfis e progressão <span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">hoje</span></p>
+        <p>agente LLM + wiki por jogo <span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">ao vivo</span></p>
+      </div>
+      <span style="align-self:center;color:var(--muted);font:600 22px var(--font-display);padding:0 12px">→</span>
+      <div class="card" style="flex:1.15">
+        <span class="card__label">04</span>
+        <h3>Notificação</h3>
+        <div style="margin-top:8px;padding:10px 12px;background:var(--surface-2);border-left:3px solid var(--brand);font-size:13.5px;line-height:1.45">"Forest of Illusion 4 não progride — entre na keyhole do túnel azul."</div>
+        <p style="font-size:13px;margin-top:8px"><span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">visão</span> na TV/overlay do jogo · <span style="font:600 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">hoje</span> console</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:14px"><b style="color:var(--brand)">●</b> no ar hoje (v0.6.1 + o que a aula constrói) &nbsp;·&nbsp; <span style="color:var(--muted)">●</span> visão completa do produto</p>
+  </div>
+  <aside class="notes">
+    O mapa do produto inteiro: clientes, captura, copiloto e a notificação que o jogador recebe —
+    com o que já roda, o que a aula constrói ao vivo e o que fica para depois.
+    A recomendação é o exemplo real da demo: o gating da Forest of Illusion.
+  </aside>
+</section>
+
+<!-- 11 · DIAGRAMA · ARQUITETURA -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Arquitetura</p>
@@ -768,7 +811,7 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 11 · DUAS COLUNAS -->
+<!-- 12 · DUAS COLUNAS · WIKI -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">A base de conhecimento</p>
@@ -803,7 +846,7 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 12 · TERMINAL -->
+<!-- 13 · TERMINAL · DEMO -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Demo</p>
@@ -826,143 +869,43 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 13 · DIVISOR PARTE 03 -->
+<!-- 14 · DIVISOR PARTE 03 · HANDS-ON -->
 <section class="slide slide--section" data-chrome="min">
   <div class="slide__main">
     <p class="kicker">Parte 03</p>
-    <h2 class="title">SDD para<br>infraestrutura</h2>
-    <p class="lead muted">A evolução de arquitetura também começa na spec — feature nova não é o único gatilho.</p>
+    <h2 class="title">Hands-on</h2>
+    <p class="lead muted">A partir daqui eu assumo o teclado — e o desenvolvimento começa ao vivo, pelo ciclo SDD.</p>
   </div>
   <span class="section__num" aria-hidden="true">03</span>
   <aside class="notes">
-    O ciclo é o mesmo da feature nova; o que a spec precisa fixar muda.
+    Do slide em diante é ao vivo: o grill, a spec, os tickets e a implementação com TDD —
+    sem slides. O retorno ao deck acontece no homework.
   </aside>
 </section>
 
-<!-- 14 · CITAÇÃO -->
-<section class="slide" data-chrome="full">
-  <div class="slide__main">
-    <blockquote class="quote">
-      "Quero que os eventos do jogo passem por um barramento de verdade, não por uma fila em memória."
-      <cite>— a iniciativa, vaga de propósito</cite>
-    </blockquote>
-  </div>
-  <aside class="notes">
-    A entrevista transforma a vaga em decisões — não em suposições. Este é o grill ao vivo da aula.
-  </aside>
-</section>
-
-<!-- 15 · BULLETS -->
-<section class="slide" data-chrome="full">
-  <div class="slide__main">
-    <p class="kicker">O grill</p>
-    <h2 class="title">O que a entrevista tira da vaga</h2>
-    <ul class="bullets">
-      <li>A interface <span class="mono">EventBus</span> é a seam — e fica intacta.</li>
-      <li>Os consumidores não mudam: o contrato sobrevive à troca.</li>
-      <li>Sem persistência — non-goal registrado na spec.</li>
-      <li>O glossário ganha os termos de infra: barramento, tópico, telemetria.</li>
-    </ul>
-  </div>
-  <aside class="notes">
-    Artefatos na tela: spec, tickets com dependências, glossário. O método transforma cada resposta em requisito testável.
-  </aside>
-</section>
-
-<!-- 16 · TERMINAL -->
-<section class="slide" data-chrome="full">
-  <div class="slide__main">
-    <p class="kicker">Implementação</p>
-    <h2 class="title">A mesma execução, o transporte trocado</h2>
-    <div class="term">
-      <div class="term__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>terminal</span></div>
-      <div class="term__body">
-        <p><span class="p">$</span>npm test</p>
-        <p class="out ok">✓ 31 passed (31) — a suíte é o gabarito da migração</p>
-        <p><span class="p">$</span>npm run demo</p>
-        <p class="out">▶ mesma fita, mesmas recomendações — novo transporte</p>
-      </div>
-    </div>
-    <p class="small muted">TDD + code-review acelerados na edição; a suíte verde prova que nenhum consumidor quebrou.</p>
-  </div>
-  <aside class="notes">
-    A seam na prática: o contrato sobrevive à troca. É por isso que a interface EventBus existia desde o bootstrap.
-  </aside>
-</section>
-
-<!-- 17 · DIVISOR PARTE 04 -->
-<section class="slide slide--section" data-chrome="min">
-  <div class="slide__main">
-    <p class="kicker">Parte 04</p>
-    <h2 class="title">SDD para<br>agentes</h2>
-    <p class="lead muted">Comportamento não-determinístico também entra no contrato — o que um agente exige da spec.</p>
-  </div>
-  <span class="section__num" aria-hidden="true">04</span>
-  <aside class="notes">
-    O bloco mais rico: a spec de um agente fixa quando ele reage, o que entrega e o que nunca faz.
-  </aside>
-</section>
-
-<!-- 18 · BULLETS -->
-<section class="slide" data-chrome="full">
-  <div class="slide__main">
-    <p class="kicker">A spec do agente</p>
-    <h2 class="title">O que a spec fixa num agente</h2>
-    <ul class="bullets">
-      <li>Quando reage: eventos relevantes + throttle — nunca a cada evento.</li>
-      <li>Contrato de saída: a mesma recomendação, com <span class="mono">evidence</span> citando a wiki.</li>
-      <li>Guardrail: "não invente segredo que não está na wiki" — sem evidência, não publica.</li>
-      <li>Provider é decisão de spec, não de código.</li>
-    </ul>
-  </div>
-  <aside class="notes">
-    A diferença para a Parte 03: aqui a spec fixa o que o agente exige — não só o que o código recebe.
-  </aside>
-</section>
-
-<!-- 19 · TERMINAL -->
-<section class="slide" data-chrome="full">
-  <div class="slide__main">
-    <p class="kicker">Demo final</p>
-    <h2 class="title">Dois consumidores, um contrato</h2>
-    <div class="term">
-      <div class="term__bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>console</span></div>
-      <div class="term__body">
-        <p class="out ok">[advisor] source=progression-advisor · FoI 4 não progride — keyhole</p>
-        <p class="out ok">[advisor] source=world-advisor · "o túnel azul flutuante com Lakitu</p>
-        <p class="out ok">          esconde a keyhole" (wiki: forest-of-illusion-4)</p>
-      </div>
-    </div>
-    <p class="small muted">Regras e agente no mesmo barramento — a spec definiu o evento.</p>
-  </div>
-  <aside class="notes">
-    A demo que fecha a aula: mesmo evento, dois consumidores — o determinístico e o inteligente, cada um com sua evidência.
-  </aside>
-</section>
-
-<!-- 20 · EXERCÍCIO -->
+<!-- 15 · EXERCÍCIO -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Homework</p>
-    <h2 class="title">Expanda o mundo</h2>
+    <h2 class="title">Adicione um novo jogo</h2>
     <div class="exercise">
       <p class="exercise__meta">no seu ritmo · individual</p>
-      <h3>Rode o ciclo SDD completo sozinho</h3>
+      <h3>O copiloto hoje só conhece Super Mario World — o sistema precisa atender ao próximo jogo</h3>
       <ol class="steps">
-        <li>Escolha uma região do mundo que ainda não está na wiki.</li>
-        <li>Escreva a spec: o que entra, quais páginas, quais campos.</li>
-        <li>Gere as páginas com o agente e valide com o <span class="mono">check:wiki</span>.</li>
-        <li>Abra o PR com as evidências das fontes.</li>
+        <li>Escolha o jogo: Sonic, Zelda, o que você dominar.</li>
+        <li>Especifique o que muda: eventos, perfis e a base de conhecimento por jogo.</li>
+        <li>Projete com design patterns: o que vira interface/strategy, o que é específico de cada jogo.</li>
+        <li>Rode o ciclo SDD completo — grill, spec, tickets e implement com TDD.</li>
       </ol>
-      <p class="exercise__goal">Critério de sucesso: PR com a wiki expandida passando no check do CI — e o grafo do visualize mostrando as novas conexões.</p>
+      <p class="exercise__goal">Critério de sucesso: o mesmo copiloto recomenda para dois jogos, sem duplicar o motor — a wiki já é organizada por jogo (<span class="mono">openwiki/&lt;game-slug&gt;/</span>).</p>
     </div>
   </div>
   <aside class="notes">
-    A expansão do conhecimento é o homework ideal: toca em spec, agente e validação — sem tocar no código.
+    A atividade amarra tudo: spec, design patterns na fronteira do domínio e a wiki multi-jogo.
   </aside>
 </section>
 
-<!-- 21 · RECAP -->
+<!-- 16 · RECAP -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Recapitulando</p>
@@ -980,14 +923,14 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 22 · REFERÊNCIAS -->
+<!-- 17 · REFERÊNCIAS -->
 <section class="slide" data-chrome="full">
   <div class="slide__main">
     <p class="kicker">Para saber mais</p>
     <h2 class="title">Onde continuar</h2>
     <div class="refs">
       <a href="https://docs.langchain.com/oss/openwiki/overview" target="_blank" rel="noopener">
-        <span class="refs__label">OpenWiki — a wiki viva do repositório</span>
+        <span class="refs__label">OpenWiki</span>
         <span class="refs__url">docs.langchain.com/oss/openwiki</span>
       </a>
       <a href="https://docs.langchain.com/oss/python/langchain/overview" target="_blank" rel="noopener">
@@ -1013,23 +956,20 @@ html[data-theme="light"] .hljs-comment{color:#8A8A80}
   </aside>
 </section>
 
-<!-- 23 · ENCERRAMENTO -->
+<!-- 18 · AGRADECIMENTO -->
 <section class="slide slide--closing" data-chrome="none">
   <div class="closing__main">
-    <p class="kicker">Fim · obrigado</p>
-    <h2 class="closing__title">Comece pela próxima spec</h2>
-    <p class="lead muted">Transforme o próximo prompt vago em contrato — a ferramenta é escolha sua; o processo é o que muda o jogo.</p>
+    <p class="kicker">Fim</p>
+    <h2 class="closing__title">Obrigado!</h2>
   </div>
-  <div class="refs" data-list="links"></div>
   <div class="closing__foot">
     <svg class="logo logo--sm" viewBox="0 0 98 40" role="img" aria-label="DIO"><use href="#dio-logo"/></svg>
     <span class="mono small muted" data-bind="event"></span>
   </div>
   <aside class="notes">
-    Convite concreto: escolha a ferramenta (Spec Kit, OpenSpec, Skills) e comece pela próxima spec. Nunca terminar com "era isso, obrigado".
+    Agradecimento simples; as perguntas seguem na conversa.
   </aside>
 </section>
-
 </div>
 </div>
 
@@ -1044,7 +984,7 @@ import Zoom from 'https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/zoom.
    ============================================================ */
 const DECK = {
   title: 'Spec-Driven Development: da spec ao produto',
-  subtitle: 'construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato',
+  subtitle: 'construindo um Game Copilot — feature, arquitetura e agentes sob o mesmo contrato',
   event: 'Spec-Driven Development',
   date: 'Novembro 2026',
   theme: 'dark',            // 'dark' | 'light'
@@ -1053,7 +993,7 @@ const DECK = {
     role: 'Principal Software Engineer, Skip',
   },
   links: [
-    { label: 'OpenWiki — a wiki viva do repositório', url: 'https://docs.langchain.com/oss/openwiki/overview' },
+    { label: 'OpenWiki', url: 'https://docs.langchain.com/oss/openwiki/overview' },
     { label: 'LangChain', url: 'https://docs.langchain.com/oss/python/langchain/overview' },
     { label: 'NestJS', url: 'https://docs.nestjs.com/' },
     { label: 'OpenCode — o agente do curso', url: 'https://opencode.ai/' },

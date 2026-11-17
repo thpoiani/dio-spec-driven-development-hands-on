@@ -10,7 +10,7 @@ Estes valores vão direto para o bloco `DECK` do template.
 | Campo | Valor |
 |---|---|
 | `title` | Spec-Driven Development: da spec ao produto |
-| `subtitle` | construindo um Game Copilot de verdade — feature, arquitetura e agentes sob o mesmo contrato |
+| `subtitle` | construindo um Game Copilot — feature, arquitetura e agentes sob o mesmo contrato |
 | `event` | Spec-Driven Development (título do curso — o cabeçalho mostra título + data) |
 | `date` | Novembro 2026 |
 | `instructor.name` | Thiago Poiani |
@@ -23,15 +23,14 @@ Estes valores vão direto para o bloco `DECK` do template.
 
 ```text
 00:00  Abertura: a semana em que o jogo lançou   (slides 04–08 · 15 min)
-00:15  O sistema: Game Copilot + demo            (slides 09–12 · 10 min)
-00:25  SDD para infraestrutura                   (slides 13–16 · 15 min)
-00:40  SDD para agentes                          (slides 17–19 · 20 min)
-01:00  Recap, homework e convite                 (slides 20–23 · 5 min)
+00:15  O sistema: Game Copilot + demo            (slides 09–13 · 10 min)
+00:25  Hands-on: o desenvolvimento ao vivo       (slide 14 · ~35 min)
+01:00  Homework, recap e convite                 (slides 15–18 · 5 min)
 ```
 
-> Ancorado nos marcadores visíveis: o contador do rodapé (`NN / 23`) e os números das Partes nos divisores (slides 04, 09, 13 e 17).
+> Ancorado nos marcadores visíveis: o contador do rodapé (`NN / 18`) e os números das Partes nos divisores (slides 04, 09 e 14).
 
-Mapeamento para gravação (pelo contador do rodapé): Abertura = 04–08 · O sistema = 09–12 · Infraestrutura = 13–16 · Agentes = 17–19 · Encerramento = 20–23.
+Mapeamento para gravação (pelo contador do rodapé): Abertura = 04–08 · O sistema = 09–13 · Hands-on = 14 (retorno: 15) · Encerramento = 15–18.
 
 ## Slides
 
@@ -49,19 +48,19 @@ Layouts disponíveis: `capa`, `agenda`, `bio`, `divisor`, `bullets`, `duas-colun
 ---
 
 ### 01 · capa
-**Título:** SDD na prática: construindo um Game Copilot
-**Mensagem:** o ciclo spec-driven aplicado a um sistema real — do evento de gameplay à recomendação no console
+**Título:** Spec-Driven Development: da spec ao produto
+**Mensagem:** construindo um Game Copilot — feature, arquitetura e agentes sob o mesmo contrato
 **Nota:** abrir com a promessa: você vai ver um sistema de verdade evoluir por spec — não um TODO app
 
-### 02 · agenda
-**Título:** O que a gente vai ver
-**Mensagem:** o problema de mercado · o sistema rodando · infraestrutura por spec · agentes por spec · homework
-**Nota:** 15 + 10 + 15 + 20 + 5 minutos
-
-### 03 · bio
+### 02 · bio
 **Título:** Thiago Poiani
-**Mensagem:** Principal Software Engineer @ Skip · foto: avatar do GitHub (github.com/thpoiani.png, link externo) · SDD na prática: o repositório do Game Copilot é a aula
+**Mensagem:** Principal Software Engineer @ Skip · foto: avatar do GitHub (github.com/thpoiani.png, link externo) · @thpoiani no LinkedIn e redes
 **Nota:** duas linhas bastam; criar confiança, não currículo
+
+### 03 · agenda
+**Título:** O que a gente vai ver
+**Mensagem:** o problema de mercado · o sistema rodando · hands-on ao vivo · homework · recap e convite
+**Nota:** 15 + 10 + ~35 (ao vivo) + 5 minutos
 
 ### 04 · divisor
 **Título:** A semana em que o jogo lançou
@@ -71,7 +70,7 @@ Layouts disponíveis: `capa`, `agenda`, `bio`, `divisor`, `bullets`, `duas-colun
 ### 05 · bullets
 **Título:** GTA VI: o lançamento da década
 **Mensagem:** 19/11/2026 — audiência massiva; o jogador busca estratégia sem sair do jogo
-**Nota:** "na semana em que esta aula sai, o jogo mais esperado da década está nas mãos de milhões de jogadores"
+**Nota:** logo oficial do GTA VI no slide (newswire da Rockstar, link externo) · "na semana em que esta aula sai, o jogo mais esperado da década está nas mãos de milhões de jogadores"
 
 ### 06 · duas-colunas
 **Título:** A TV virou plataforma computacional
@@ -90,75 +89,62 @@ Layouts disponíveis: `capa`, `agenda`, `bio`, `divisor`, `bullets`, `duas-colun
 
 ### 09 · divisor
 **Título:** O sistema: Game Copilot
-**Mensagem:** um sistema de verdade rodando antes de qualquer evolução — o brownfield onde o SDD brilha
+**Mensagem:** um sistema rodando antes de qualquer evolução — o brownfield onde o SDD brilha
 **Nota:** mostrar o sistema existente: wiki, barramento, profiler, advisor
 
-### 10 · diagrama
+### 10 · duas-colunas (big picture)
+**Título:** O sistema completo, ponta a ponta
+**Mensagem:** clientes (PS5 · PC · Xbox · Switch 2) → captura (OCR/vision) → Game Copilot (barramento + regras + agente LLM + wiki) → notificação com a recomendação ("FoI 4 não progride — busque a keyhole")
+**Nota:** width 100% — todos os componentes, mesmo os fora do escopo agora; badges hoje/ao vivo/visão marcam o que existe e o que vem
+
+### 11 · diagrama
 **Título:** Um contrato, consumidores independentes
 **Mensagem:** telemetria → barramento de eventos → profiler + advisor → recomendações no console
-**Nota:** a base de conhecimento é a wiki OpenWiki/OKF gerada de um detonado de Super Mario World
+**Nota:** a interface EventBus é a seam: trocar o transporte não toca nos consumidores
 
-### 11 · duas-colunas
+### 12 · duas-colunas
 **Título:** A base de conhecimento também tem spec
 **Mensagem:** frontmatter alimenta o motor · prosa é leitura rica · schema é a spec da base
-**Nota:** frase-tese do bloco — mostrar o grafo da wiki no visualizador
+**Nota:** a wiki nasceu de um detonado de Super Mario World; o grafo do openwiki visualize mostra as conexões
 
-### 12 · terminal
+### 13 · terminal
 **Título:** Demo: três jogadores, três perfis
 **Mensagem:** `npm run demo` — o casual trava no loop da Forest of Illusion e o advisor aponta a saída secreta
 **Nota:** rodar em tempo real; se falhar, cortar para a fita acelerada
 
-### 13 · divisor
-**Título:** SDD para infraestrutura
-**Mensagem:** a evolução de arquitetura também começa na spec — feature nova não é o único gatilho
-**Nota:** o ciclo é o mesmo; o que a spec precisa fixar muda
+### 14 · divisor
+**Título:** Hands-on
+**Mensagem:** a partir daqui eu assumo o teclado — e o desenvolvimento começa ao vivo, pelo ciclo SDD
+**Nota:** do slide em diante é gravação ao vivo: grill, spec, tickets e implement com TDD — o retorno ao deck acontece no homework
 
-### 14 · citacao
-**Título:** A iniciativa
-**Mensagem:** "quero que os eventos do jogo passem por um barramento de verdade, não por uma fila em memória"
-**Nota:** vaga de propósito — o grill transforma em decisões, não em suposições
+### 15 · exercicio
+**Título:** Adicione um novo jogo
+**Mensagem:** o copiloto hoje só conhece Super Mario World — especifique o que muda (eventos, perfis, wiki por jogo), projete com design patterns e rode o ciclo SDD completo
+**Nota:** critério de sucesso: o mesmo copiloto recomenda para dois jogos, sem duplicar o motor (a wiki já é organizada por jogo: openwiki/<game-slug>/)
 
-### 15 · bullets
-**Título:** O que a entrevista tira da vaga
-**Mensagem:** a interface `EventBus` é a seam · os consumidores não mudam · sem persistência (non-goal) · o glossário ganha os termos de infra
-**Nota:** artefatos na tela: spec, tickets com dependências, glossário recebendo os termos
-
-### 16 · terminal
-**Título:** A mesma execução, o transporte trocado
-**Mensagem:** TDD + code-review acelerados; a suíte verde prova que nenhum consumidor quebrou
-**Nota:** a seam na prática — o contrato sobrevive à troca
-
-### 17 · divisor
-**Título:** SDD para agentes
-**Mensagem:** comportamento não-determinístico também entra no contrato — o que um agente exige da spec
-**Nota:** o bloco mais rico: a spec de um LLM fixa quando, o quê e o que nunca fazer
-
-### 18 · bullets
-**Título:** O que a spec fixa num agente
-**Mensagem:** quando reage (eventos relevantes + throttle) · contrato de saída com `evidence` · guardrail: sem evidência, não publica · provider é decisão de spec
-**Nota:** "não invente segredo que não está na wiki"
-
-### 19 · terminal
-**Título:** Dois consumidores, um contrato
-**Mensagem:** o console mostra regras e agente no mesmo barramento — a spec definiu o evento
-**Nota:** a demo que fecha a aula
-
-### 20 · exercicio
-**Título:** Homework: expanda o mundo
-**Mensagem:** expanda a base de conhecimento na wiki e rode o ciclo completo sozinho — spec e tickets publicados no repositório
-**Nota:** critério de sucesso: PR com a wiki expandida passando no `check:wiki`
-
-### 21 · recap
+### 16 · recap
 **Título:** Cinco coisas para levar
 **Mensagem:** a spec é o contrato que sobrevive à sessão · o que você não diz, o agente inventa · SDD serve para feature, arquitetura e agente · a base de conhecimento também tem spec · o método transforma decisões em requisitos testáveis
 **Nota:** a versão que a pessoa repete no elevador
 
-### 22 · referencias
+### 17 · referencias
 **Título:** Onde continuar
-**Mensagem:** OpenWiki (docs.langchain.com/oss/openwiki) · LangChain (docs.langchain.com/oss/python/langchain) · NestJS (docs.nestjs.com) · OpenCode (opencode.ai) · Skills do Matt Pocock (github.com/mattpocock/skills)
+**Mensagem:** OpenWiki · LangChain · NestJS · OpenCode · Skills do Matt Pocock
 **Nota:** os cinco links vivem no `DECK.links` e voltam no encerramento
 
-### 23 · encerramento
-**Título:** Dúvidas?
-**Mensagem:** transforme o próximo prompt vago em spec — escolha a ferramenta (Spec Kit, OpenSpec, Skills) e comece
-**Nota:** nunca termine com "era isso, obrigado"
+### 18 · encerramento
+**Título:** Obrigado!
+**Mensagem:** slide simples de agradecimento (logo DIO + evento no rodapé)
+**Nota:** agradecimento simples; as perguntas seguem na conversa
+
+---
+
+## Antes de mandar para aprovação
+
+- [x] Todo título é uma afirmação, com no máximo ~60 caracteres (exceção: a capa).
+- [x] Nenhum slide tem duas ideias.
+- [x] Nenhum layout aparece duas vezes seguidas.
+- [x] Existe um divisor por bloco (3 no total — a Parte 03 é o hands-on ao vivo).
+- [x] Tem agenda, recap e agradecimento (exercício = o homework).
+- [x] O tempo do roteiro fecha com a duração da aula (65 min, ~35 de desenvolvimento ao vivo).
+- [x] Imagens (avatar do GitHub e logo do GTA VI) carregadas por link externo — nenhuma no git.
